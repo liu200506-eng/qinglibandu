@@ -1,0 +1,1439 @@
+[
+  {
+    "question_id": "q001",
+    "question": "OSI七层模型从上到下依次是什么？",
+    "category": "网络基础",
+    "knowledge_point": "OSI模型",
+    "difficulty": 0.3,
+    "question_type": "concept",
+    "prerequisite_knowledge": [],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q002",
+    "question": "TCP/IP四层模型与OSI七层模型的对应关系是什么？",
+    "category": "网络基础",
+    "knowledge_point": "TCP/IP模型",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "OSI模型"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q003",
+    "question": "数据在OSI七层模型中如何封装？每层添加什么头部？",
+    "category": "网络基础",
+    "knowledge_point": "数据封装",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "OSI模型"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q004",
+    "question": "TCP熟知端口的范围是什么？HTTP、HTTPS、SSH分别使用什么端口？",
+    "category": "网络基础",
+    "knowledge_point": "端口号",
+    "difficulty": 0.3,
+    "question_type": "concept",
+    "prerequisite_knowledge": [],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q005",
+    "question": "什么是网络协议？协议三要素是什么？",
+    "category": "网络基础",
+    "knowledge_point": "网络协议",
+    "difficulty": 0.3,
+    "question_type": "concept",
+    "prerequisite_knowledge": [],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q006",
+    "question": "网络带宽和吞吐量有什么区别？",
+    "category": "网络基础",
+    "knowledge_point": "带宽与吞吐量",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q007",
+    "question": "网络延迟的组成部分有哪些？",
+    "category": "网络基础",
+    "knowledge_point": "网络延迟",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q008",
+    "question": "什么是RTT？如何计算RTT？",
+    "category": "网络基础",
+    "knowledge_point": "RTT",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q009",
+    "question": "什么是丢包率？丢包对TCP传输有什么影响？",
+    "category": "网络基础",
+    "knowledge_point": "丢包率",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q010",
+    "question": "电路交换和分组交换的区别是什么？",
+    "category": "网络基础",
+    "knowledge_point": "交换方式",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q011",
+    "question": "模拟信号和数字信号的区别是什么？",
+    "category": "物理层",
+    "knowledge_point": "信号类型",
+    "difficulty": 0.3,
+    "question_type": "concept",
+    "prerequisite_knowledge": [],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q012",
+    "question": "什么是调制？常见的调制方式有哪些？",
+    "category": "物理层",
+    "knowledge_point": "调制",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "信号类型"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q013",
+    "question": "奈奎斯特采样定理的内容是什么？",
+    "category": "物理层",
+    "knowledge_point": "采样定理",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "信号类型"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q014",
+    "question": "什么是信道容量？香农公式是什么？",
+    "category": "物理层",
+    "knowledge_point": "信道容量",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "信号类型"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q015",
+    "question": "常见的传输介质有哪些？各自的特点是什么？",
+    "category": "物理层",
+    "knowledge_point": "传输介质",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q016",
+    "question": "光纤通信的优点是什么？",
+    "category": "物理层",
+    "knowledge_point": "光纤",
+    "difficulty": 0.3,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "传输介质"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q017",
+    "question": "双绞线分为哪几类？各自的带宽是多少？",
+    "category": "物理层",
+    "knowledge_point": "双绞线",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "传输介质"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q018",
+    "question": "什么是CSMA/CD协议？它是如何工作的？",
+    "category": "数据链路层",
+    "knowledge_point": "CSMA/CD",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q019",
+    "question": "以太网的最小帧长度是多少？为什么需要最小帧长度？",
+    "category": "数据链路层",
+    "knowledge_point": "以太网帧",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "CSMA/CD"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q020",
+    "question": "以太网的最大帧长度是多少？超过最大帧长度会怎样？",
+    "category": "数据链路层",
+    "knowledge_point": "以太网帧",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "以太网帧"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q021",
+    "question": "什么是MAC地址？它的格式是什么？",
+    "category": "数据链路层",
+    "knowledge_point": "MAC地址",
+    "difficulty": 0.3,
+    "question_type": "concept",
+    "prerequisite_knowledge": [],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q022",
+    "question": "交换机的MAC地址表是如何建立的？",
+    "category": "数据链路层",
+    "knowledge_point": "交换机",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "MAC地址"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q023",
+    "question": "集线器和交换机的区别是什么？",
+    "category": "数据链路层",
+    "knowledge_point": "网络设备",
+    "difficulty": 0.3,
+    "question_type": "concept",
+    "prerequisite_knowledge": [],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q024",
+    "question": "什么是VLAN？它的作用是什么？",
+    "category": "数据链路层",
+    "knowledge_point": "VLAN",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "交换机"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q025",
+    "question": "STP协议的作用是什么？它如何防止网络环路？",
+    "category": "数据链路层",
+    "knowledge_point": "STP",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "交换机"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q026",
+    "question": "IP地址分为哪几类？每类的范围是什么？",
+    "category": "网络层",
+    "knowledge_point": "IP地址分类",
+    "difficulty": 0.3,
+    "question_type": "concept",
+    "prerequisite_knowledge": [],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q027",
+    "question": "IP地址10.0.0.0/8，子网掩码是什么？可用主机数是多少？",
+    "category": "网络层",
+    "knowledge_point": "子网划分",
+    "difficulty": 0.4,
+    "question_type": "calculation",
+    "prerequisite_knowledge": [
+      "IP地址分类",
+      "CIDR"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q028",
+    "question": "IP地址202.113.25.120，判断它属于哪类地址？",
+    "category": "网络层",
+    "knowledge_point": "IP地址分类",
+    "difficulty": 0.3,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "IP地址分类"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q029",
+    "question": "什么是CIDR？它如何简化路由表？",
+    "category": "网络层",
+    "knowledge_point": "CIDR",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "IP地址分类"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q030",
+    "question": "什么是ARP协议？它的作用是什么？",
+    "category": "网络层",
+    "knowledge_point": "ARP协议",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "IP地址",
+      "MAC地址"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q031",
+    "question": "ARP缓存的作用是什么？ARP缓存超时时间通常是多少？",
+    "category": "网络层",
+    "knowledge_point": "ARP缓存",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "ARP协议"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q032",
+    "question": "什么是ICMP协议？它的主要用途是什么？",
+    "category": "网络层",
+    "knowledge_point": "ICMP协议",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "IP协议"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q033",
+    "question": "ICMP不可达报文的类型有哪些？",
+    "category": "网络层",
+    "knowledge_point": "ICMP类型",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "ICMP协议"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q034",
+    "question": "Traceroute的工作原理是什么？它使用什么协议？",
+    "category": "网络层",
+    "knowledge_point": "Traceroute",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "ICMP协议"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q035",
+    "question": "路由表的组成部分有哪些？",
+    "category": "网络层",
+    "knowledge_point": "路由表",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "IP协议"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q036",
+    "question": "RIP协议的最大跳数是多少？为什么？",
+    "category": "网络层",
+    "knowledge_point": "RIP",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "路由协议"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q037",
+    "question": "OSPF协议和RIP协议的区别是什么？",
+    "category": "网络层",
+    "knowledge_point": "路由协议对比",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "RIP",
+      "OSPF"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q038",
+    "question": "TCP和UDP的区别是什么？分别适用于什么场景？",
+    "category": "传输层",
+    "knowledge_point": "TCP vs UDP",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q039",
+    "question": "TCP三次握手的过程是什么？为什么需要三次握手？",
+    "category": "传输层",
+    "knowledge_point": "TCP握手",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "TCP协议"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q040",
+    "question": "TCP四次挥手的过程是什么？为什么需要四次挥手？",
+    "category": "传输层",
+    "knowledge_point": "TCP挥手",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "TCP协议"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q041",
+    "question": "TCP报文段的格式是什么？各字段的含义是什么？",
+    "category": "传输层",
+    "knowledge_point": "TCP报文",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "TCP协议"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q042",
+    "question": "UDP报文段的格式是什么？各字段的含义是什么？",
+    "category": "传输层",
+    "knowledge_point": "UDP报文",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "UDP协议"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q043",
+    "question": "UDP校验和的计算方法是什么？",
+    "category": "传输层",
+    "knowledge_point": "UDP校验",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "UDP报文"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q044",
+    "question": "TCP校验和的计算方法是什么？",
+    "category": "传输层",
+    "knowledge_point": "TCP校验",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "TCP报文"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q045",
+    "question": "TCP滑动窗口的作用是什么？",
+    "category": "传输层",
+    "knowledge_point": "TCP滑动窗口",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "TCP报文"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q046",
+    "question": "TCP选择确认的作用是什么？常见的TCP选项有哪些？",
+    "category": "传输层",
+    "knowledge_point": "TCP选项",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "TCP报文"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q047",
+    "question": "TCP慢启动的原理是什么？cwnd如何变化？",
+    "category": "TCP拥塞控制",
+    "knowledge_point": "慢启动",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "TCP滑动窗口"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q048",
+    "question": "TCP拥塞避免的原理是什么？cwnd如何变化？",
+    "category": "TCP拥塞控制",
+    "knowledge_point": "拥塞避免",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "慢启动"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q049",
+    "question": "ssthresh的作用是什么？它如何影响拥塞控制？",
+    "category": "TCP拥塞控制",
+    "knowledge_point": "ssthresh",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "慢启动",
+      "拥塞避免"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q050",
+    "question": "TCP快速重传的原理是什么？",
+    "category": "TCP拥塞控制",
+    "knowledge_point": "快速重传",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "TCP滑动窗口"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q051",
+    "question": "TCP快速恢复的原理是什么？",
+    "category": "TCP拥塞控制",
+    "knowledge_point": "快速恢复",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "快速重传"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q052",
+    "question": "TCP Reno和TCP Tahoe的区别是什么？",
+    "category": "TCP拥塞控制",
+    "knowledge_point": "TCP变体",
+    "difficulty": 0.6,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "快速重传",
+      "快速恢复"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q053",
+    "question": "TCP BBR的原理是什么？它与传统TCP有什么不同？",
+    "category": "TCP拥塞控制",
+    "knowledge_point": "BBR",
+    "difficulty": 0.7,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "慢启动",
+      "拥塞避免"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q054",
+    "question": "cwnd和rwnd的区别是什么？它们如何共同决定发送窗口？",
+    "category": "TCP拥塞控制",
+    "knowledge_point": "窗口概念",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "TCP滑动窗口"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q055",
+    "question": "假设TCP连接的ssthresh=8，初始cwnd=1，经过几个RTT后cwnd达到ssthresh？",
+    "category": "TCP拥塞控制",
+    "knowledge_point": "慢启动计算",
+    "difficulty": 0.6,
+    "question_type": "calculation",
+    "prerequisite_knowledge": [
+      "慢启动",
+      "ssthresh"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q056",
+    "question": "假设cwnd=10，ssthresh=8，此时收到3个重复ACK，cwnd和ssthresh如何变化？",
+    "category": "TCP拥塞控制",
+    "knowledge_point": "快速重传计算",
+    "difficulty": 0.6,
+    "question_type": "calculation",
+    "prerequisite_knowledge": [
+      "快速重传",
+      "快速恢复"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q057",
+    "question": "HTTP协议的工作过程是什么？",
+    "category": "应用层",
+    "knowledge_point": "HTTP",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "TCP协议"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q058",
+    "question": "HTTP和HTTPS的区别是什么？",
+    "category": "应用层",
+    "knowledge_point": "HTTPS",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "HTTP"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q059",
+    "question": "HTTP状态码301和302的区别是什么？",
+    "category": "应用层",
+    "knowledge_point": "HTTP状态码",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "HTTP"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q060",
+    "question": "HTTP请求方法有哪些？GET和POST的区别是什么？",
+    "category": "应用层",
+    "knowledge_point": "HTTP方法",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "HTTP"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q061",
+    "question": "DNS的工作过程是什么？",
+    "category": "应用层",
+    "knowledge_point": "DNS",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "UDP协议",
+      "IP协议"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q062",
+    "question": "DNS解析过程中，递归查询和迭代查询的区别是什么？",
+    "category": "应用层",
+    "knowledge_point": "DNS查询",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "DNS"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q063",
+    "question": "FTP协议的工作原理是什么？它使用哪些端口？",
+    "category": "应用层",
+    "knowledge_point": "FTP",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "TCP协议"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q064",
+    "question": "SMTP协议的工作原理是什么？",
+    "category": "应用层",
+    "knowledge_point": "SMTP",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "TCP协议"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q065",
+    "question": "SSH协议的工作原理是什么？它如何保证安全？",
+    "category": "应用层",
+    "knowledge_point": "SSH",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "TCP协议",
+      "加密"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q066",
+    "question": "什么是SSL证书？它如何验证？",
+    "category": "网络安全",
+    "knowledge_point": "SSL证书",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "HTTPS"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q067",
+    "question": "什么是CA？它的作用是什么？",
+    "category": "网络安全",
+    "knowledge_point": "CA",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "SSL证书"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q068",
+    "question": "对称加密和非对称加密的区别是什么？",
+    "category": "网络安全",
+    "knowledge_point": "加密方式",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q069",
+    "question": "什么是数字签名？它如何保证数据完整性？",
+    "category": "网络安全",
+    "knowledge_point": "数字签名",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "非对称加密"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q070",
+    "question": "什么是防火墙？它的工作原理是什么？",
+    "category": "网络安全",
+    "knowledge_point": "防火墙",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q071",
+    "question": "什么是入侵检测系统（IDS）？它的工作原理是什么？",
+    "category": "网络安全",
+    "knowledge_point": "IDS",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "防火墙"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q072",
+    "question": "什么是DDoS攻击？如何防范？",
+    "category": "网络安全",
+    "knowledge_point": "DDoS",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "网络基础"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q073",
+    "question": "什么是中间人攻击？如何防范？",
+    "category": "网络安全",
+    "knowledge_point": "中间人攻击",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "加密方式"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q074",
+    "question": "TCP连接建立过程中，SYN包和ACK包分别携带哪些信息？",
+    "category": "传输层",
+    "knowledge_point": "TCP握手",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "TCP握手",
+      "TCP报文"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q075",
+    "question": "TCP连接关闭过程中，FIN包和ACK包分别携带哪些信息？",
+    "category": "传输层",
+    "knowledge_point": "TCP挥手",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "TCP挥手",
+      "TCP报文"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q076",
+    "question": "编写Python代码解析TCP报文段？",
+    "category": "编程实践",
+    "knowledge_point": "TCP解析",
+    "difficulty": 0.8,
+    "question_type": "code",
+    "prerequisite_knowledge": [
+      "TCP报文"
+    ],
+    "source": "编程实践"
+  },
+  {
+    "question_id": "q077",
+    "question": "编写Python代码实现简单的端口扫描器？",
+    "category": "编程实践",
+    "knowledge_point": "端口扫描",
+    "difficulty": 0.7,
+    "question_type": "code",
+    "prerequisite_knowledge": [
+      "端口号",
+      "TCP协议"
+    ],
+    "source": "编程实践"
+  },
+  {
+    "question_id": "q078",
+    "question": "编写Python代码实现HTTP服务器？",
+    "category": "编程实践",
+    "knowledge_point": "HTTP服务器",
+    "difficulty": 0.7,
+    "question_type": "code",
+    "prerequisite_knowledge": [
+      "HTTP",
+      "TCP协议"
+    ],
+    "source": "编程实践"
+  },
+  {
+    "question_id": "q079",
+    "question": "编写Python代码实现DNS查询工具？",
+    "category": "编程实践",
+    "knowledge_point": "DNS查询",
+    "difficulty": 0.7,
+    "question_type": "code",
+    "prerequisite_knowledge": [
+      "DNS",
+      "UDP协议"
+    ],
+    "source": "编程实践"
+  },
+  {
+    "question_id": "q080",
+    "question": "编写Python代码模拟TCP慢启动过程？",
+    "category": "编程实践",
+    "knowledge_point": "TCP模拟",
+    "difficulty": 0.8,
+    "question_type": "code",
+    "prerequisite_knowledge": [
+      "慢启动",
+      "TCP滑动窗口"
+    ],
+    "source": "编程实践"
+  },
+  {
+    "question_id": "q081",
+    "question": "什么是MTU？MTU对TCP传输有什么影响？",
+    "category": "网络层",
+    "knowledge_point": "MTU",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "IP协议"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q082",
+    "question": "什么是MSS？它与MTU的关系是什么？",
+    "category": "传输层",
+    "knowledge_point": "MSS",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "MTU",
+      "TCP报文"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q083",
+    "question": "什么是TCP分段？为什么需要分段？",
+    "category": "传输层",
+    "knowledge_point": "TCP分段",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "MTU",
+      "MSS"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q084",
+    "question": "什么是IP分片？它与TCP分段的区别是什么？",
+    "category": "网络层",
+    "knowledge_point": "IP分片",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "MTU",
+      "TCP分段"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q085",
+    "question": "TCP超时重传的原理是什么？超时时间如何计算？",
+    "category": "传输层",
+    "knowledge_point": "超时重传",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "TCP协议",
+      "RTT"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q086",
+    "question": "TCP时间戳选项的作用是什么？",
+    "category": "传输层",
+    "knowledge_point": "TCP选项",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "TCP报文"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q087",
+    "question": "什么是NAT？它的作用是什么？",
+    "category": "网络层",
+    "knowledge_point": "NAT",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "IP地址"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q088",
+    "question": "什么是DHCP？它的工作过程是什么？",
+    "category": "网络层",
+    "knowledge_point": "DHCP",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "IP地址"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q089",
+    "question": "IPv6的地址格式是什么？它与IPv4有什么区别？",
+    "category": "网络层",
+    "knowledge_point": "IPv6",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "IP地址"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q090",
+    "question": "什么是VPN？它的工作原理是什么？",
+    "category": "网络安全",
+    "knowledge_point": "VPN",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "加密方式",
+      "IP协议"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q091",
+    "question": "什么是HTTPS证书链？它如何验证？",
+    "category": "网络安全",
+    "knowledge_point": "证书链",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "SSL证书",
+      "CA"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q092",
+    "question": "TCP连接建立时，如果服务器收到SYN包后宕机，客户端会怎样？",
+    "category": "传输层",
+    "knowledge_point": "TCP异常",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "TCP握手"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q093",
+    "question": "TCP连接关闭时，如果客户端在FIN_WAIT_1状态收到RST包，会怎样？",
+    "category": "传输层",
+    "knowledge_point": "TCP异常",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "TCP挥手"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q094",
+    "question": "什么是HTTP/2？它与HTTP/1.1有什么区别？",
+    "category": "应用层",
+    "knowledge_point": "HTTP/2",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "HTTP"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q095",
+    "question": "什么是WebSocket？它与HTTP有什么区别？",
+    "category": "应用层",
+    "knowledge_point": "WebSocket",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "HTTP",
+      "TCP协议"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q096",
+    "question": "什么是CDN？它的工作原理是什么？",
+    "category": "应用层",
+    "knowledge_point": "CDN",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "DNS",
+      "HTTP"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q097",
+    "question": "什么是负载均衡？常见的负载均衡算法有哪些？",
+    "category": "应用层",
+    "knowledge_point": "负载均衡",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "HTTP",
+      "TCP协议"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q098",
+    "question": "什么是HTTPS证书吊销？它如何验证？",
+    "category": "网络安全",
+    "knowledge_point": "证书吊销",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "SSL证书",
+      "CA"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q099",
+    "question": "假设TCP连接的cwnd=4，ssthresh=8，此时发送方收到一个ACK，cwnd变为多少？",
+    "category": "TCP拥塞控制",
+    "knowledge_point": "慢启动计算",
+    "difficulty": 0.5,
+    "question_type": "calculation",
+    "prerequisite_knowledge": [
+      "慢启动"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q100",
+    "question": "假设TCP连接的cwnd=10，ssthresh=8，此时发送方收到一个ACK，cwnd变为多少？",
+    "category": "TCP拥塞控制",
+    "knowledge_point": "拥塞避免计算",
+    "difficulty": 0.5,
+    "question_type": "calculation",
+    "prerequisite_knowledge": [
+      "拥塞避免"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q101",
+    "question": "编写Python代码计算IP地址的网络地址和广播地址？",
+    "category": "编程实践",
+    "knowledge_point": "IP计算",
+    "difficulty": 0.7,
+    "question_type": "code",
+    "prerequisite_knowledge": [
+      "IP地址分类",
+      "子网划分"
+    ],
+    "source": "编程实践"
+  },
+  {
+    "question_id": "q102",
+    "question": "编写Python代码实现ARP请求和响应？",
+    "category": "编程实践",
+    "knowledge_point": "ARP编程",
+    "difficulty": 0.8,
+    "question_type": "code",
+    "prerequisite_knowledge": [
+      "ARP协议",
+      "MAC地址"
+    ],
+    "source": "编程实践"
+  },
+  {
+    "question_id": "q103",
+    "question": "什么是ICMP时间戳请求？它的作用是什么？",
+    "category": "网络层",
+    "knowledge_point": "ICMP应用",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "ICMP协议"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q104",
+    "question": "什么是路由环路？如何检测和解决路由环路？",
+    "category": "网络层",
+    "knowledge_point": "路由环路",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "路由协议"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q105",
+    "question": "什么是BGP？它的作用是什么？",
+    "category": "网络层",
+    "knowledge_point": "BGP",
+    "difficulty": 0.6,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "路由协议"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q106",
+    "question": "什么是TCP保活机制？它的作用是什么？",
+    "category": "传输层",
+    "knowledge_point": "TCP保活",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "TCP协议"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q107",
+    "question": "什么是TCP紧急指针？它的作用是什么？",
+    "category": "传输层",
+    "knowledge_point": "TCP选项",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "TCP报文"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q108",
+    "question": "什么是TCP延迟确认？它的作用是什么？",
+    "category": "传输层",
+    "knowledge_point": "TCP确认",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "TCP协议"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q109",
+    "question": "什么是Nagle算法？它的作用是什么？",
+    "category": "传输层",
+    "knowledge_point": "Nagle算法",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "TCP协议"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q110",
+    "question": "什么是TCP_NODELAY选项？它与Nagle算法有什么关系？",
+    "category": "传输层",
+    "knowledge_point": "TCP选项",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "Nagle算法"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q111",
+    "question": "什么是TCP同步和异步？它们的区别是什么？",
+    "category": "传输层",
+    "knowledge_point": "TCP编程",
+    "difficulty": 0.4,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "TCP协议"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q112",
+    "question": "什么是TCP半关闭？它的作用是什么？",
+    "category": "传输层",
+    "knowledge_point": "TCP半关闭",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "TCP挥手"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q113",
+    "question": "什么是TCP状态转换图？常见的状态有哪些？",
+    "category": "传输层",
+    "knowledge_point": "TCP状态",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "TCP握手",
+      "TCP挥手"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q114",
+    "question": "TCP连接处于ESTABLISHED状态时，收到FIN包会怎样？",
+    "category": "传输层",
+    "knowledge_point": "TCP状态转换",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "TCP状态"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q115",
+    "question": "什么是TCP滑动窗口的大小？它如何影响数据传输？",
+    "category": "传输层",
+    "knowledge_point": "TCP滑动窗口",
+    "difficulty": 0.5,
+    "question_type": "concept",
+    "prerequisite_knowledge": [
+      "TCP滑动窗口"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q116",
+    "question": "假设TCP连接的cwnd=1，ssthresh=16，经过5个RTT后，cwnd变为多少？",
+    "category": "TCP拥塞控制",
+    "knowledge_point": "慢启动计算",
+    "difficulty": 0.6,
+    "question_type": "calculation",
+    "prerequisite_knowledge": [
+      "慢启动"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q117",
+    "question": "假设TCP连接的cwnd=20，ssthresh=16，此时收到3个重复ACK，cwnd和ssthresh变为多少？",
+    "category": "TCP拥塞控制",
+    "knowledge_point": "快速恢复计算",
+    "difficulty": 0.6,
+    "question_type": "calculation",
+    "prerequisite_knowledge": [
+      "快速重传",
+      "快速恢复"
+    ],
+    "source": "计算机网络教材"
+  },
+  {
+    "question_id": "q118",
+    "question": "编写Python代码实现TCP客户端和服务器？",
+    "category": "编程实践",
+    "knowledge_point": "TCP编程",
+    "difficulty": 0.7,
+    "question_type": "code",
+    "prerequisite_knowledge": [
+      "TCP协议"
+    ],
+    "source": "编程实践"
+  },
+  {
+    "question_id": "q119",
+    "question": "编写Python代码实现UDP客户端和服务器？",
+    "category": "编程实践",
+    "knowledge_point": "UDP编程",
+    "difficulty": 0.6,
+    "question_type": "code",
+    "prerequisite_knowledge": [
+      "UDP协议"
+    ],
+    "source": "编程实践"
+  },
+  {
+    "question_id": "q120",
+    "question": "编写Python代码实现简单的HTTP客户端？",
+    "category": "编程实践",
+    "knowledge_point": "HTTP客户端",
+    "difficulty": 0.6,
+    "question_type": "code",
+    "prerequisite_knowledge": [
+      "HTTP",
+      "TCP协议"
+    ],
+    "source": "编程实践"
+  }
+]

@@ -1,0 +1,159 @@
+{
+  "course_id": "operating_system",
+  "version": "1.0",
+  "description": "操作系统常见错误模式与诊断",
+  "error_patterns": [
+    {
+      "pattern_id": "err_process_state",
+      "knowledge_point_id": "os_001_001",
+      "pattern_name": "进程状态转换错误",
+      "pattern_description": "学生混淆进程状态转换的条件",
+      "common_cause": "对就绪、运行、阻塞状态的转换条件理解不深入",
+      "remediation_strategy": "通过状态转换图理解各状态之间的转换条件",
+      "difficulty_level": 0.5,
+      "examples": [
+        "认为进程可以直接从阻塞态转换到运行态"
+      ],
+      "origin_type": "teacher_defined",
+      "source_ids": [
+        "os_r_01_01_001"
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "reviewed_at": null
+    },
+    {
+      "pattern_id": "err_scheduling_algo",
+      "knowledge_point_id": "os_001_002",
+      "pattern_name": "调度算法混淆",
+      "pattern_description": "学生混淆不同调度算法的特点",
+      "common_cause": "对各算法的优缺点和适用场景理解不清晰",
+      "remediation_strategy": "对比各调度算法的平均周转时间、公平性等指标",
+      "difficulty_level": 0.6,
+      "examples": [
+        "认为SJF总是最优的"
+      ],
+      "origin_type": "teacher_defined",
+      "source_ids": [
+        "os_r_01_02_001"
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "reviewed_at": null
+    },
+    {
+      "pattern_id": "err_thread_process",
+      "knowledge_point_id": "os_001_003",
+      "pattern_name": "线程与进程混淆",
+      "pattern_description": "学生不清楚线程和进程的区别",
+      "common_cause": "对资源分配和调度的主体理解不清晰",
+      "remediation_strategy": "记住进程是资源分配的基本单位，线程是调度的基本单位",
+      "difficulty_level": 0.5,
+      "examples": [
+        "认为线程拥有独立的地址空间"
+      ],
+      "origin_type": "teacher_defined",
+      "source_ids": [
+        "os_r_01_03_001"
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "reviewed_at": null
+    },
+    {
+      "pattern_id": "err_paging_segmentation",
+      "knowledge_point_id": "os_002_001",
+      "pattern_name": "分页与分段混淆",
+      "pattern_description": "学生混淆分页和分段的特点",
+      "common_cause": "不清楚两者的优缺点和适用场景",
+      "remediation_strategy": "对比分页和分段的地址空间、内存利用率等特点",
+      "difficulty_level": 0.6,
+      "examples": [
+        "认为分段的内存利用率高"
+      ],
+      "origin_type": "teacher_defined",
+      "source_ids": [
+        "os_r_02_01_001"
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "reviewed_at": null
+    },
+    {
+      "pattern_id": "err_page_replacement",
+      "knowledge_point_id": "os_002_002",
+      "pattern_name": "页面置换算法错误",
+      "pattern_description": "学生无法正确模拟页面置换过程",
+      "common_cause": "对各置换算法的实现机制理解不深入",
+      "remediation_strategy": "通过具体例子模拟各算法的置换过程",
+      "difficulty_level": 0.7,
+      "examples": [
+        "模拟LRU置换算法"
+      ],
+      "origin_type": "teacher_defined",
+      "source_ids": [
+        "os_r_02_02_001"
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "reviewed_at": null
+    },
+    {
+      "pattern_id": "err_belady",
+      "knowledge_point_id": "os_002_002",
+      "pattern_name": "Belady异常理解错误",
+      "pattern_description": "学生不清楚Belady异常的原因",
+      "common_cause": "对FIFO算法的特性理解不深入",
+      "remediation_strategy": "通过示例演示增加页框数导致缺页次数增加的现象",
+      "difficulty_level": 0.7,
+      "examples": [
+        "FIFO算法的Belady异常示例"
+      ],
+      "origin_type": "teacher_defined",
+      "source_ids": [
+        "os_r_02_02_001"
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "reviewed_at": null
+    },
+    {
+      "pattern_id": "err_critical_section",
+      "knowledge_point_id": "os_004_001",
+      "pattern_name": "临界区问题错误",
+      "pattern_description": "学生无法正确实现临界区的互斥",
+      "common_cause": "对临界区的四个必要条件理解不深入",
+      "remediation_strategy": "通过具体示例理解互斥、空闲让进、有限等待等条件",
+      "difficulty_level": 0.7,
+      "examples": [
+        "使用Peterson算法实现临界区"
+      ],
+      "origin_type": "teacher_defined",
+      "source_ids": [
+        "os_r_04_01_001"
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "reviewed_at": null
+    },
+    {
+      "pattern_id": "err_semaphore",
+      "knowledge_point_id": "os_004_001",
+      "pattern_name": "信号量使用错误",
+      "pattern_description": "学生混淆信号量的P/V操作",
+      "common_cause": "对信号量的同步和互斥用法理解不清晰",
+      "remediation_strategy": "通过生产者-消费者问题理解信号量的使用",
+      "difficulty_level": 0.7,
+      "examples": [
+        "使用信号量解决生产者-消费者问题"
+      ],
+      "origin_type": "teacher_defined",
+      "source_ids": [
+        "os_r_04_01_001"
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "reviewed_at": null
+    }
+  ]
+}

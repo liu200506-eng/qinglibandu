@@ -1,0 +1,94 @@
+{
+  "course_code": "computer_network",
+  "success": true,
+  "backup_path": "备份至: D:\\ruanjianbei\\a3-master1\\a3-master\\backend\\backups\\magicstudy_20260718_033918.db.bak",
+  "rollback_performed": false,
+  "rollback_actions": [],
+  "final_status": "published",
+  "error": "",
+  "release_id": "20260717193917-computer_network",
+  "git_commit": "a94ffe9f8d7f",
+  "schema_version": "2.0",
+  "embedding_model": "BAAI/bge-base-zh",
+  "embedding_dimension": 768,
+  "qdrant_image": "qdrant/qdrant:v1.7.0",
+  "staging_collection": "course_computer_network_v1",
+  "active_collection": "course_computer_network_v1",
+  "previous_collection": "(无)",
+  "alias_name": "course_computer_network_alias",
+  "database_chunk_count": 84,
+  "qdrant_vector_count": 84,
+  "published_at": "2026-07-17T19:43:18Z",
+  "steps": [
+    {
+      "name": "1. Schema 验证",
+      "passed": true,
+      "message": "Schema 验证通过 (0 个警告)",
+      "duration_ms": 14,
+      "error": ""
+    },
+    {
+      "name": "2. 数据关系验证",
+      "passed": true,
+      "message": "知识点 37 个，父子关系 31 条",
+      "duration_ms": 1,
+      "error": ""
+    },
+    {
+      "name": "3. 来源和审核验证",
+      "passed": true,
+      "message": "错误模式 8 条，来源覆盖率 100%",
+      "duration_ms": 0,
+      "error": ""
+    },
+    {
+      "name": "4. 数据库备份",
+      "passed": true,
+      "message": "备份至: D:\\ruanjianbei\\a3-master1\\a3-master\\backend\\backups\\magicstudy_20260718_033918.db.bak",
+      "duration_ms": 330,
+      "error": ""
+    },
+    {
+      "name": "5. 数据库导入",
+      "passed": true,
+      "message": "已导入知识点 52 个",
+      "duration_ms": 165,
+      "error": ""
+    },
+    {
+      "name": "6. 文档切片",
+      "passed": true,
+      "message": "新增切片 0 个，总切片 84 个",
+      "duration_ms": 11522,
+      "error": ""
+    },
+    {
+      "name": "7. 蓝绿同步",
+      "passed": true,
+      "message": "暂存集合 course_computer_network_v1，嵌入向量 84 个",
+      "duration_ms": 212042,
+      "error": ""
+    },
+    {
+      "name": "8. 一致性检查",
+      "passed": true,
+      "message": "DB 切片 84 = 暂存向量 84 (一致)",
+      "duration_ms": 2071,
+      "error": ""
+    },
+    {
+      "name": "9. 抽样检索测试",
+      "passed": true,
+      "message": "暂存集合检索通过 5/5",
+      "duration_ms": 10243,
+      "error": ""
+    },
+    {
+      "name": "10. 别名切换+状态更新",
+      "passed": true,
+      "message": "别名 course_computer_network_alias -> course_computer_network_v1，状态 published -> published",
+      "duration_ms": 2097,
+      "error": ""
+    }
+  ]
+}

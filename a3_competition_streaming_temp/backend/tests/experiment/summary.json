@@ -1,0 +1,22 @@
+{
+  "A": {
+    "factual_accuracy": 70,
+    "citation_accuracy": 0,
+    "personalization_match": 30
+  },
+  "B": {
+    "factual_accuracy": 80,
+    "citation_accuracy": 70,
+    "personalization_match": 40
+  },
+  "C": {
+    "factual_accuracy": 90,
+    "citation_accuracy": 80,
+    "personalization_match": 40
+  },
+  "D": {
+    "factual_accuracy": 90,
+    "citation_accuracy": 80,
+    "personalization_match": 80
+  }
+}

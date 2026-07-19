@@ -1,0 +1,77 @@
+# 青藜伴读 Docker Compose
+# 一键启动前端(Nginx) + 后端(FastAPI) + Qdrant 向量库
+#
+# 使用方式:
+#   1. 复制 backend/.env.example 到 backend/.env，填入 LLM API Key
+#   2. docker compose up -d --build
+#   3. 访问 http://localhost:8080
+#
+# 镜像版本固定，不使用 latest。
+
+services:
+  # ===== 向量数据库 =====
+  qdrant:
+    image: ${QDRANT_IMAGE:-qdrant/qdrant:v1.8.0}
+    container_name: qingli-qdrant
+    restart: unless-stopped
+    ports:
+      # 绑定到 127.0.0.1，避免未启用认证的 Qdrant 暴露到局域网
+      - "127.0.0.1:6333:6333"
+      - "127.0.0.1:6334:6334"
+    volumes:
+      - qdrant_storage:/qdrant/storage
+    healthcheck:
+      test: [ "CMD-SHELL", "bash -c 'exec 3<>/dev/tcp/127.0.0.1/6333 && echo -e \"GET / HTTP/1.0\\r\\n\\r\\n\" >&3 && cat <&3 | grep -q ready'" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  # ===== 后端 FastAPI =====
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: magicstudy-backend
+    restart: unless-stopped
+    env_file:
+      - ./backend/.env
+    environment:
+      - APP_HOST=0.0.0.0
+      - APP_PORT=8001
+      - QDRANT_URL=http://qdrant:6333
+      - QDRANT_HOST=qdrant
+      - QDRANT_PORT=6333
+    ports:
+      - "127.0.0.1:8001:8001"
+    volumes:
+      # 挂载数据库与知识库，便于持久化和热更新
+      - backend_db:/app/database
+      - ./backend/knowledge_base:/app/knowledge_base:ro
+    depends_on:
+      qdrant:
+        condition: service_healthy
+    healthcheck:
+      test: [ "CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8001/health', timeout=3)" ]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  # ===== 前端 Nginx =====
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: magicstudy-frontend
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+
+volumes:
+  qdrant_storage:
+    name: magicstudy-qdrant-storage
+  backend_db:
+    name: magicstudy-backend-db

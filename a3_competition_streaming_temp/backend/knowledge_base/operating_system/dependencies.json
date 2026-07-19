@@ -1,0 +1,14 @@
+{
+  "course_id": "operating_system",
+  "version": "1.0",
+  "description": "操作系统知识点先修依赖关系",
+  "dependencies": [
+    {"source_id": "os_001_001", "target_id": "os_001_002", "dependency_type": "prerequisite", "weight": 0.8, "description": "调度基于进程概念"},
+    {"source_id": "os_001_001", "target_id": "os_001_003", "dependency_type": "prerequisite", "weight": 0.7, "description": "线程是进程的一部分"},
+    {"source_id": "os_002_001", "target_id": "os_002_002", "dependency_type": "prerequisite", "weight": 0.9, "description": "虚拟内存基于分页"},
+    {"source_id": "os_003_001", "target_id": "os_003_002", "dependency_type": "prerequisite", "weight": 0.7, "description": "磁盘调度基于文件系统"},
+    {"source_id": "os_001_001", "target_id": "os_004_001", "dependency_type": "prerequisite", "weight": 0.8, "description": "同步基于进程"},
+    {"source_id": "os_004_001", "target_id": "os_004_002", "dependency_type": "prerequisite", "weight": 0.9, "description": "经典问题基于互斥"},
+    {"source_id": "os_001_002", "target_id": "os_002_002", "dependency_type": "corequisite", "weight": 0.6, "description": "调度和内存管理协同工作"}
+  ]
+}

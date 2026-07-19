@@ -1,0 +1,282 @@
+{
+  "course_id": "computer_organization",
+  "version": "1.0",
+  "description": "计算机组成原理课程知识点结构",
+  "roots": [
+    {
+      "id": "co_001",
+      "name": "数制与编码",
+      "description": "计算机中数据的表示方法",
+      "difficulty": 0.5,
+      "learning_hours": 8,
+      "children": [
+        {
+          "id": "co_001_001",
+          "name": "定点数",
+          "description": "原码、反码、补码、移码的表示和运算",
+          "difficulty": 0.5,
+          "learning_hours": 4,
+          "prerequisites": [],
+          "keywords": [
+            "原码",
+            "反码",
+            "补码",
+            "移码",
+            "定点运算"
+          ],
+          "children": [],
+          "node_code": "co_001_001"
+        },
+        {
+          "id": "co_001_002",
+          "name": "浮点数",
+          "description": "IEEE 754标准浮点数表示和运算",
+          "difficulty": 0.7,
+          "learning_hours": 4,
+          "prerequisites": [
+            "co_001_001"
+          ],
+          "keywords": [
+            "IEEE 754",
+            "单精度",
+            "双精度",
+            "阶码",
+            "尾数"
+          ],
+          "children": [],
+          "node_code": "co_001_002"
+        }
+      ],
+      "node_code": "co_001"
+    },
+    {
+      "id": "co_002",
+      "name": "CPU",
+      "description": "中央处理器的结构和工作原理",
+      "difficulty": 0.7,
+      "learning_hours": 20,
+      "children": [
+        {
+          "id": "co_002_001",
+          "name": "ALU与CU",
+          "description": "算术逻辑单元和控制单元",
+          "difficulty": 0.6,
+          "learning_hours": 4,
+          "prerequisites": [
+            "co_001_001"
+          ],
+          "keywords": [
+            "ALU",
+            "CU",
+            "算术运算",
+            "逻辑运算"
+          ],
+          "children": [],
+          "node_code": "co_002_001"
+        },
+        {
+          "id": "co_002_002",
+          "name": "寄存器",
+          "description": "用户可见寄存器和控制寄存器",
+          "difficulty": 0.5,
+          "learning_hours": 3,
+          "prerequisites": [],
+          "keywords": [
+            "通用寄存器",
+            "程序计数器",
+            "指令寄存器",
+            "状态寄存器"
+          ],
+          "children": [],
+          "node_code": "co_002_002"
+        },
+        {
+          "id": "co_002_003",
+          "name": "指令系统",
+          "description": "指令格式、寻址方式和指令类型",
+          "difficulty": 0.7,
+          "learning_hours": 6,
+          "prerequisites": [
+            "co_002_002"
+          ],
+          "keywords": [
+            "指令格式",
+            "寻址方式",
+            "RISC",
+            "CISC"
+          ],
+          "children": [],
+          "node_code": "co_002_003"
+        },
+        {
+          "id": "co_002_004",
+          "name": "CPU结构",
+          "description": "单周期、多周期和流水线CPU",
+          "difficulty": 0.8,
+          "learning_hours": 7,
+          "prerequisites": [
+            "co_002_001",
+            "co_002_002",
+            "co_002_003"
+          ],
+          "keywords": [
+            "单周期CPU",
+            "多周期CPU",
+            "流水线",
+            "冒险"
+          ],
+          "children": [],
+          "node_code": "co_002_004"
+        }
+      ],
+      "node_code": "co_002"
+    },
+    {
+      "id": "co_003",
+      "name": "存储系统",
+      "description": "存储器层次结构和工作原理",
+      "difficulty": 0.7,
+      "learning_hours": 16,
+      "children": [
+        {
+          "id": "co_003_001",
+          "name": "主存",
+          "description": "DRAM和SRAM的工作原理",
+          "difficulty": 0.5,
+          "learning_hours": 4,
+          "prerequisites": [],
+          "keywords": [
+            "DRAM",
+            "SRAM",
+            "存储芯片",
+            "地址映射"
+          ],
+          "children": [],
+          "node_code": "co_003_001"
+        },
+        {
+          "id": "co_003_002",
+          "name": "Cache",
+          "description": "高速缓存的工作原理和映射方式",
+          "difficulty": 0.8,
+          "learning_hours": 8,
+          "prerequisites": [
+            "co_003_001"
+          ],
+          "keywords": [
+            "Cache",
+            "直接映射",
+            "全相联映射",
+            "组相联映射",
+            "Cache一致性"
+          ],
+          "children": [],
+          "node_code": "co_003_002"
+        },
+        {
+          "id": "co_003_003",
+          "name": "虚拟内存",
+          "description": "分页和分段存储管理",
+          "difficulty": 0.8,
+          "learning_hours": 4,
+          "prerequisites": [
+            "co_003_001"
+          ],
+          "keywords": [
+            "虚拟内存",
+            "分页",
+            "分段",
+            "页表",
+            "TLB"
+          ],
+          "children": [],
+          "node_code": "co_003_003"
+        }
+      ],
+      "node_code": "co_003"
+    },
+    {
+      "id": "co_004",
+      "name": "总线与I/O",
+      "description": "总线系统和输入输出系统",
+      "difficulty": 0.6,
+      "learning_hours": 20,
+      "children": [
+        {
+          "id": "co_004_001",
+          "name": "总线",
+          "description": "总线的分类、仲裁和时序",
+          "difficulty": 0.5,
+          "learning_hours": 4,
+          "prerequisites": [],
+          "keywords": [
+            "系统总线",
+            "数据总线",
+            "地址总线",
+            "控制总线",
+            "总线仲裁"
+          ],
+          "children": [],
+          "node_code": "co_004_001"
+        },
+        {
+          "id": "co_004_002",
+          "name": "I_O系统",
+          "description": "程序查询、程序中断、DMA和通道",
+          "difficulty": 0.7,
+          "learning_hours": 8,
+          "prerequisites": [
+            "co_004_001"
+          ],
+          "keywords": [
+            "程序查询",
+            "程序中断",
+            "DMA",
+            "通道",
+            "中断向量"
+          ],
+          "children": [],
+          "node_code": "co_004_002"
+        },
+        {
+          "id": "co_004_003",
+          "name": "外部设备",
+          "description": "常见输入输出设备",
+          "difficulty": 0.4,
+          "learning_hours": 4,
+          "prerequisites": [
+            "co_004_002"
+          ],
+          "keywords": [
+            "键盘",
+            "显示器",
+            "磁盘",
+            "固态硬盘"
+          ],
+          "children": [],
+          "node_code": "co_004_003"
+        },
+        {
+          "id": "co_004_004",
+          "name": "接口",
+          "description": "I/O接口的功能和类型",
+          "difficulty": 0.5,
+          "learning_hours": 4,
+          "prerequisites": [
+            "co_004_001"
+          ],
+          "keywords": [
+            "I/O接口",
+            "端口",
+            "接口类型"
+          ],
+          "children": [],
+          "node_code": "co_004_004"
+        }
+      ],
+      "node_code": "co_004"
+    }
+  ],
+  "schema_version": "2.0",
+  "course_code": "computer_organization"
+}

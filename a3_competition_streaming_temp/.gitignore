@@ -1,0 +1,53 @@
+# Node
+node_modules/
+dist/
+dist-ssr/
+dist-electron/
+*.local
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+*.dist-info/
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# DB
+backend/magicstudy.db
+backend/*.sqlite
+backend/*.db
+*.db
+
+# Qdrant local storage
+backend/data/qdrant_storage/
+backend/database/backups/
+backend/backups/
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# FFmpeg
+backend/_ffmpeg/ffmpeg-master-latest-win64-gpl/doc/
+backend/_ffmpeg/ffmpeg-master-latest-win64-gpl/presets/
+backend/_ffmpeg/ffmpeg-master-latest-win64-gpl/bin/
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp

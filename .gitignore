@@ -1,0 +1,82 @@
+# Node
+node_modules/
+dist/
+dist-ssr/
+dist-electron/
+*.local
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+*.dist-info/
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# DB
+backend/magicstudy.db
+backend/*.sqlite
+backend/*.db
+backend/database/*.db
+backend/database/*.sqlite
+*.db
+
+# Qdrant local storage
+backend/data/qdrant_storage/
+backend/database/backups/
+backend/backups/
+
+# 临时脚本（一次性 fix/fill/cleanup 类脚本，不应入库）
+backend/fix_*.py
+backend/fill_*.py
+backend/cleanup_*.py
+backend/final_*.py
+backend/batch_*.py
+backend/force_*.py
+backend/find_*.py
+backend/check_*.py
+backend/add_chinese_*.py
+backend/convert_lf.py
+backend/fix_lf.py
+backend/enhance_*.py
+backend/generate_missing_*.py
+backend/import_book_*.py
+backend/import_knowledge_from_files.py
+backend/import_question_bank.py
+backend/migrate_db.py
+backend/migrate_schema.py
+
+# 临时报告
+backend/COMPLETION_REPORT.md
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# FFmpeg
+backend/_ffmpeg/ffmpeg-master-latest-win64-gpl/doc/
+backend/_ffmpeg/ffmpeg-master-latest-win64-gpl/presets/
+backend/_ffmpeg/ffmpeg-master-latest-win64-gpl/bin/
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+
+# 临时备份/解压目录
+/a3-competition-improved.zip
+/a3_competition_improved/

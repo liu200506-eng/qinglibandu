@@ -1,0 +1,288 @@
+{
+  "course_id": "database_principles",
+  "version": "1.0",
+  "description": "数据库原理课程知识点结构",
+  "roots": [
+    {
+      "id": "dp_001",
+      "name": "概述",
+      "description": "数据库系统的基本概念和体系结构",
+      "difficulty": 0.4,
+      "learning_hours": 6,
+      "children": [
+        {
+          "id": "dp_001_001",
+          "name": "三级模式",
+          "description": "外模式、模式、内模式的概念和关系",
+          "difficulty": 0.5,
+          "learning_hours": 3,
+          "prerequisites": [],
+          "keywords": [
+            "外模式",
+            "模式",
+            "内模式",
+            "二级映像"
+          ],
+          "children": [],
+          "node_code": "dp_001_001"
+        },
+        {
+          "id": "dp_001_002",
+          "name": "数据模型",
+          "description": "概念模型、逻辑模型和物理模型",
+          "difficulty": 0.5,
+          "learning_hours": 3,
+          "prerequisites": [],
+          "keywords": [
+            "ER模型",
+            "关系模型",
+            "层次模型",
+            "网状模型"
+          ],
+          "children": [],
+          "node_code": "dp_001_002"
+        }
+      ],
+      "node_code": "dp_001"
+    },
+    {
+      "id": "dp_002",
+      "name": "关系模型",
+      "description": "关系数据库的基本概念和操作",
+      "difficulty": 0.6,
+      "learning_hours": 20,
+      "children": [
+        {
+          "id": "dp_002_001",
+          "name": "关系代数",
+          "description": "选择、投影、笛卡尔积、并、差等基本操作",
+          "difficulty": 0.6,
+          "learning_hours": 6,
+          "prerequisites": [
+            "dp_001_002"
+          ],
+          "keywords": [
+            "选择",
+            "投影",
+            "笛卡尔积",
+            "并",
+            "差",
+            "交",
+            "连接",
+            "除"
+          ],
+          "children": [],
+          "node_code": "dp_002_001"
+        },
+        {
+          "id": "dp_002_002",
+          "name": "SQL",
+          "description": "结构化查询语言，包括查询、插入、更新、删除",
+          "difficulty": 0.7,
+          "learning_hours": 8,
+          "prerequisites": [
+            "dp_002_001"
+          ],
+          "keywords": [
+            "SELECT",
+            "INSERT",
+            "UPDATE",
+            "DELETE",
+            "JOIN",
+            "子查询",
+            "聚合",
+            "窗口函数"
+          ],
+          "children": [],
+          "node_code": "dp_002_002"
+        },
+        {
+          "id": "dp_002_003",
+          "name": "规范化",
+          "description": "函数依赖、范式、规范化方法",
+          "difficulty": 0.8,
+          "learning_hours": 6,
+          "prerequisites": [
+            "dp_002_001"
+          ],
+          "keywords": [
+            "函数依赖",
+            "1NF",
+            "2NF",
+            "3NF",
+            "BCNF",
+            "4NF"
+          ],
+          "children": [],
+          "node_code": "dp_002_003"
+        }
+      ],
+      "node_code": "dp_002"
+    },
+    {
+      "id": "dp_003",
+      "name": "事务与并发",
+      "description": "事务的概念和并发控制技术",
+      "difficulty": 0.7,
+      "learning_hours": 16,
+      "children": [
+        {
+          "id": "dp_003_001",
+          "name": "事务ACID",
+          "description": "事务的原子性、一致性、隔离性、持久性",
+          "difficulty": 0.6,
+          "learning_hours": 4,
+          "prerequisites": [],
+          "keywords": [
+            "原子性",
+            "一致性",
+            "隔离性",
+            "持久性",
+            "事务状态"
+          ],
+          "children": [],
+          "node_code": "dp_003_001"
+        },
+        {
+          "id": "dp_003_002",
+          "name": "并发控制",
+          "description": "封锁协议、死锁、可串行化调度",
+          "difficulty": 0.8,
+          "learning_hours": 8,
+          "prerequisites": [
+            "dp_003_001"
+          ],
+          "keywords": [
+            "共享锁",
+            "排他锁",
+            "两段锁协议",
+            "死锁",
+            "可串行化"
+          ],
+          "children": [],
+          "node_code": "dp_003_002"
+        },
+        {
+          "id": "dp_003_003",
+          "name": "隔离级别",
+          "description": "读未提交、读已提交、可重复读、串行化",
+          "difficulty": 0.7,
+          "learning_hours": 4,
+          "prerequisites": [
+            "dp_003_002"
+          ],
+          "keywords": [
+            "读未提交",
+            "读已提交",
+            "可重复读",
+            "串行化",
+            "脏读",
+            "不可重复读",
+            "幻读"
+          ],
+          "children": [],
+          "node_code": "dp_003_003"
+        }
+      ],
+      "node_code": "dp_003"
+    },
+    {
+      "id": "dp_004",
+      "name": "恢复与安全",
+      "description": "数据库恢复技术和安全机制",
+      "difficulty": 0.6,
+      "learning_hours": 12,
+      "children": [
+        {
+          "id": "dp_004_001",
+          "name": "备份与恢复",
+          "description": "日志、检查点、恢复策略",
+          "difficulty": 0.7,
+          "learning_hours": 6,
+          "prerequisites": [
+            "dp_003_001"
+          ],
+          "keywords": [
+            "日志",
+            "检查点",
+            "撤销",
+            "重做",
+            "恢复策略"
+          ],
+          "children": [],
+          "node_code": "dp_004_001"
+        },
+        {
+          "id": "dp_004_002",
+          "name": "安全",
+          "description": "用户权限、角色、加密",
+          "difficulty": 0.5,
+          "learning_hours": 6,
+          "prerequisites": [],
+          "keywords": [
+            "用户",
+            "角色",
+            "GRANT",
+            "REVOKE",
+            "加密",
+            "完整性约束"
+          ],
+          "children": [],
+          "node_code": "dp_004_002"
+        }
+      ],
+      "node_code": "dp_004"
+    },
+    {
+      "id": "dp_005",
+      "name": "数据库设计",
+      "description": "数据库系统的设计方法和步骤",
+      "difficulty": 0.6,
+      "learning_hours": 10,
+      "children": [
+        {
+          "id": "dp_005_001",
+          "name": "ER模型",
+          "description": "实体、属性、关系的概念和ER图绘制",
+          "difficulty": 0.6,
+          "learning_hours": 4,
+          "prerequisites": [
+            "dp_001_002"
+          ],
+          "keywords": [
+            "实体",
+            "属性",
+            "关系",
+            "ER图",
+            "弱实体"
+          ],
+          "children": [],
+          "node_code": "dp_005_001"
+        },
+        {
+          "id": "dp_005_002",
+          "name": "设计步骤",
+          "description": "需求分析、概念设计、逻辑设计、物理设计",
+          "difficulty": 0.6,
+          "learning_hours": 6,
+          "prerequisites": [
+            "dp_005_001",
+            "dp_002_003"
+          ],
+          "keywords": [
+            "需求分析",
+            "概念设计",
+            "逻辑设计",
+            "物理设计",
+            "索引设计"
+          ],
+          "children": [],
+          "node_code": "dp_005_002"
+        }
+      ],
+      "node_code": "dp_005"
+    }
+  ],
+  "schema_version": "2.0",
+  "course_code": "database_principles"
+}

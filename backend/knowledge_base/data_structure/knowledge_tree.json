@@ -1,0 +1,282 @@
+{
+  "course_id": "data_structure",
+  "version": "1.0",
+  "description": "数据结构课程知识点结构",
+  "roots": [
+    {
+      "id": "ds_001",
+      "name": "线性表",
+      "description": "线性结构的基本概念和实现",
+      "difficulty": 0.5,
+      "mastery_threshold": 0.7,
+      "learning_hours": 8,
+      "children": [
+        {
+          "id": "ds_001_001",
+          "name": "顺序表",
+          "description": "基于数组的线性表实现",
+          "difficulty": 0.4,
+          "mastery_threshold": 0.7,
+          "learning_hours": 4,
+          "prerequisites": [],
+          "keywords": [
+            "顺序表",
+            "数组",
+            "动态数组",
+            "随机访问"
+          ],
+          "node_code": "ds_001_001"
+        },
+        {
+          "id": "ds_001_002",
+          "name": "链表",
+          "description": "基于指针的线性表实现",
+          "difficulty": 0.5,
+          "mastery_threshold": 0.7,
+          "learning_hours": 4,
+          "prerequisites": [],
+          "keywords": [
+            "单链表",
+            "双链表",
+            "循环链表",
+            "指针"
+          ],
+          "node_code": "ds_001_002"
+        }
+      ],
+      "node_code": "ds_001"
+    },
+    {
+      "id": "ds_002",
+      "name": "栈和队列",
+      "description": "特殊线性结构的定义和应用",
+      "difficulty": 0.5,
+      "mastery_threshold": 0.7,
+      "learning_hours": 6,
+      "children": [
+        {
+          "id": "ds_002_001",
+          "name": "栈",
+          "description": "后进先出(LIFO)的数据结构",
+          "difficulty": 0.4,
+          "mastery_threshold": 0.7,
+          "learning_hours": 3,
+          "prerequisites": [
+            "ds_001_001"
+          ],
+          "keywords": [
+            "栈",
+            "后进先出",
+            "括号匹配",
+            "表达式求值"
+          ],
+          "node_code": "ds_002_001"
+        },
+        {
+          "id": "ds_002_002",
+          "name": "队列",
+          "description": "先进先出(FIFO)的数据结构",
+          "difficulty": 0.4,
+          "mastery_threshold": 0.7,
+          "learning_hours": 3,
+          "prerequisites": [
+            "ds_001_001"
+          ],
+          "keywords": [
+            "队列",
+            "先进先出",
+            "循环队列",
+            "双端队列"
+          ],
+          "node_code": "ds_002_002"
+        }
+      ],
+      "node_code": "ds_002"
+    },
+    {
+      "id": "ds_003",
+      "name": "树和二叉树",
+      "description": "层次结构的定义和操作",
+      "difficulty": 0.7,
+      "mastery_threshold": 0.75,
+      "learning_hours": 12,
+      "children": [
+        {
+          "id": "ds_003_001",
+          "name": "二叉树",
+          "description": "二叉树的性质、遍历和存储",
+          "difficulty": 0.6,
+          "mastery_threshold": 0.75,
+          "learning_hours": 6,
+          "prerequisites": [
+            "ds_001_002"
+          ],
+          "keywords": [
+            "二叉树",
+            "前序遍历",
+            "中序遍历",
+            "后序遍历",
+            "层序遍历",
+            "线索化"
+          ],
+          "node_code": "ds_003_001"
+        },
+        {
+          "id": "ds_003_002",
+          "name": "二叉搜索树",
+          "description": "具有搜索特性的二叉树",
+          "difficulty": 0.7,
+          "mastery_threshold": 0.75,
+          "learning_hours": 6,
+          "prerequisites": [
+            "ds_003_001"
+          ],
+          "keywords": [
+            "BST",
+            "二叉搜索树",
+            "查找",
+            "插入",
+            "删除"
+          ],
+          "node_code": "ds_003_002"
+        }
+      ],
+      "node_code": "ds_003"
+    },
+    {
+      "id": "ds_004",
+      "name": "图",
+      "description": "图结构的定义和算法",
+      "difficulty": 0.75,
+      "mastery_threshold": 0.75,
+      "learning_hours": 10,
+      "children": [
+        {
+          "id": "ds_004_001",
+          "name": "图的存储",
+          "description": "邻接矩阵和邻接表",
+          "difficulty": 0.6,
+          "mastery_threshold": 0.7,
+          "learning_hours": 4,
+          "prerequisites": [],
+          "keywords": [
+            "邻接矩阵",
+            "邻接表",
+            "图的表示"
+          ],
+          "node_code": "ds_004_001"
+        },
+        {
+          "id": "ds_004_002",
+          "name": "图的遍历",
+          "description": "深度优先和广度优先搜索",
+          "difficulty": 0.7,
+          "mastery_threshold": 0.75,
+          "learning_hours": 6,
+          "prerequisites": [
+            "ds_004_001",
+            "ds_002_001",
+            "ds_002_002"
+          ],
+          "keywords": [
+            "DFS",
+            "深度优先搜索",
+            "BFS",
+            "广度优先搜索"
+          ],
+          "node_code": "ds_004_002"
+        }
+      ],
+      "node_code": "ds_004"
+    },
+    {
+      "id": "ds_005",
+      "name": "查找",
+      "description": "查找算法的原理和实现",
+      "difficulty": 0.6,
+      "mastery_threshold": 0.7,
+      "learning_hours": 6,
+      "children": [
+        {
+          "id": "ds_005_001",
+          "name": "二分查找",
+          "description": "有序序列的高效查找",
+          "difficulty": 0.5,
+          "mastery_threshold": 0.7,
+          "learning_hours": 3,
+          "prerequisites": [
+            "ds_001_001"
+          ],
+          "keywords": [
+            "二分查找",
+            "折半查找",
+            "有序数组"
+          ],
+          "node_code": "ds_005_001"
+        },
+        {
+          "id": "ds_005_002",
+          "name": "哈希表",
+          "description": "基于哈希函数的查找",
+          "difficulty": 0.7,
+          "mastery_threshold": 0.75,
+          "learning_hours": 3,
+          "prerequisites": [],
+          "keywords": [
+            "哈希表",
+            "散列函数",
+            "冲突处理",
+            "开放地址法",
+            "链地址法"
+          ],
+          "node_code": "ds_005_002"
+        }
+      ],
+      "node_code": "ds_005"
+    },
+    {
+      "id": "ds_006",
+      "name": "排序",
+      "description": "排序算法的原理和复杂度分析",
+      "difficulty": 0.65,
+      "mastery_threshold": 0.75,
+      "learning_hours": 6,
+      "children": [
+        {
+          "id": "ds_006_001",
+          "name": "快速排序",
+          "description": "基于分治的排序算法",
+          "difficulty": 0.7,
+          "mastery_threshold": 0.75,
+          "learning_hours": 3,
+          "prerequisites": [],
+          "keywords": [
+            "快速排序",
+            "分治",
+            "基准元素",
+            "分区"
+          ],
+          "node_code": "ds_006_001"
+        },
+        {
+          "id": "ds_006_002",
+          "name": "归并排序",
+          "description": "基于归并的稳定排序",
+          "difficulty": 0.65,
+          "mastery_threshold": 0.75,
+          "learning_hours": 3,
+          "prerequisites": [],
+          "keywords": [
+            "归并排序",
+            "稳定排序",
+            "合并"
+          ],
+          "node_code": "ds_006_002"
+        }
+      ],
+      "node_code": "ds_006"
+    }
+  ],
+  "schema_version": "2.0",
+  "course_code": "data_structure"
+}

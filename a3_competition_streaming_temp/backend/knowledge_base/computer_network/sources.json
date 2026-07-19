@@ -1,0 +1,311 @@
+{
+  "schema_version": "2.0",
+  "course_code": "computer_network",
+  "description": "计算机网络课程的来源文档清单（SourceDocument）",
+  "source_documents": [
+    {
+      "source_id": "cn_src_001",
+      "title": "计算机网络：自顶向下方法（第7版）",
+      "authors": [
+        "James F. Kurose",
+        "Keith W. Ross"
+      ],
+      "publisher": "机械工业出版社",
+      "edition": "第7版",
+      "year": 2018,
+      "isbn": "978-7-111-59891-5",
+      "origin_type": "textbook",
+      "chapters": [
+        {
+          "chapter": "第1章",
+          "title": "计算机网络和因特网",
+          "pages": "1-58"
+        },
+        {
+          "chapter": "第2章",
+          "title": "应用层",
+          "pages": "59-132"
+        },
+        {
+          "chapter": "第3章",
+          "title": "传输层",
+          "pages": "133-198"
+        },
+        {
+          "chapter": "第4章",
+          "title": "网络层：数据平面",
+          "pages": "199-264"
+        },
+        {
+          "chapter": "第5章",
+          "title": "网络层：控制平面",
+          "pages": "265-330"
+        },
+        {
+          "chapter": "第6章",
+          "title": "链路层和局域网",
+          "pages": "331-398"
+        }
+      ],
+      "review_status": "approved",
+      "reviewed_by": "teacher01",
+      "reviewed_at": "2026-07-10"
+    },
+    {
+      "source_id": "cn_src_002",
+      "title": "计算机网络（第8版）",
+      "authors": [
+        "谢希仁"
+      ],
+      "publisher": "电子工业出版社",
+      "edition": "第8版",
+      "year": 2021,
+      "isbn": "978-7-121-40707-5",
+      "origin_type": "textbook",
+      "chapters": [
+        {
+          "chapter": "第2章",
+          "title": "物理层",
+          "pages": "35-70"
+        },
+        {
+          "chapter": "第3章",
+          "title": "数据链路层",
+          "pages": "71-130"
+        },
+        {
+          "chapter": "第4章",
+          "title": "网络层",
+          "pages": "131-200"
+        },
+        {
+          "chapter": "第5章",
+          "title": "运输层",
+          "pages": "201-260"
+        },
+        {
+          "chapter": "第6章",
+          "title": "应用层",
+          "pages": "261-310"
+        }
+      ],
+      "review_status": "approved",
+      "reviewed_by": "teacher01",
+      "reviewed_at": "2026-07-10"
+    },
+    {
+      "source_id": "cn_src_003",
+      "title": "RFC 793 - Transmission Control Protocol",
+      "authors": [
+        "Jon Postel"
+      ],
+      "publisher": "IETF",
+      "year": 1981,
+      "url": "https://www.rfc-editor.org/rfc/rfc793",
+      "origin_type": "official_document",
+      "rfc_number": 793,
+      "sections": [
+        {
+          "section": "3.1",
+          "title": "Header Format",
+          "pages": "15-25"
+        },
+        {
+          "section": "3.4",
+          "title": "Establishing a connection",
+          "pages": "28-32"
+        },
+        {
+          "section": "3.5",
+          "title": "Closing a Connection",
+          "pages": "33-37"
+        },
+        {
+          "section": "3.7",
+          "title": "Data Communication",
+          "pages": "40-45"
+        }
+      ],
+      "review_status": "approved",
+      "reviewed_by": "teacher01",
+      "reviewed_at": "2026-07-10"
+    },
+    {
+      "source_id": "cn_src_004",
+      "title": "RFC 1180 - A TCP/IP Tutorial",
+      "authors": [
+        "T. J. Socolofsky",
+        "C. J. Kale"
+      ],
+      "publisher": "IETF",
+      "year": 1990,
+      "url": "https://www.rfc-editor.org/rfc/rfc1180",
+      "origin_type": "official_document",
+      "rfc_number": 1180,
+      "sections": [
+        {
+          "section": "2",
+          "title": "TCP/IP Overview",
+          "pages": "2-5"
+        },
+        {
+          "section": "3",
+          "title": "Ethernet",
+          "pages": "5-8"
+        },
+        {
+          "section": "4",
+          "title": "ARP",
+          "pages": "8-11"
+        },
+        {
+          "section": "6",
+          "title": "UDP",
+          "pages": "13-15"
+        },
+        {
+          "section": "7",
+          "title": "TCP",
+          "pages": "15-20"
+        }
+      ],
+      "review_status": "approved",
+      "reviewed_by": "teacher01",
+      "reviewed_at": "2026-07-10"
+    },
+    {
+      "source_id": "cn_src_005",
+      "title": "中科大 计算机网络课程",
+      "authors": [
+        "郑烇"
+      ],
+      "publisher": "中国科学技术大学",
+      "year": 2023,
+      "url": "https://www.bilibili.com/video/BV1JV411t7ow/",
+      "origin_type": "open_course",
+      "sections": [
+        {
+          "section": "Lecture 4",
+          "title": "网络应用",
+          "pages": "视频1-3"
+        },
+        {
+          "section": "Lecture 5",
+          "title": "传输层基本概念",
+          "pages": "视频1-4"
+        },
+        {
+          "section": "Lecture 6",
+          "title": "TCP与UDP",
+          "pages": "视频1-5"
+        },
+        {
+          "section": "Lecture 8",
+          "title": "网络层基础",
+          "pages": "视频1-4"
+        }
+      ],
+      "review_status": "approved",
+      "reviewed_by": "teacher01",
+      "reviewed_at": "2026-07-10"
+    },
+    {
+      "source_id": "cn_src_006",
+      "title": "斯坦福 CS144 - Introduction to Computer Networking",
+      "authors": [
+        "Philip Levis",
+        "Nick McKeown"
+      ],
+      "publisher": "Stanford University",
+      "year": 2022,
+      "url": "https://cs144.github.io/",
+      "origin_type": "open_course",
+      "sections": [
+        {
+          "section": "Lab 1",
+          "title": "Implementing a TCP Receiver",
+          "pages": "1-20"
+        },
+        {
+          "section": "Lab 2",
+          "title": "Implementing a TCP Sender",
+          "pages": "1-22"
+        },
+        {
+          "section": "Lab 3",
+          "title": "The Network Interface",
+          "pages": "1-15"
+        },
+        {
+          "section": "Lab 4",
+          "title": "The IP Router",
+          "pages": "1-25"
+        }
+      ],
+      "review_status": "approved",
+      "reviewed_by": "teacher01",
+      "reviewed_at": "2026-07-10"
+    },
+    {
+      "source_id": "cn_src_007",
+      "title": "教师自编 - 计算机网络实验讲义",
+      "authors": [
+        "teacher01"
+      ],
+      "publisher": "MagicStudy 教学组",
+      "year": 2026,
+      "origin_type": "teacher_defined",
+      "sections": [
+        {
+          "section": "实验1",
+          "title": "Wireshark 抓包分析 TCP",
+          "pages": "1-8"
+        },
+        {
+          "section": "实验2",
+          "title": "Socket 编程实现",
+          "pages": "9-15"
+        },
+        {
+          "section": "实验3",
+          "title": "路由器配置实验",
+          "pages": "16-22"
+        }
+      ],
+      "review_status": "approved",
+      "reviewed_by": "teacher01",
+      "reviewed_at": "2026-07-10"
+    },
+    {
+      "source_id": "cn_src_008",
+      "title": "教师自编 - 计算机网络典型错误模式归纳",
+      "authors": [
+        "teacher01",
+        "team_member02"
+      ],
+      "publisher": "MagicStudy 教学组",
+      "year": 2026,
+      "origin_type": "team_defined",
+      "sections": [
+        {
+          "section": "第一章",
+          "title": "概念混淆类错误",
+          "pages": "1-12"
+        },
+        {
+          "section": "第二章",
+          "title": "协议机制类错误",
+          "pages": "13-25"
+        },
+        {
+          "section": "第三章",
+          "title": "地址计算类错误",
+          "pages": "26-35"
+        }
+      ],
+      "review_status": "approved",
+      "reviewed_by": "teacher01",
+      "reviewed_at": "2026-07-10"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "course_id": "data_structure",
+  "version": "1.0",
+  "description": "数据结构常见错误模式与诊断",
+  "error_patterns": [
+    {
+      "pattern_id": "err_linked_list_null",
+      "knowledge_point_id": "ds_001_002",
+      "pattern_name": "链表空指针错误",
+      "pattern_description": "学生在链表操作中忘记处理头节点为空或指针指向空的情况",
+      "common_cause": "对链表边界条件考虑不充分",
+      "remediation_strategy": "在进行任何操作前检查指针是否为空，通过画图理解链表结构",
+      "difficulty_level": 0.5,
+      "examples": [
+        "删除链表头节点时忘记更新头指针",
+        "遍历链表时未检查当前节点是否为空"
+      ],
+      "origin_type": "teacher_defined",
+      "source_ids": [
+        "ds_r_01_02_001"
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "reviewed_at": null
+    },
+    {
+      "pattern_id": "err_stack_overflow",
+      "knowledge_point_id": "ds_002_001",
+      "pattern_name": "栈溢出/下溢错误",
+      "pattern_description": "学生在栈操作中未检查栈是否已满或已空",
+      "common_cause": "对栈的边界条件理解不深入",
+      "remediation_strategy": "在push前检查栈满，在pop前检查栈空",
+      "difficulty_level": 0.4,
+      "examples": [
+        "向满栈中push元素",
+        "从空栈中pop元素"
+      ],
+      "origin_type": "teacher_defined",
+      "source_ids": [
+        "ds_r_02_01_001"
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "reviewed_at": null
+    },
+    {
+      "pattern_id": "err_queue_empty_full",
+      "knowledge_point_id": "ds_002_002",
+      "pattern_name": "循环队列判空判满错误",
+      "pattern_description": "学生无法正确判断循环队列是空还是满",
+      "common_cause": "不清楚循环队列的front和rear关系",
+      "remediation_strategy": "使用牺牲一个单元或计数器的方法区分空满",
+      "difficulty_level": 0.5,
+      "examples": [
+        "循环队列front==rear时无法判断状态"
+      ],
+      "origin_type": "teacher_defined",
+      "source_ids": [
+        "ds_r_02_02_001"
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "reviewed_at": null
+    },
+    {
+      "pattern_id": "err_binary_tree_traversal",
+      "knowledge_point_id": "ds_003_001",
+      "pattern_name": "二叉树遍历顺序错误",
+      "pattern_description": "学生混淆前序、中序、后序遍历的顺序",
+      "common_cause": "对遍历顺序的定义理解不清晰",
+      "remediation_strategy": "记住前序(根左右)、中序(左根右)、后序(左右根)的口诀，通过示例练习",
+      "difficulty_level": 0.5,
+      "examples": [
+        "中序遍历写成先访问右子树"
+      ],
+      "origin_type": "teacher_defined",
+      "source_ids": [
+        "ds_r_03_01_001"
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "reviewed_at": null
+    },
+    {
+      "pattern_id": "err_bst_delete",
+      "knowledge_point_id": "ds_003_002",
+      "pattern_name": "BST删除节点错误",
+      "pattern_description": "学生在删除有两个子节点的节点时出错",
+      "common_cause": "不清楚如何处理有两个子节点的情况",
+      "remediation_strategy": "用左子树最大值或右子树最小值替代被删除节点",
+      "difficulty_level": 0.7,
+      "examples": [
+        "删除BST中既有左子树又有右子树的节点"
+      ],
+      "origin_type": "teacher_defined",
+      "source_ids": [
+        "ds_r_03_02_001"
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "reviewed_at": null
+    },
+    {
+      "pattern_id": "err_dfs_bfs",
+      "knowledge_point_id": "ds_004_002",
+      "pattern_name": "DFS与BFS混淆",
+      "pattern_description": "学生混淆深度优先搜索和广度优先搜索的实现",
+      "common_cause": "不清楚两种遍历方式的特点和适用场景",
+      "remediation_strategy": "记住DFS用栈、BFS用队列，通过具体例子对比",
+      "difficulty_level": 0.6,
+      "examples": [
+        "用栈实现BFS",
+        "用队列实现DFS"
+      ],
+      "origin_type": "teacher_defined",
+      "source_ids": [
+        "ds_r_04_02_001"
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "reviewed_at": null
+    },
+    {
+      "pattern_id": "err_binary_search_boundary",
+      "knowledge_point_id": "ds_005_001",
+      "pattern_name": "二分查找边界错误",
+      "pattern_description": "学生在二分查找中处理边界条件出错",
+      "common_cause": "不清楚low和high的更新规则",
+      "remediation_strategy": "明确循环条件和mid计算，通过多个示例验证",
+      "difficulty_level": 0.5,
+      "examples": [
+        "循环条件写成low <= high还是low < high"
+      ],
+      "origin_type": "teacher_defined",
+      "source_ids": [
+        "ds_r_05_01_001"
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "reviewed_at": null
+    },
+    {
+      "pattern_id": "err_hash_collision",
+      "knowledge_point_id": "ds_005_002",
+      "pattern_name": "哈希冲突处理错误",
+      "pattern_description": "学生不清楚如何处理哈希冲突",
+      "common_cause": "对开放地址法和链地址法理解不深入",
+      "remediation_strategy": "对比两种冲突处理方法的优缺点和实现方式",
+      "difficulty_level": 0.6,
+      "examples": [
+        "使用线性探测时未正确处理探测序列"
+      ],
+      "origin_type": "teacher_defined",
+      "source_ids": [
+        "ds_r_01_01_001"
+      ],
+      "review_status": "pending",
+      "reviewed_by": "",
+      "reviewed_at": null
+    }
+  ]
+}

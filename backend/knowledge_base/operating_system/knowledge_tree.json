@@ -1,0 +1,208 @@
+{
+  "course_id": "operating_system",
+  "version": "1.0",
+  "description": "操作系统课程知识点结构",
+  "roots": [
+    {
+      "id": "os_001",
+      "name": "进程与线程",
+      "description": "进程和线程的管理",
+      "difficulty": 0.7,
+      "mastery_threshold": 0.75,
+      "learning_hours": 16,
+      "children": [
+        {
+          "id": "os_001_001",
+          "name": "进程概念",
+          "description": "进程的定义、状态转换和PCB",
+          "difficulty": 0.6,
+          "mastery_threshold": 0.7,
+          "learning_hours": 6,
+          "prerequisites": [],
+          "keywords": [
+            "进程",
+            "PCB",
+            "状态转换",
+            "进程控制"
+          ],
+          "node_code": "os_001_001"
+        },
+        {
+          "id": "os_001_002",
+          "name": "进程调度",
+          "description": "调度算法和调度策略",
+          "difficulty": 0.7,
+          "mastery_threshold": 0.75,
+          "learning_hours": 6,
+          "prerequisites": [
+            "os_001_001"
+          ],
+          "keywords": [
+            "FCFS",
+            "SJF",
+            "RR",
+            "优先级调度"
+          ],
+          "node_code": "os_001_002"
+        },
+        {
+          "id": "os_001_003",
+          "name": "线程",
+          "description": "线程的概念和实现",
+          "difficulty": 0.6,
+          "mastery_threshold": 0.7,
+          "learning_hours": 4,
+          "prerequisites": [
+            "os_001_001"
+          ],
+          "keywords": [
+            "线程",
+            "用户线程",
+            "内核线程",
+            "线程同步"
+          ],
+          "node_code": "os_001_003"
+        }
+      ],
+      "node_code": "os_001"
+    },
+    {
+      "id": "os_002",
+      "name": "内存管理",
+      "description": "内存的分配和管理",
+      "difficulty": 0.75,
+      "mastery_threshold": 0.75,
+      "learning_hours": 16,
+      "children": [
+        {
+          "id": "os_002_001",
+          "name": "分页与分段",
+          "description": "分页和分段存储管理",
+          "difficulty": 0.7,
+          "mastery_threshold": 0.75,
+          "learning_hours": 6,
+          "prerequisites": [],
+          "keywords": [
+            "分页",
+            "分段",
+            "段页式",
+            "页表"
+          ],
+          "node_code": "os_002_001"
+        },
+        {
+          "id": "os_002_002",
+          "name": "虚拟内存",
+          "description": "虚拟内存和页面置换",
+          "difficulty": 0.8,
+          "mastery_threshold": 0.8,
+          "learning_hours": 10,
+          "prerequisites": [
+            "os_002_001"
+          ],
+          "keywords": [
+            "虚拟内存",
+            "页面置换",
+            "LRU",
+            "FIFO",
+            "Belady异常"
+          ],
+          "node_code": "os_002_002"
+        }
+      ],
+      "node_code": "os_002"
+    },
+    {
+      "id": "os_003",
+      "name": "文件系统",
+      "description": "文件和目录的管理",
+      "difficulty": 0.6,
+      "mastery_threshold": 0.7,
+      "learning_hours": 10,
+      "children": [
+        {
+          "id": "os_003_001",
+          "name": "文件与目录",
+          "description": "文件结构和目录管理",
+          "difficulty": 0.5,
+          "mastery_threshold": 0.7,
+          "learning_hours": 5,
+          "prerequisites": [],
+          "keywords": [
+            "文件",
+            "目录",
+            "索引节点",
+            "FAT"
+          ],
+          "node_code": "os_003_001"
+        },
+        {
+          "id": "os_003_002",
+          "name": "磁盘调度",
+          "description": "磁盘访问和调度算法",
+          "difficulty": 0.6,
+          "mastery_threshold": 0.7,
+          "learning_hours": 5,
+          "prerequisites": [
+            "os_003_001"
+          ],
+          "keywords": [
+            "SCAN",
+            "C-SCAN",
+            "FCFS",
+            "SSTF"
+          ],
+          "node_code": "os_003_002"
+        }
+      ],
+      "node_code": "os_003"
+    },
+    {
+      "id": "os_004",
+      "name": "进程同步",
+      "description": "并发进程的同步与互斥",
+      "difficulty": 0.75,
+      "mastery_threshold": 0.75,
+      "learning_hours": 6,
+      "children": [
+        {
+          "id": "os_004_001",
+          "name": "进程互斥",
+          "description": "临界区和互斥实现",
+          "difficulty": 0.7,
+          "mastery_threshold": 0.75,
+          "learning_hours": 3,
+          "prerequisites": [
+            "os_001_001"
+          ],
+          "keywords": [
+            "临界区",
+            "互斥锁",
+            "信号量"
+          ],
+          "node_code": "os_004_001"
+        },
+        {
+          "id": "os_004_002",
+          "name": "经典同步问题",
+          "description": "生产者-消费者、读者-写者等问题",
+          "difficulty": 0.8,
+          "mastery_threshold": 0.8,
+          "learning_hours": 3,
+          "prerequisites": [
+            "os_004_001"
+          ],
+          "keywords": [
+            "生产者-消费者",
+            "读者-写者",
+            "哲学家进餐"
+          ],
+          "node_code": "os_004_002"
+        }
+      ],
+      "node_code": "os_004"
+    }
+  ],
+  "schema_version": "2.0",
+  "course_code": "operating_system"
+}

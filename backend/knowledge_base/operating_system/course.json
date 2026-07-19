@@ -1,0 +1,49 @@
+{
+  "schema_version": "2.0",
+  "course_code": "operating_system",
+  "course_id": "operating_system",
+  "course_name": "操作系统",
+  "course_name_en": "Operating System",
+  "description": "操作系统课程，介绍操作系统的基本原理和实现机制",
+  "education_level": "university",
+  "publish_status": "demo_only",
+  "total_hours": 48,
+  "credits": 3,
+  "target_students": "计算机科学与技术专业本科生",
+  "prerequisites": [
+    "计算机组成原理",
+    "数据结构"
+  ],
+  "course_objectives": [
+    "理解操作系统的基本概念和功能",
+    "掌握进程和线程的管理机制",
+    "掌握内存管理技术",
+    "理解文件系统和I/O管理"
+  ],
+  "textbooks": [
+    {
+      "name": "操作系统导论",
+      "author": "Thomas W.Operating System Concepts",
+      "publisher": "机械工业出版社",
+      "edition": "第9版",
+      "year": 2012
+    },
+    {
+      "name": "现代操作系统",
+      "author": "Andrew S.Tanenbaum",
+      "publisher": "机械工业出版社",
+      "edition": "第4版",
+      "year": 2014
+    }
+  ],
+  "reference_materials": [
+    {
+      "name": "深入理解计算机系统",
+      "author": "Randal E.Bryant",
+      "publisher": "机械工业出版社"
+    }
+  ],
+  "status": "demo_only",
+  "version": "1.0",
+  "last_updated": "2026-07-18"
+}

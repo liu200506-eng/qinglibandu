@@ -1,0 +1,45 @@
+{
+  "schema_version": "2.0",
+  "course_code": "computer_organization",
+  "course_id": "computer_organization",
+  "course_name": "计算机组成原理",
+  "course_name_en": "Computer Organization",
+  "description": "面向高校计算机科学与技术、软件工程等专业的核心课程，系统讲解计算机系统的硬件组成和工作原理。",
+  "education_level": "university",
+  "publish_status": "review",
+  "total_hours": 64,
+  "credits": 4,
+  "target_students": "计算机科学与技术、软件工程、网络工程等专业本科生",
+  "prerequisites": [
+    "程序设计基础",
+    "数字电子技术"
+  ],
+  "course_objectives": [
+    "理解计算机系统的层次结构和基本组成",
+    "掌握定点数和浮点数的表示方法及运算",
+    "理解CPU的结构、指令系统和执行过程",
+    "掌握存储系统的层次结构和Cache原理",
+    "理解总线和I/O系统的工作原理"
+  ],
+  "textbooks": [
+    {
+      "title": "计算机组成原理",
+      "author": "唐朔飞",
+      "edition": "第3版",
+      "publisher": "高等教育出版社",
+      "isbn": "978-7-04-045387-2"
+    },
+    {
+      "title": "计算机组成与设计：硬件/软件接口",
+      "author": "David Patterson, John Hennessy",
+      "edition": "第5版",
+      "publisher": "机械工业出版社",
+      "isbn": "978-7-111-46848-0"
+    }
+  ],
+  "reference_materials": [
+    "深入理解计算机系统 - Randal E.Bryant",
+    "计算机组成原理学习指导与习题解答 - 唐朔飞",
+    "IEEE Computer Architecture Letters"
+  ]
+}

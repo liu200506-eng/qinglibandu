@@ -1,0 +1,276 @@
+{
+  "course_id": "database_principles",
+  "description": "数据库原理课程题库",
+  "questions": [
+    {
+      "question_id": "dp_q_01_01_001",
+      "knowledge_point_id": "dp_001_001",
+      "knowledge_point_name": "三级模式",
+      "question_type": "single_choice",
+      "difficulty": 0.4,
+      "score": 2,
+      "question": "数据库系统的三级模式不包括以下哪一项？",
+      "options": [
+        {"key": "A", "text": "外模式"},
+        {"key": "B", "text": "模式"},
+        {"key": "C", "text": "内模式"},
+        {"key": "D", "text": "用户模式"}
+      ],
+      "answer": "D",
+      "analysis": "数据库系统的三级模式包括外模式、模式和内模式。用户模式是外模式的另一种称呼，不是独立的模式级别。",
+      "reference": ["数据库系统概论", "第1章", "1.3节"]
+    },
+    {
+      "question_id": "dp_q_01_01_002",
+      "knowledge_point_id": "dp_001_001",
+      "knowledge_point_name": "三级模式",
+      "question_type": "single_choice",
+      "difficulty": 0.5,
+      "score": 2,
+      "question": "保证数据物理独立性的是以下哪个映像？",
+      "options": [
+        {"key": "A", "text": "外模式/模式映像"},
+        {"key": "B", "text": "模式/内模式映像"},
+        {"key": "C", "text": "外模式/内模式映像"},
+        {"key": "D", "text": "模式/外模式映像"}
+      ],
+      "answer": "B",
+      "analysis": "模式/内模式映像保证了数据的物理独立性，即当内模式（物理存储）改变时，模式和应用程序不需要改变。",
+      "reference": ["数据库系统概论", "第1章", "1.3节"]
+    },
+    {
+      "question_id": "dp_q_02_01_001",
+      "knowledge_point_id": "dp_002_001",
+      "knowledge_point_name": "关系代数",
+      "question_type": "single_choice",
+      "difficulty": 0.5,
+      "score": 2,
+      "question": "关系代数中，选择运算的符号是？",
+      "options": [
+        {"key": "A", "text": "π"},
+        {"key": "B", "text": "σ"},
+        {"key": "C", "text": "⋈"},
+        {"key": "D", "text": "÷"}
+      ],
+      "answer": "B",
+      "analysis": "选择运算的符号是σ（sigma），投影运算的符号是π（pi），连接运算的符号是⋈，除运算的符号是÷。",
+      "reference": ["数据库系统概论", "第2章", "2.2节"]
+    },
+    {
+      "question_id": "dp_q_02_01_002",
+      "knowledge_point_id": "dp_002_001",
+      "knowledge_point_name": "关系代数",
+      "question_type": "single_choice",
+      "difficulty": 0.5,
+      "score": 2,
+      "question": "关系R有3个元组，关系S有4个元组，则R×S有多少个元组？",
+      "options": [
+        {"key": "A", "text": "7个"},
+        {"key": "B", "text": "12个"},
+        {"key": "C", "text": "3个"},
+        {"key": "D", "text": "4个"}
+      ],
+      "answer": "B",
+      "analysis": "笛卡尔积R×S的元组个数等于R的元组个数乘以S的元组个数，即3×4=12个。",
+      "reference": ["数据库系统概论", "第2章", "2.2节"]
+    },
+    {
+      "question_id": "dp_q_02_02_001",
+      "knowledge_point_id": "dp_002_002",
+      "knowledge_point_name": "SQL",
+      "question_type": "single_choice",
+      "difficulty": 0.4,
+      "score": 2,
+      "question": "以下哪个SQL语句用于插入数据？",
+      "options": [
+        {"key": "A", "text": "INSERT"},
+        {"key": "B", "text": "UPDATE"},
+        {"key": "C", "text": "DELETE"},
+        {"key": "D", "text": "SELECT"}
+      ],
+      "answer": "A",
+      "analysis": "INSERT用于插入数据，UPDATE用于更新数据，DELETE用于删除数据，SELECT用于查询数据。",
+      "reference": ["数据库系统概论", "第3章", "3.2节"]
+    },
+    {
+      "question_id": "dp_q_02_02_002",
+      "knowledge_point_id": "dp_002_002",
+      "knowledge_point_name": "SQL",
+      "question_type": "single_choice",
+      "difficulty": 0.5,
+      "score": 2,
+      "question": "SQL语句中，用于分组的关键字是？",
+      "options": [
+        {"key": "A", "text": "ORDER BY"},
+        {"key": "B", "text": "GROUP BY"},
+        {"key": "C", "text": "HAVING"},
+        {"key": "D", "text": "DISTINCT"}
+      ],
+      "answer": "B",
+      "analysis": "GROUP BY用于分组，ORDER BY用于排序，HAVING用于过滤分组，DISTINCT用于去重。",
+      "reference": ["数据库系统概论", "第3章", "3.3节"]
+    },
+    {
+      "question_id": "dp_q_02_03_001",
+      "knowledge_point_id": "dp_002_003",
+      "knowledge_point_name": "规范化",
+      "question_type": "single_choice",
+      "difficulty": 0.5,
+      "score": 2,
+      "question": "第一范式（1NF）要求什么？",
+      "options": [
+        {"key": "A", "text": "消除部分函数依赖"},
+        {"key": "B", "text": "消除传递函数依赖"},
+        {"key": "C", "text": "每个属性都是原子值"},
+        {"key": "D", "text": "消除多值依赖"}
+      ],
+      "answer": "C",
+      "analysis": "第一范式要求每个属性都是不可再分的原子值，第二范式消除部分函数依赖，第三范式消除传递函数依赖，第四范式消除多值依赖。",
+      "reference": ["数据库系统概论", "第4章", "4.1节"]
+    },
+    {
+      "question_id": "dp_q_02_03_002",
+      "knowledge_point_id": "dp_002_003",
+      "knowledge_point_name": "规范化",
+      "question_type": "single_choice",
+      "difficulty": 0.6,
+      "score": 2,
+      "question": "在关系模式R(A,B,C)中，函数依赖A→B，B→C，则A→C是什么类型的依赖？",
+      "options": [
+        {"key": "A", "text": "完全函数依赖"},
+        {"key": "B", "text": "部分函数依赖"},
+        {"key": "C", "text": "传递函数依赖"},
+        {"key": "D", "text": "多值依赖"}
+      ],
+      "answer": "C",
+      "analysis": "如果X→Y，Y→Z，且Y↛X，则称Z传递函数依赖于X。这里A→B，B→C，所以A→C是传递函数依赖。",
+      "reference": ["数据库系统概论", "第4章", "4.2节"]
+    },
+    {
+      "question_id": "dp_q_03_01_001",
+      "knowledge_point_id": "dp_003_001",
+      "knowledge_point_name": "事务ACID",
+      "question_type": "single_choice",
+      "difficulty": 0.4,
+      "score": 2,
+      "question": "事务的ACID特性不包括以下哪一项？",
+      "options": [
+        {"key": "A", "text": "原子性"},
+        {"key": "B", "text": "一致性"},
+        {"key": "C", "text": "完整性"},
+        {"key": "D", "text": "隔离性"}
+      ],
+      "answer": "C",
+      "analysis": "事务的ACID特性包括原子性（Atomicity）、一致性（Consistency）、隔离性（Isolation）和持久性（Durability）。完整性不是ACID特性之一。",
+      "reference": ["数据库系统概论", "第5章", "5.1节"]
+    },
+    {
+      "question_id": "dp_q_03_01_002",
+      "knowledge_point_id": "dp_003_001",
+      "knowledge_point_name": "事务ACID",
+      "question_type": "single_choice",
+      "difficulty": 0.5,
+      "score": 2,
+      "question": "事务的原子性是指？",
+      "options": [
+        {"key": "A", "text": "事务执行前后数据保持一致"},
+        {"key": "B", "text": "事务中的操作要么全部执行，要么全部不执行"},
+        {"key": "C", "text": "事务之间相互隔离"},
+        {"key": "D", "text": "事务提交后永久保存"}
+      ],
+      "answer": "B",
+      "analysis": "原子性是指事务中的所有操作要么全部执行成功，要么全部不执行。选项A是一致性，选项C是隔离性，选项D是持久性。",
+      "reference": ["数据库系统概论", "第5章", "5.1节"]
+    },
+    {
+      "question_id": "dp_q_03_02_001",
+      "knowledge_point_id": "dp_003_002",
+      "knowledge_point_name": "并发控制",
+      "question_type": "single_choice",
+      "difficulty": 0.5,
+      "score": 2,
+      "question": "以下哪种锁允许其他事务读取但不允许修改数据？",
+      "options": [
+        {"key": "A", "text": "共享锁"},
+        {"key": "B", "text": "排他锁"},
+        {"key": "C", "text": "意向锁"},
+        {"key": "D", "text": "更新锁"}
+      ],
+      "answer": "A",
+      "analysis": "共享锁（S锁）允许其他事务读取数据，但不允许修改数据。排他锁（X锁）不允许其他事务读取或修改数据。",
+      "reference": ["数据库系统概论", "第5章", "5.3节"]
+    },
+    {
+      "question_id": "dp_q_03_02_002",
+      "knowledge_point_id": "dp_003_002",
+      "knowledge_point_name": "并发控制",
+      "question_type": "single_choice",
+      "difficulty": 0.6,
+      "score": 2,
+      "question": "死锁的四个必要条件不包括以下哪一项？",
+      "options": [
+        {"key": "A", "text": "互斥条件"},
+        {"key": "B", "text": "请求与保持条件"},
+        {"key": "C", "text": "可剥夺条件"},
+        {"key": "D", "text": "循环等待条件"}
+      ],
+      "answer": "C",
+      "analysis": "死锁的四个必要条件是：互斥条件、请求与保持条件、不剥夺条件和循环等待条件。可剥夺条件不是死锁的必要条件，相反，可剥夺可以防止死锁。",
+      "reference": ["数据库系统概论", "第5章", "5.4节"]
+    },
+    {
+      "question_id": "dp_q_03_03_001",
+      "knowledge_point_id": "dp_003_003",
+      "knowledge_point_name": "隔离级别",
+      "question_type": "single_choice",
+      "difficulty": 0.5,
+      "score": 2,
+      "question": "以下哪个隔离级别可以防止脏读？",
+      "options": [
+        {"key": "A", "text": "读未提交"},
+        {"key": "B", "text": "读已提交"},
+        {"key": "C", "text": "所有级别都可以"},
+        {"key": "D", "text": "没有任何级别可以"}
+      ],
+      "answer": "B",
+      "analysis": "读已提交隔离级别只允许读取已提交的数据，可以防止脏读。读未提交允许读取未提交的数据，不能防止脏读。",
+      "reference": ["数据库系统概论", "第5章", "5.2节"]
+    },
+    {
+      "question_id": "dp_q_04_01_001",
+      "knowledge_point_id": "dp_004_001",
+      "knowledge_point_name": "备份与恢复",
+      "question_type": "single_choice",
+      "difficulty": 0.5,
+      "score": 2,
+      "question": "用于回滚未提交事务的日志是？",
+      "options": [
+        {"key": "A", "text": "重做日志"},
+        {"key": "B", "text": "撤销日志"},
+        {"key": "C", "text": "二进制日志"},
+        {"key": "D", "text": "错误日志"}
+      ],
+      "answer": "B",
+      "analysis": "撤销日志（Undo Log）记录事务的反向操作，用于回滚未提交的事务。重做日志（Redo Log）记录事务的修改，用于重做已提交的事务。",
+      "reference": ["数据库系统概论", "第6章", "6.1节"]
+    },
+    {
+      "question_id": "dp_q_04_02_001",
+      "knowledge_point_id": "dp_004_002",
+      "knowledge_point_name": "安全",
+      "question_type": "single_choice",
+      "difficulty": 0.4,
+      "score": 2,
+      "question": "用于授予用户权限的SQL语句是？",
+      "options": [
+        {"key": "A", "text": "GRANT"},
+        {"key": "B", "text": "REVOKE"},
+        {"key": "C", "text": "CREATE"},
+        {"key": "D", "text": "ALTER"}
+      ],
+      "answer": "A",
+      "analysis": "GRANT用于授予用户权限，REVOKE用于回收用户权限，CREATE用于创建对象，ALTER用于修改对象。",
+      "reference": ["数据库系统概论", "第6章", "6.2节"]
+    }
+  ]
+}

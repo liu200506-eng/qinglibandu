@@ -1,0 +1,126 @@
+{
+  "course_id": "computer_network",
+  "description": "学习资源索引",
+  "resources": [
+    {
+      "resource_id": "cn_res_001",
+      "knowledge_point_id": "cn_001_001",
+      "knowledge_point_name": "OSI七层模型",
+      "resource_type": "lecture",
+      "title": "OSI七层模型详解",
+      "description": "系统讲解OSI七层模型的层次结构和各层功能",
+      "format": "markdown",
+      "source": "textbook",
+      "reference": "计算机网络：自顶向下方法，第1章",
+      "difficulty": 0.4
+    },
+    {
+      "resource_id": "cn_res_002",
+      "knowledge_point_id": "cn_001_002",
+      "knowledge_point_name": "TCP/IP四层模型",
+      "resource_type": "lecture",
+      "title": "TCP/IP协议体系",
+      "description": "TCP/IP四层模型与OSI模型的对比",
+      "format": "markdown",
+      "source": "textbook",
+      "reference": "计算机网络：自顶向下方法，第1章",
+      "difficulty": 0.4
+    },
+    {
+      "resource_id": "cn_res_003",
+      "knowledge_point_id": "cn_004_006",
+      "knowledge_point_name": "TCP拥塞控制",
+      "resource_type": "lecture",
+      "title": "TCP拥塞控制机制详解",
+      "description": "慢启动、拥塞避免、快速重传、快速恢复的完整讲解",
+      "format": "markdown",
+      "source": "textbook",
+      "reference": "计算机网络：自顶向下方法，第3章，3.7节",
+      "difficulty": 0.8
+    },
+    {
+      "resource_id": "cn_res_004",
+      "knowledge_point_id": "cn_004_006",
+      "knowledge_point_name": "TCP拥塞控制",
+      "resource_type": "simulation",
+      "title": "TCP拥塞控制仿真动画",
+      "description": "可视化展示cwnd变化过程",
+      "format": "html",
+      "source": "interactive",
+      "reference": "课程课件",
+      "difficulty": 0.6
+    },
+    {
+      "resource_id": "cn_res_005",
+      "knowledge_point_id": "cn_004_006",
+      "knowledge_point_name": "TCP拥塞控制",
+      "resource_type": "code",
+      "title": "TCP拥塞控制算法实现",
+      "description": "Python实现慢启动和拥塞避免算法",
+      "format": "python",
+      "source": "courseware",
+      "reference": "课程实验",
+      "difficulty": 0.7
+    },
+    {
+      "resource_id": "cn_res_006",
+      "knowledge_point_id": "cn_004_003",
+      "knowledge_point_name": "TCP三次握手",
+      "resource_type": "lecture",
+      "title": "TCP连接建立过程",
+      "description": "三次握手的详细过程和状态转换",
+      "format": "markdown",
+      "source": "textbook",
+      "reference": "计算机网络：自顶向下方法，第3章，3.5节",
+      "difficulty": 0.5
+    },
+    {
+      "resource_id": "cn_res_007",
+      "knowledge_point_id": "cn_004_004",
+      "knowledge_point_name": "TCP四次挥手",
+      "resource_type": "lecture",
+      "title": "TCP连接释放过程",
+      "description": "四次挥手的详细过程和TIME_WAIT状态",
+      "format": "markdown",
+      "source": "textbook",
+      "reference": "计算机网络：自顶向下方法，第3章，3.5节",
+      "difficulty": 0.5
+    },
+    {
+      "resource_id": "cn_res_008",
+      "knowledge_point_id": "cn_004_002",
+      "knowledge_point_name": "TCP可靠传输",
+      "resource_type": "lecture",
+      "title": "TCP可靠传输原理",
+      "description": "确认、重传、序号、滑动窗口等机制",
+      "format": "markdown",
+      "source": "textbook",
+      "reference": "计算机网络：自顶向下方法，第3章，3.4节",
+      "difficulty": 0.6
+    },
+    {
+      "resource_id": "cn_res_009",
+      "knowledge_point_id": "cn_003_001",
+      "knowledge_point_name": "IP地址与子网划分",
+      "resource_type": "practice",
+      "title": "子网划分练习",
+      "description": "多个子网划分案例练习",
+      "format": "markdown",
+      "source": "courseware",
+      "reference": "课程习题",
+      "difficulty": 0.6
+    },
+    {
+      "resource_id": "cn_res_010",
+      "knowledge_point_id": "cn_005_005",
+      "knowledge_point_name": "Socket编程",
+      "resource_type": "code",
+      "title": "TCP Socket编程示例",
+      "description": "Python TCP客户端和服务器实现",
+      "format": "python",
+      "source": "courseware",
+      "reference": "课程实验",
+      "difficulty": 0.7
+    }
+  ]
+}

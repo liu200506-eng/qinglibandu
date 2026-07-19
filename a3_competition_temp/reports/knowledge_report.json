@@ -1,0 +1,247 @@
+{
+  "generated_at": "2026-07-18T07:20:18.993401",
+  "total_courses": 5,
+  "courses": [
+    {
+      "course_code": "computer_network",
+      "publish_status": "published",
+      "schema_version": "2.0",
+      "knowledge_point_count": 37,
+      "leaf_point_count": 30,
+      "lecture_coverage": 100.0,
+      "question_coverage": 100.0,
+      "source_coverage": 100.0,
+      "review_pass_rate": 100.0,
+      "dependency_completeness": 100.0,
+      "db_chunk_count": 0,
+      "qdrant_vector_count": 0,
+      "orphan_vector_count": 0,
+      "last_published_at": "2026-07-18",
+      "question_count": 19,
+      "question_source_stats": {
+        "total": 19,
+        "with_source": 19,
+        "missing_source": 0,
+        "coverage": 100.0
+      },
+      "question_review_stats": {
+        "total": 19,
+        "approved": 19,
+        "pending": 0,
+        "pass_rate": 100.0
+      },
+      "error_pattern_source_stats": {
+        "total": 8,
+        "with_source": 8,
+        "missing_source": 0,
+        "coverage": 100.0
+      },
+      "error_pattern_review_stats": {
+        "total": 8,
+        "approved": 8,
+        "pending": 0,
+        "pass_rate": 100.0
+      },
+      "document_source_stats": {
+        "total": 35,
+        "with_source": 35,
+        "missing_source": 0,
+        "coverage": 100.0
+      }
+    },
+    {
+      "course_code": "computer_organization",
+      "publish_status": "review",
+      "schema_version": "2.0",
+      "knowledge_point_count": 17,
+      "leaf_point_count": 13,
+      "lecture_coverage": 100.0,
+      "question_coverage": 100.0,
+      "source_coverage": 34.78,
+      "review_pass_rate": 0.0,
+      "dependency_completeness": 100.0,
+      "db_chunk_count": 0,
+      "qdrant_vector_count": 0,
+      "orphan_vector_count": 0,
+      "last_published_at": null,
+      "question_count": 15,
+      "question_source_stats": {
+        "total": 15,
+        "with_source": 0,
+        "missing_source": 15,
+        "coverage": 0.0
+      },
+      "question_review_stats": {
+        "total": 15,
+        "approved": 0,
+        "pending": 15,
+        "pass_rate": 0.0
+      },
+      "error_pattern_source_stats": {
+        "total": 8,
+        "with_source": 8,
+        "missing_source": 0,
+        "coverage": 100.0
+      },
+      "error_pattern_review_stats": {
+        "total": 8,
+        "approved": 0,
+        "pending": 8,
+        "pass_rate": 0.0
+      },
+      "document_source_stats": {
+        "total": 13,
+        "with_source": 0,
+        "missing_source": 13,
+        "coverage": 0.0
+      }
+    },
+    {
+      "course_code": "data_structure",
+      "publish_status": "demo_only",
+      "schema_version": "2.0",
+      "knowledge_point_count": 18,
+      "leaf_point_count": 12,
+      "lecture_coverage": 0.0,
+      "question_coverage": 100.0,
+      "source_coverage": 34.78,
+      "review_pass_rate": 0.0,
+      "dependency_completeness": 100.0,
+      "db_chunk_count": 0,
+      "qdrant_vector_count": 0,
+      "orphan_vector_count": 0,
+      "last_published_at": "2026-07-17",
+      "question_count": 15,
+      "question_source_stats": {
+        "total": 15,
+        "with_source": 0,
+        "missing_source": 15,
+        "coverage": 0.0
+      },
+      "question_review_stats": {
+        "total": 15,
+        "approved": 0,
+        "pending": 15,
+        "pass_rate": 0.0
+      },
+      "error_pattern_source_stats": {
+        "total": 8,
+        "with_source": 8,
+        "missing_source": 0,
+        "coverage": 100.0
+      },
+      "error_pattern_review_stats": {
+        "total": 8,
+        "approved": 0,
+        "pending": 8,
+        "pass_rate": 0.0
+      }
+    },
+    {
+      "course_code": "database_principles",
+      "publish_status": "review",
+      "schema_version": "2.0",
+      "knowledge_point_count": 17,
+      "leaf_point_count": 12,
+      "lecture_coverage": 100.0,
+      "question_coverage": 100.0,
+      "source_coverage": 34.78,
+      "review_pass_rate": 0.0,
+      "dependency_completeness": 100.0,
+      "db_chunk_count": 0,
+      "qdrant_vector_count": 0,
+      "orphan_vector_count": 0,
+      "last_published_at": null,
+      "question_count": 15,
+      "question_source_stats": {
+        "total": 15,
+        "with_source": 0,
+        "missing_source": 15,
+        "coverage": 0.0
+      },
+      "question_review_stats": {
+        "total": 15,
+        "approved": 0,
+        "pending": 15,
+        "pass_rate": 0.0
+      },
+      "error_pattern_source_stats": {
+        "total": 8,
+        "with_source": 8,
+        "missing_source": 0,
+        "coverage": 100.0
+      },
+      "error_pattern_review_stats": {
+        "total": 8,
+        "approved": 0,
+        "pending": 8,
+        "pass_rate": 0.0
+      },
+      "document_source_stats": {
+        "total": 12,
+        "with_source": 0,
+        "missing_source": 12,
+        "coverage": 0.0
+      }
+    },
+    {
+      "course_code": "operating_system",
+      "publish_status": "demo_only",
+      "schema_version": "2.0",
+      "knowledge_point_count": 13,
+      "leaf_point_count": 9,
+      "lecture_coverage": 0.0,
+      "question_coverage": 100.0,
+      "source_coverage": 34.78,
+      "review_pass_rate": 0.0,
+      "dependency_completeness": 100.0,
+      "db_chunk_count": 0,
+      "qdrant_vector_count": 0,
+      "orphan_vector_count": 0,
+      "last_published_at": "2026-07-18",
+      "question_count": 15,
+      "question_source_stats": {
+        "total": 15,
+        "with_source": 0,
+        "missing_source": 15,
+        "coverage": 0.0
+      },
+      "question_review_stats": {
+        "total": 15,
+        "approved": 0,
+        "pending": 15,
+        "pass_rate": 0.0
+      },
+      "error_pattern_source_stats": {
+        "total": 8,
+        "with_source": 8,
+        "missing_source": 0,
+        "coverage": 100.0
+      },
+      "error_pattern_review_stats": {
+        "total": 8,
+        "approved": 0,
+        "pending": 8,
+        "pass_rate": 0.0
+      }
+    }
+  ],
+  "summary": {
+    "total_knowledge_points": 102,
+    "total_leaf_points": 76,
+    "total_questions": 79,
+    "total_documents": 0,
+    "avg_lecture_coverage": 60.0,
+    "avg_question_coverage": 100.0,
+    "avg_source_coverage": 47.82,
+    "avg_review_pass_rate": 20.0,
+    "avg_dependency_completeness": 100.0
+  },
+  "qdrant": {
+    "db_chunk_count": 84,
+    "qdrant_vector_count": 0,
+    "orphan_vector_count": 0,
+    "missing_vector_count": 84,
+    "is_consistent": false
+  }
+}

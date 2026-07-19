@@ -1,0 +1,804 @@
+{
+  "course_id": "computer_network",
+  "description": "计算机网络课程题库",
+  "questions": [
+    {
+      "question_id": "cn_q_04_06_001",
+      "knowledge_point_id": "cn_004_006",
+      "knowledge_point_name": "TCP拥塞控制",
+      "question_type": "single_choice",
+      "difficulty": 0.5,
+      "score": 2,
+      "question": "TCP拥塞控制中，拥塞窗口(cwnd)的主要作用是什么？",
+      "options": [
+        {
+          "key": "A",
+          "text": "限制接收方缓冲区大小"
+        },
+        {
+          "key": "B",
+          "text": "根据网络拥塞情况动态调整发送速率"
+        },
+        {
+          "key": "C",
+          "text": "确定TCP连接的最大报文段长度"
+        },
+        {
+          "key": "D",
+          "text": "设置TCP连接的超时时间"
+        }
+      ],
+      "answer": "B",
+      "analysis": "拥塞窗口(cwnd)是TCP拥塞控制的核心机制，由发送方根据网络拥塞情况动态调整，用于限制发送速率。接收窗口(rwnd)才是限制接收方缓冲区大小的。",
+      "reference": [
+        "计算机网络：自顶向下方法",
+        "第3章",
+        "3.7节"
+      ],
+      "source_ids": [
+        "cn_src_001",
+        "cn_src_003"
+      ],
+      "origin_type": "textbook",
+      "review_status": "approved",
+      "reviewed_by": "teacher01",
+      "reviewed_at": "2026-07-17T18:34:13",
+      "review_comment": "测试通过"
+    },
+    {
+      "question_id": "cn_q_04_06_002",
+      "knowledge_point_id": "cn_004_006",
+      "knowledge_point_name": "TCP拥塞控制",
+      "question_type": "single_choice",
+      "difficulty": 0.6,
+      "score": 2,
+      "question": "在TCP拥塞控制中，发送方的实际发送窗口大小由什么决定？",
+      "options": [
+        {
+          "key": "A",
+          "text": "仅由拥塞窗口(cwnd)决定"
+        },
+        {
+          "key": "B",
+          "text": "仅由接收窗口(rwnd)决定"
+        },
+        {
+          "key": "C",
+          "text": "由cwnd和rwnd中的较小值决定"
+        },
+        {
+          "key": "D",
+          "text": "由cwnd和rwnd中的较大值决定"
+        }
+      ],
+      "answer": "C",
+      "analysis": "TCP的实际发送窗口是拥塞窗口(cwnd)和接收窗口(rwnd)中的较小值，即min(cwnd, rwnd)。这是因为既要考虑网络拥塞，也要考虑接收方的处理能力。",
+      "reference": [
+        "计算机网络：自顶向下方法",
+        "第3章",
+        "3.7节"
+      ],
+      "source_ids": [
+        "cn_src_001",
+        "cn_src_003"
+      ],
+      "origin_type": "textbook",
+      "review_status": "approved",
+      "reviewed_by": "teacher01",
+      "reviewed_at": "2026-07-13T09:00:00"
+    },
+    {
+      "question_id": "cn_q_04_06_003",
+      "knowledge_point_id": "cn_004_006_001",
+      "knowledge_point_name": "慢启动",
+      "question_type": "calculation",
+      "difficulty": 0.7,
+      "score": 3,
+      "question": "TCP连接初始化时，cwnd=1，ssthresh=16。在慢启动阶段，经过多少个RTT后cwnd会达到8？",
+      "options": [
+        {
+          "key": "A",
+          "text": "3个RTT"
+        },
+        {
+          "key": "B",
+          "text": "4个RTT"
+        },
+        {
+          "key": "C",
+          "text": "8个RTT"
+        },
+        {
+          "key": "D",
+          "text": "16个RTT"
+        }
+      ],
+      "answer": "A",
+      "analysis": "慢启动阶段cwnd呈指数增长：RTT1: cwnd=2, RTT2: cwnd=4, RTT3: cwnd=8。所以经过3个RTT后cwnd达到8。",
+      "reference": [
+        "计算机网络：自顶向下方法",
+        "第3章",
+        "3.7.1节"
+      ],
+      "source_ids": [
+        "cn_src_001",
+        "cn_src_003"
+      ],
+      "origin_type": "textbook",
+      "review_status": "approved",
+      "reviewed_by": "teacher01",
+      "reviewed_at": "2026-07-13T09:00:00"
+    },
+    {
+      "question_id": "cn_q_04_06_004",
+      "knowledge_point_id": "cn_004_006_002",
+      "knowledge_point_name": "拥塞避免",
+      "question_type": "calculation",
+      "difficulty": 0.7,
+      "score": 3,
+      "question": "当cwnd=16，ssthresh=16时，TCP进入拥塞避免阶段。经过5个RTT后，cwnd的值是多少？",
+      "options": [
+        {
+          "key": "A",
+          "text": "20"
+        },
+        {
+          "key": "B",
+          "text": "21"
+        },
+        {
+          "key": "C",
+          "text": "32"
+        },
+        {
+          "key": "D",
+          "text": "17"
+        }
+      ],
+      "answer": "B",
+      "analysis": "拥塞避免阶段cwnd呈线性增长，每个RTT增加1。初始cwnd=16，经过5个RTT后：16+5=21。",
+      "reference": [
+        "计算机网络：自顶向下方法",
+        "第3章",
+        "3.7.1节"
+      ],
+      "source_ids": [
+        "cn_src_001",
+        "cn_src_003"
+      ],
+      "origin_type": "textbook",
+      "review_status": "approved",
+      "reviewed_by": "teacher01",
+      "reviewed_at": "2026-07-13T09:00:00"
+    },
+    {
+      "question_id": "cn_q_04_06_005",
+      "knowledge_point_id": "cn_004_006_003",
+      "knowledge_point_name": "快速重传",
+      "question_type": "single_choice",
+      "difficulty": 0.6,
+      "score": 2,
+      "question": "TCP快速重传机制通常在什么情况下触发？",
+      "options": [
+        {
+          "key": "A",
+          "text": "发送方超时"
+        },
+        {
+          "key": "B",
+          "text": "连续收到三个重复的确认报文段"
+        },
+        {
+          "key": "C",
+          "text": "接收方缓冲区满"
+        },
+        {
+          "key": "D",
+          "text": "网络出现丢包"
+        }
+      ],
+      "answer": "B",
+      "analysis": "快速重传的触发条件是发送方连续收到三个相同的确认报文段（重复ACK），这表明中间某个报文段可能丢失了，不需要等待超时。",
+      "reference": [
+        "计算机网络：自顶向下方法",
+        "第3章",
+        "3.7.2节"
+      ],
+      "source_ids": [
+        "cn_src_001",
+        "cn_src_003"
+      ],
+      "origin_type": "textbook",
+      "review_status": "approved",
+      "reviewed_by": "teacher01",
+      "reviewed_at": "2026-07-17T18:32:07",
+      "review_comment": "选项已修订"
+    },
+    {
+      "question_id": "cn_q_04_06_006",
+      "knowledge_point_id": "cn_004_006_004",
+      "knowledge_point_name": "快速恢复",
+      "question_type": "single_choice",
+      "difficulty": 0.7,
+      "score": 2,
+      "question": "在快速恢复阶段，cwnd的初始值通常设置为？",
+      "options": [
+        {
+          "key": "A",
+          "text": "1"
+        },
+        {
+          "key": "B",
+          "text": "ssthresh"
+        },
+        {
+          "key": "C",
+          "text": "ssthresh + 3"
+        },
+        {
+          "key": "D",
+          "text": "上一次cwnd的一半"
+        }
+      ],
+      "answer": "C",
+      "analysis": "快速恢复阶段，cwnd初始值设置为ssthresh + 3（因为收到了3个重复ACK，说明有3个报文段已经离开网络），然后线性增长。",
+      "reference": [
+        "计算机网络：自顶向下方法",
+        "第3章",
+        "3.7.2节"
+      ],
+      "source_ids": [
+        "cn_src_001",
+        "cn_src_003"
+      ],
+      "origin_type": "textbook",
+      "review_status": "approved",
+      "reviewed_by": "teacher01",
+      "reviewed_at": "2026-07-13T09:00:00"
+    },
+    {
+      "question_id": "cn_q_04_06_007",
+      "knowledge_point_id": "cn_004_006",
+      "knowledge_point_name": "TCP拥塞控制",
+      "question_type": "calculation",
+      "difficulty": 0.8,
+      "score": 4,
+      "question": "TCP连接中，当前cwnd=20，ssthresh=16。当检测到超时重传时，新的ssthresh和cwnd分别是多少？",
+      "options": [
+        {
+          "key": "A",
+          "text": "ssthresh=10, cwnd=1"
+        },
+        {
+          "key": "B",
+          "text": "ssthresh=10, cwnd=10"
+        },
+        {
+          "key": "C",
+          "text": "ssthresh=16, cwnd=1"
+        },
+        {
+          "key": "D",
+          "text": "ssthresh=20, cwnd=1"
+        }
+      ],
+      "answer": "A",
+      "analysis": "超时重传时，ssthresh更新为当前cwnd的一半（20/2=10），cwnd重置为1，重新进入慢启动阶段。",
+      "reference": [
+        "计算机网络：自顶向下方法",
+        "第3章",
+        "3.7.1节"
+      ],
+      "source_ids": [
+        "cn_src_001",
+        "cn_src_003"
+      ],
+      "origin_type": "textbook",
+      "review_status": "approved",
+      "reviewed_by": "teacher01",
+      "reviewed_at": "2026-07-13T09:00:00"
+    },
+    {
+      "question_id": "cn_q_04_06_008",
+      "knowledge_point_id": "cn_004_006",
+      "knowledge_point_name": "TCP拥塞控制",
+      "question_type": "calculation",
+      "difficulty": 0.8,
+      "score": 4,
+      "question": "TCP连接中，当前cwnd=20，ssthresh=16。当收到三个重复ACK触发快速重传时，新的ssthresh和cwnd分别是多少？",
+      "options": [
+        {
+          "key": "A",
+          "text": "ssthresh=10, cwnd=1"
+        },
+        {
+          "key": "B",
+          "text": "ssthresh=10, cwnd=13"
+        },
+        {
+          "key": "C",
+          "text": "ssthresh=16, cwnd=20"
+        },
+        {
+          "key": "D",
+          "text": "ssthresh=20, cwnd=16"
+        }
+      ],
+      "answer": "B",
+      "analysis": "快速重传时，ssthresh更新为当前cwnd的一半（20/2=10），cwnd设置为ssthresh+3=13，进入快速恢复阶段。",
+      "reference": [
+        "计算机网络：自顶向下方法",
+        "第3章",
+        "3.7.2节"
+      ],
+      "source_ids": [
+        "cn_src_001",
+        "cn_src_003"
+      ],
+      "origin_type": "textbook",
+      "review_status": "approved",
+      "reviewed_by": "teacher01",
+      "reviewed_at": "2026-07-13T09:00:00"
+    },
+    {
+      "question_id": "cn_q_04_01_001",
+      "knowledge_point_id": "cn_004_001",
+      "knowledge_point_name": "UDP协议",
+      "question_type": "single_choice",
+      "difficulty": 0.4,
+      "score": 2,
+      "question": "UDP协议不提供以下哪种服务？",
+      "options": [
+        {
+          "key": "A",
+          "text": "端口号标识"
+        },
+        {
+          "key": "B",
+          "text": "可靠传输"
+        },
+        {
+          "key": "C",
+          "text": "校验和"
+        },
+        {
+          "key": "D",
+          "text": "多路复用"
+        }
+      ],
+      "answer": "B",
+      "analysis": "UDP是无连接、不可靠的传输协议，不提供确认、重传和排序等可靠传输服务。",
+      "reference": [
+        "计算机网络：自顶向下方法",
+        "第3章",
+        "3.3节"
+      ],
+      "source_ids": [
+        "cn_src_001",
+        "cn_src_002"
+      ],
+      "origin_type": "textbook",
+      "review_status": "approved",
+      "reviewed_by": "teacher01",
+      "reviewed_at": "2026-07-13T09:00:00"
+    },
+    {
+      "question_id": "cn_q_04_01_002",
+      "knowledge_point_id": "cn_004_001",
+      "knowledge_point_name": "UDP协议",
+      "question_type": "single_choice",
+      "difficulty": 0.5,
+      "score": 2,
+      "question": "以下哪种应用更适合使用UDP协议？",
+      "options": [
+        {
+          "key": "A",
+          "text": "文件传输"
+        },
+        {
+          "key": "B",
+          "text": "视频直播"
+        },
+        {
+          "key": "C",
+          "text": "电子邮件"
+        },
+        {
+          "key": "D",
+          "text": "网页浏览"
+        }
+      ],
+      "answer": "B",
+      "analysis": "视频直播对实时性要求高，对少量丢包不敏感，适合使用UDP。文件传输、电子邮件和网页浏览都需要可靠传输，适合使用TCP。",
+      "reference": [
+        "计算机网络：自顶向下方法",
+        "第3章",
+        "3.3节"
+      ],
+      "source_ids": [
+        "cn_src_001",
+        "cn_src_002"
+      ],
+      "origin_type": "textbook",
+      "review_status": "approved",
+      "reviewed_by": "teacher01",
+      "reviewed_at": "2026-07-13T09:00:00"
+    },
+    {
+      "question_id": "cn_q_03_01_001",
+      "knowledge_point_id": "cn_003_001",
+      "knowledge_point_name": "IP地址与子网划分",
+      "question_type": "calculation",
+      "difficulty": 0.6,
+      "score": 3,
+      "question": "IP地址192.168.1.100，子网掩码255.255.255.240，其网络地址是？",
+      "options": [
+        {
+          "key": "A",
+          "text": "192.168.1.96"
+        },
+        {
+          "key": "B",
+          "text": "192.168.1.100"
+        },
+        {
+          "key": "C",
+          "text": "192.168.1.112"
+        },
+        {
+          "key": "D",
+          "text": "192.168.1.0"
+        }
+      ],
+      "answer": "A",
+      "analysis": "子网掩码255.255.255.240对应的CIDR是/28，每个子网有16个地址。100 ÷ 16 = 6余4，所以网络地址是192.168.1.(6×16) = 192.168.1.96。",
+      "reference": [
+        "计算机网络：自顶向下方法",
+        "第4章",
+        "4.3节"
+      ],
+      "source_ids": [
+        "cn_src_001",
+        "cn_src_002"
+      ],
+      "origin_type": "textbook",
+      "review_status": "approved",
+      "reviewed_by": "teacher01",
+      "reviewed_at": "2026-07-13T09:00:00"
+    },
+    {
+      "question_id": "cn_q_03_01_002",
+      "knowledge_point_id": "cn_003_001",
+      "knowledge_point_name": "IP地址与子网划分",
+      "question_type": "calculation",
+      "difficulty": 0.6,
+      "score": 3,
+      "question": "IP地址192.168.1.100，子网掩码255.255.255.240，其广播地址是？",
+      "options": [
+        {
+          "key": "A",
+          "text": "192.168.1.100"
+        },
+        {
+          "key": "B",
+          "text": "192.168.1.111"
+        },
+        {
+          "key": "C",
+          "text": "192.168.1.255"
+        },
+        {
+          "key": "D",
+          "text": "192.168.1.127"
+        }
+      ],
+      "answer": "B",
+      "analysis": "子网掩码255.255.255.240对应的CIDR是/28，每个子网有16个地址。网络地址是192.168.1.96，广播地址是192.168.1.(96+16-1) = 192.168.1.111。",
+      "reference": [
+        "计算机网络：自顶向下方法",
+        "第4章",
+        "4.3节"
+      ],
+      "source_ids": [
+        "cn_src_001",
+        "cn_src_002"
+      ],
+      "origin_type": "textbook",
+      "review_status": "approved",
+      "reviewed_by": "teacher01",
+      "reviewed_at": "2026-07-13T09:00:00"
+    },
+    {
+      "question_id": "cn_q_05_02_001",
+      "knowledge_point_id": "cn_005_002",
+      "knowledge_point_name": "HTTP与HTTPS",
+      "question_type": "single_choice",
+      "difficulty": 0.5,
+      "score": 2,
+      "question": "HTTPS默认使用的端口号是？",
+      "options": [
+        {
+          "key": "A",
+          "text": "80"
+        },
+        {
+          "key": "B",
+          "text": "443"
+        },
+        {
+          "key": "C",
+          "text": "8080"
+        },
+        {
+          "key": "D",
+          "text": "21"
+        }
+      ],
+      "answer": "B",
+      "analysis": "HTTPS默认使用443端口，HTTP默认使用80端口。",
+      "reference": [
+        "计算机网络：自顶向下方法",
+        "第2章",
+        "2.2节"
+      ],
+      "source_ids": [
+        "cn_src_001"
+      ],
+      "origin_type": "textbook",
+      "review_status": "approved",
+      "reviewed_by": "teacher01",
+      "reviewed_at": "2026-07-13T09:00:00"
+    },
+    {
+      "question_id": "cn_q_05_02_002",
+      "knowledge_point_id": "cn_005_002",
+      "knowledge_point_name": "HTTP与HTTPS",
+      "question_type": "single_choice",
+      "difficulty": 0.6,
+      "score": 2,
+      "question": "HTTPS使用什么协议对数据进行加密？",
+      "options": [
+        {
+          "key": "A",
+          "text": "SSH"
+        },
+        {
+          "key": "B",
+          "text": "SSL/TLS"
+        },
+        {
+          "key": "C",
+          "text": "IPsec"
+        },
+        {
+          "key": "D",
+          "text": "VPN"
+        }
+      ],
+      "answer": "B",
+      "analysis": "HTTPS使用SSL/TLS协议对传输数据进行加密，确保数据传输的安全性。",
+      "reference": [
+        "计算机网络：自顶向下方法",
+        "第8章",
+        "8.4节"
+      ],
+      "source_ids": [
+        "cn_src_001"
+      ],
+      "origin_type": "textbook",
+      "review_status": "approved",
+      "reviewed_by": "teacher01",
+      "reviewed_at": "2026-07-13T09:00:00"
+    },
+    {
+      "question_id": "cn_q_05_01_001",
+      "knowledge_point_id": "cn_005_001",
+      "knowledge_point_name": "DNS域名系统",
+      "question_type": "single_choice",
+      "difficulty": 0.5,
+      "score": 2,
+      "question": "DNS查询中，递归查询是指？",
+      "options": [
+        {
+          "key": "A",
+          "text": "服务器返回下一个服务器地址"
+        },
+        {
+          "key": "B",
+          "text": "服务器替客户端完成全部查询"
+        },
+        {
+          "key": "C",
+          "text": "客户端直接查询根服务器"
+        },
+        {
+          "key": "D",
+          "text": "查询结果被缓存"
+        }
+      ],
+      "answer": "B",
+      "analysis": "递归查询是指DNS服务器收到查询请求后，自己负责完成全部查询过程，最终返回查询结果给客户端。",
+      "reference": [
+        "计算机网络：自顶向下方法",
+        "第2章",
+        "2.5节"
+      ],
+      "source_ids": [
+        "cn_src_001",
+        "cn_src_002"
+      ],
+      "origin_type": "textbook",
+      "review_status": "approved",
+      "reviewed_by": "teacher01",
+      "reviewed_at": "2026-07-13T09:00:00"
+    },
+    {
+      "question_id": "cn_q_05_01_002",
+      "knowledge_point_id": "cn_005_001",
+      "knowledge_point_name": "DNS域名系统",
+      "question_type": "single_choice",
+      "difficulty": 0.5,
+      "score": 2,
+      "question": "DNS域名解析的正确顺序是？",
+      "options": [
+        {
+          "key": "A",
+          "text": "根服务器 -> 顶级域名服务器 -> 权威域名服务器"
+        },
+        {
+          "key": "B",
+          "text": "权威域名服务器 -> 顶级域名服务器 -> 根服务器"
+        },
+        {
+          "key": "C",
+          "text": "本地DNS -> 根服务器 -> 顶级域名服务器 -> 权威域名服务器"
+        },
+        {
+          "key": "D",
+          "text": "顶级域名服务器 -> 根服务器 -> 权威域名服务器"
+        }
+      ],
+      "answer": "C",
+      "analysis": "DNS解析过程：本地DNS服务器先查询缓存，若未命中则依次查询根服务器、顶级域名服务器、权威域名服务器。",
+      "reference": [
+        "计算机网络：自顶向下方法",
+        "第2章",
+        "2.5节"
+      ],
+      "source_ids": [
+        "cn_src_001",
+        "cn_src_002"
+      ],
+      "origin_type": "textbook",
+      "review_status": "approved",
+      "reviewed_by": "teacher01",
+      "reviewed_at": "2026-07-13T09:00:00"
+    },
+    {
+      "question_id": "cn_q_01_01_001",
+      "knowledge_point_id": "cn_001_001",
+      "knowledge_point_name": "OSI七层模型",
+      "question_type": "single_choice",
+      "difficulty": 0.3,
+      "score": 2,
+      "question": "OSI七层模型中，负责端到端可靠传输的是哪一层？",
+      "options": [
+        {
+          "key": "A",
+          "text": "网络层"
+        },
+        {
+          "key": "B",
+          "text": "传输层"
+        },
+        {
+          "key": "C",
+          "text": "数据链路层"
+        },
+        {
+          "key": "D",
+          "text": "应用层"
+        }
+      ],
+      "answer": "B",
+      "analysis": "传输层负责端到端的可靠传输，包括TCP协议提供的确认、重传等机制。",
+      "reference": [
+        "计算机网络：自顶向下方法",
+        "第1章",
+        "1.3节"
+      ],
+      "source_ids": [
+        "cn_src_001",
+        "cn_src_002"
+      ],
+      "origin_type": "textbook",
+      "review_status": "approved",
+      "reviewed_by": "teacher01",
+      "reviewed_at": "2026-07-13T09:00:00"
+    },
+    {
+      "question_id": "cn_q_01_02_001",
+      "knowledge_point_id": "cn_001_002",
+      "knowledge_point_name": "TCP/IP四层模型",
+      "question_type": "single_choice",
+      "difficulty": 0.3,
+      "score": 2,
+      "question": "TCP/IP四层模型中，与OSI模型的物理层和数据链路层对应的是？",
+      "options": [
+        {
+          "key": "A",
+          "text": "网络接口层"
+        },
+        {
+          "key": "B",
+          "text": "网络层"
+        },
+        {
+          "key": "C",
+          "text": "传输层"
+        },
+        {
+          "key": "D",
+          "text": "应用层"
+        }
+      ],
+      "answer": "A",
+      "analysis": "TCP/IP四层模型将OSI的物理层和数据链路层合并为网络接口层。",
+      "reference": [
+        "计算机网络：自顶向下方法",
+        "第1章",
+        "1.3节"
+      ],
+      "source_ids": [
+        "cn_src_001",
+        "cn_src_002"
+      ],
+      "origin_type": "textbook",
+      "review_status": "approved",
+      "reviewed_by": "teacher01",
+      "reviewed_at": "2026-07-13T09:00:00"
+    },
+    {
+      "question_id": "cn_q_04_03_001",
+      "knowledge_point_id": "cn_004_003",
+      "knowledge_point_name": "TCP三次握手",
+      "question_type": "single_choice",
+      "difficulty": 0.5,
+      "score": 2,
+      "question": "TCP三次握手过程中，第二次握手时服务器发送的报文段包含哪些标志位？",
+      "options": [
+        {
+          "key": "A",
+          "text": "仅SYN"
+        },
+        {
+          "key": "B",
+          "text": "仅ACK"
+        },
+        {
+          "key": "C",
+          "text": "SYN和ACK"
+        },
+        {
+          "key": "D",
+          "text": "FIN和ACK"
+        }
+      ],
+      "answer": "C",
+      "analysis": "TCP三次握手第二次，服务器发送SYN+ACK报文段，确认客户端的SYN并发送自己的SYN。",
+      "reference": [
+        "计算机网络：自顶向下方法",
+        "第3章",
+        "3.5节"
+      ],
+      "source_ids": [
+        "cn_src_001",
+        "cn_src_003"
+      ],
+      "origin_type": "textbook",
+      "review_status": "approved",
+      "reviewed_by": "teacher01",
+      "reviewed_at": "2026-07-13T09:00:00"
+    }
+  ]
+}

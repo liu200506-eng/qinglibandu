@@ -1,0 +1,19 @@
+{
+  "course_id": "database_principles",
+  "version": "1.0",
+  "description": "数据库原理知识点先修依赖关系",
+  "dependencies": [
+    {"source_id": "dp_001_001", "target_id": "dp_001_002", "dependency_type": "prerequisite", "weight": 0.5, "description": "三级模式理解有助于理解数据模型"},
+    {"source_id": "dp_001_002", "target_id": "dp_002_001", "dependency_type": "prerequisite", "weight": 0.8, "description": "关系代数基于关系数据模型"},
+    {"source_id": "dp_002_001", "target_id": "dp_002_002", "dependency_type": "prerequisite", "weight": 0.9, "description": "SQL基于关系代数操作"},
+    {"source_id": "dp_002_001", "target_id": "dp_002_003", "dependency_type": "prerequisite", "weight": 0.8, "description": "规范化基于关系代数"},
+    {"source_id": "dp_003_001", "target_id": "dp_003_002", "dependency_type": "prerequisite", "weight": 0.8, "description": "并发控制基于事务概念"},
+    {"source_id": "dp_003_002", "target_id": "dp_003_003", "dependency_type": "prerequisite", "weight": 0.7, "description": "隔离级别基于并发控制"},
+    {"source_id": "dp_003_001", "target_id": "dp_004_001", "dependency_type": "prerequisite", "weight": 0.8, "description": "恢复技术基于事务特性"},
+    {"source_id": "dp_001_002", "target_id": "dp_005_001", "dependency_type": "prerequisite", "weight": 0.7, "description": "ER模型是数据模型的一种"},
+    {"source_id": "dp_005_001", "target_id": "dp_005_002", "dependency_type": "prerequisite", "weight": 0.8, "description": "设计步骤基于ER模型"},
+    {"source_id": "dp_002_003", "target_id": "dp_005_002", "dependency_type": "prerequisite", "weight": 0.7, "description": "逻辑设计需要规范化"},
+    {"source_id": "dp_002_002", "target_id": "dp_004_001", "dependency_type": "corequisite", "weight": 0.6, "description": "恢复需要执行SQL操作"},
+    {"source_id": "dp_003_002", "target_id": "dp_004_001", "dependency_type": "corequisite", "weight": 0.7, "description": "并发控制和恢复相互配合"}
+  ]
+}

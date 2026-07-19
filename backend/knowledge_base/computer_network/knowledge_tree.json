@@ -1,0 +1,612 @@
+{
+  "course_id": "computer_network",
+  "version": "1.0",
+  "description": "计算机网络课程知识点结构",
+  "roots": [
+    {
+      "id": "cn_001",
+      "name": "网络基础",
+      "description": "网络基本概念和分层体系",
+      "difficulty": 0.3,
+      "learning_hours": 6,
+      "children": [
+        {
+          "id": "cn_001_001",
+          "name": "OSI七层模型",
+          "description": "开放系统互联参考模型，将网络通信划分为七个层次",
+          "difficulty": 0.4,
+          "learning_hours": 2,
+          "prerequisites": [],
+          "keywords": [
+            "物理层",
+            "数据链路层",
+            "网络层",
+            "传输层",
+            "会话层",
+            "表示层",
+            "应用层"
+          ],
+          "children": [],
+          "node_code": "cn_001_001"
+        },
+        {
+          "id": "cn_001_002",
+          "name": "TCP/IP四层模型",
+          "description": "互联网实际使用的四层协议体系",
+          "difficulty": 0.4,
+          "learning_hours": 2,
+          "prerequisites": [
+            "cn_001_001"
+          ],
+          "keywords": [
+            "网络接口层",
+            "网络层",
+            "传输层",
+            "应用层"
+          ],
+          "children": [],
+          "node_code": "cn_001_002"
+        },
+        {
+          "id": "cn_001_003",
+          "name": "数据封装与解封装",
+          "description": "数据在各层之间的封装和解封装过程",
+          "difficulty": 0.5,
+          "learning_hours": 2,
+          "prerequisites": [
+            "cn_001_001",
+            "cn_001_002"
+          ],
+          "keywords": [
+            "PDU",
+            "帧",
+            "数据包",
+            "段"
+          ],
+          "children": [],
+          "node_code": "cn_001_003"
+        }
+      ],
+      "node_code": "cn_001"
+    },
+    {
+      "id": "cn_002",
+      "name": "物理层与数据链路层",
+      "description": "网络底层通信技术",
+      "difficulty": 0.4,
+      "learning_hours": 10,
+      "children": [
+        {
+          "id": "cn_002_001",
+          "name": "物理层设备",
+          "description": "集线器、中继器等物理层设备工作原理",
+          "difficulty": 0.3,
+          "learning_hours": 2,
+          "prerequisites": [],
+          "keywords": [
+            "集线器",
+            "中继器",
+            "双绞线",
+            "光纤"
+          ],
+          "children": [],
+          "node_code": "cn_002_001"
+        },
+        {
+          "id": "cn_002_002",
+          "name": "以太网与MAC地址",
+          "description": "以太网技术和介质访问控制",
+          "difficulty": 0.4,
+          "learning_hours": 2,
+          "prerequisites": [
+            "cn_002_001"
+          ],
+          "keywords": [
+            "CSMA/CD",
+            "MAC地址",
+            "以太网帧"
+          ],
+          "children": [],
+          "node_code": "cn_002_002"
+        },
+        {
+          "id": "cn_002_003",
+          "name": "交换机工作原理",
+          "description": "二层交换机的转发机制",
+          "difficulty": 0.5,
+          "learning_hours": 3,
+          "prerequisites": [
+            "cn_002_002"
+          ],
+          "keywords": [
+            "MAC地址表",
+            "帧转发",
+            "VLAN"
+          ],
+          "children": [],
+          "node_code": "cn_002_003"
+        },
+        {
+          "id": "cn_002_004",
+          "name": "ARP协议",
+          "description": "地址解析协议，IP地址到MAC地址的映射",
+          "difficulty": 0.4,
+          "learning_hours": 3,
+          "prerequisites": [
+            "cn_002_002"
+          ],
+          "keywords": [
+            "ARP请求",
+            "ARP响应",
+            "ARP缓存"
+          ],
+          "children": [],
+          "node_code": "cn_002_004"
+        }
+      ],
+      "node_code": "cn_002"
+    },
+    {
+      "id": "cn_003",
+      "name": "网络层",
+      "description": "IP协议和路由技术",
+      "difficulty": 0.5,
+      "learning_hours": 12,
+      "children": [
+        {
+          "id": "cn_003_001",
+          "name": "IP地址与子网划分",
+          "description": "IPv4地址结构和子网划分方法",
+          "difficulty": 0.5,
+          "learning_hours": 3,
+          "prerequisites": [],
+          "keywords": [
+            "A类地址",
+            "B类地址",
+            "C类地址",
+            "子网掩码",
+            "CIDR"
+          ],
+          "children": [],
+          "node_code": "cn_003_001"
+        },
+        {
+          "id": "cn_003_002",
+          "name": "路由算法",
+          "description": "静态路由和动态路由算法",
+          "difficulty": 0.6,
+          "learning_hours": 3,
+          "prerequisites": [
+            "cn_003_001"
+          ],
+          "keywords": [
+            "最短路径",
+            "距离向量",
+            "链路状态"
+          ],
+          "children": [],
+          "node_code": "cn_003_002"
+        },
+        {
+          "id": "cn_003_003",
+          "name": "RIP与OSPF",
+          "description": "常用路由协议原理",
+          "difficulty": 0.6,
+          "learning_hours": 3,
+          "prerequisites": [
+            "cn_003_002"
+          ],
+          "keywords": [
+            "RIP",
+            "OSPF",
+            "AS",
+            "区域"
+          ],
+          "children": [],
+          "node_code": "cn_003_003"
+        },
+        {
+          "id": "cn_003_004",
+          "name": "ICMP与ping",
+          "description": "互联网控制报文协议",
+          "difficulty": 0.4,
+          "learning_hours": 2,
+          "prerequisites": [
+            "cn_003_001"
+          ],
+          "keywords": [
+            "ping",
+            "traceroute",
+            "ICMP报文"
+          ],
+          "children": [],
+          "node_code": "cn_003_004"
+        },
+        {
+          "id": "cn_003_005",
+          "name": "NAT与VPN",
+          "description": "网络地址转换和虚拟专用网络",
+          "difficulty": 0.5,
+          "learning_hours": 1,
+          "prerequisites": [
+            "cn_003_001"
+          ],
+          "keywords": [
+            "NAT",
+            "SNAT",
+            "DNAT",
+            "VPN"
+          ],
+          "children": [],
+          "node_code": "cn_003_005"
+        }
+      ],
+      "node_code": "cn_003"
+    },
+    {
+      "id": "cn_004",
+      "name": "传输层",
+      "description": "TCP和UDP协议",
+      "difficulty": 0.7,
+      "learning_hours": 16,
+      "children": [
+        {
+          "id": "cn_004_001",
+          "name": "UDP协议",
+          "description": "用户数据报协议，无连接传输",
+          "difficulty": 0.4,
+          "learning_hours": 2,
+          "prerequisites": [
+            "cn_001_002"
+          ],
+          "keywords": [
+            "无连接",
+            "端口",
+            "校验和"
+          ],
+          "children": [],
+          "node_code": "cn_004_001"
+        },
+        {
+          "id": "cn_004_002",
+          "name": "TCP可靠传输",
+          "description": "TCP的确认、重传、序号机制",
+          "difficulty": 0.6,
+          "learning_hours": 3,
+          "prerequisites": [
+            "cn_004_001"
+          ],
+          "keywords": [
+            "序号",
+            "确认号",
+            "重传",
+            "超时"
+          ],
+          "children": [],
+          "node_code": "cn_004_002"
+        },
+        {
+          "id": "cn_004_003",
+          "name": "TCP三次握手",
+          "description": "TCP连接建立过程",
+          "difficulty": 0.5,
+          "learning_hours": 2,
+          "prerequisites": [
+            "cn_004_002"
+          ],
+          "keywords": [
+            "SYN",
+            "ACK",
+            "序列号",
+            "连接建立"
+          ],
+          "children": [],
+          "node_code": "cn_004_003"
+        },
+        {
+          "id": "cn_004_004",
+          "name": "TCP四次挥手",
+          "description": "TCP连接释放过程",
+          "difficulty": 0.5,
+          "learning_hours": 2,
+          "prerequisites": [
+            "cn_004_003"
+          ],
+          "keywords": [
+            "FIN",
+            "TIME_WAIT",
+            "连接释放"
+          ],
+          "children": [],
+          "node_code": "cn_004_004"
+        },
+        {
+          "id": "cn_004_005",
+          "name": "TCP流量控制",
+          "description": "滑动窗口实现的流量控制",
+          "difficulty": 0.6,
+          "learning_hours": 2,
+          "prerequisites": [
+            "cn_004_002"
+          ],
+          "keywords": [
+            "接收窗口",
+            "滑动窗口",
+            "rwnd"
+          ],
+          "children": [],
+          "node_code": "cn_004_005"
+        },
+        {
+          "id": "cn_004_006",
+          "name": "TCP拥塞控制",
+          "description": "慢启动、拥塞避免、快速重传、快速恢复",
+          "difficulty": 0.8,
+          "learning_hours": 5,
+          "prerequisites": [
+            "cn_004_002",
+            "cn_004_005"
+          ],
+          "keywords": [
+            "慢启动",
+            "拥塞避免",
+            "快速重传",
+            "快速恢复",
+            "cwnd",
+            "ssthresh"
+          ],
+          "is_core": true,
+          "children": [
+            {
+              "id": "cn_004_006_001",
+              "name": "慢启动",
+              "description": "TCP连接建立初期指数增长阶段",
+              "difficulty": 0.7,
+              "learning_hours": 1.5,
+              "prerequisites": [
+                "cn_004_002"
+              ],
+              "keywords": [
+                "cwnd",
+                "指数增长",
+                "ssthresh"
+              ],
+              "children": [],
+              "node_code": "cn_004_006_001"
+            },
+            {
+              "id": "cn_004_006_002",
+              "name": "拥塞避免",
+              "description": "超过阈值后的线性增长阶段",
+              "difficulty": 0.7,
+              "learning_hours": 1.5,
+              "prerequisites": [
+                "cn_004_006_001"
+              ],
+              "keywords": [
+                "线性增长",
+                "加法增大",
+                "cwnd++"
+              ],
+              "children": [],
+              "node_code": "cn_004_006_002"
+            },
+            {
+              "id": "cn_004_006_003",
+              "name": "快速重传",
+              "description": "收到三个重复ACK后的快速重传机制",
+              "difficulty": 0.8,
+              "learning_hours": 1,
+              "prerequisites": [
+                "cn_004_002"
+              ],
+              "keywords": [
+                "重复ACK",
+                "快速重传",
+                "立即重传"
+              ],
+              "children": [],
+              "node_code": "cn_004_006_003"
+            },
+            {
+              "id": "cn_004_006_004",
+              "name": "快速恢复",
+              "description": "快速重传后的拥塞窗口恢复策略",
+              "difficulty": 0.8,
+              "learning_hours": 1,
+              "prerequisites": [
+                "cn_004_006_003"
+              ],
+              "keywords": [
+                "乘法减小",
+                "快速恢复",
+                "新ssthresh"
+              ],
+              "children": [],
+              "node_code": "cn_004_006_004"
+            }
+          ],
+          "node_code": "cn_004_006"
+        }
+      ],
+      "node_code": "cn_004"
+    },
+    {
+      "id": "cn_005",
+      "name": "应用层",
+      "description": "常见应用层协议",
+      "difficulty": 0.5,
+      "learning_hours": 12,
+      "children": [
+        {
+          "id": "cn_005_001",
+          "name": "DNS域名系统",
+          "description": "域名到IP地址的解析",
+          "difficulty": 0.5,
+          "learning_hours": 2,
+          "prerequisites": [
+            "cn_003_001"
+          ],
+          "keywords": [
+            "域名解析",
+            "递归查询",
+            "迭代查询"
+          ],
+          "children": [],
+          "node_code": "cn_005_001"
+        },
+        {
+          "id": "cn_005_002",
+          "name": "HTTP与HTTPS",
+          "description": "超文本传输协议和安全版本",
+          "difficulty": 0.6,
+          "learning_hours": 3,
+          "prerequisites": [
+            "cn_004_002"
+          ],
+          "keywords": [
+            "HTTP请求",
+            "HTTP响应",
+            "HTTPS",
+            "SSL/TLS"
+          ],
+          "children": [],
+          "node_code": "cn_005_002"
+        },
+        {
+          "id": "cn_005_003",
+          "name": "DHCP",
+          "description": "动态主机配置协议",
+          "difficulty": 0.4,
+          "learning_hours": 2,
+          "prerequisites": [
+            "cn_003_001"
+          ],
+          "keywords": [
+            "IP地址分配",
+            "租约",
+            "DHCP服务器"
+          ],
+          "children": [],
+          "node_code": "cn_005_003"
+        },
+        {
+          "id": "cn_005_004",
+          "name": "FTP与邮件协议",
+          "description": "文件传输和电子邮件协议",
+          "difficulty": 0.5,
+          "learning_hours": 2,
+          "prerequisites": [
+            "cn_004_002"
+          ],
+          "keywords": [
+            "FTP",
+            "SMTP",
+            "POP3",
+            "IMAP"
+          ],
+          "children": [],
+          "node_code": "cn_005_004"
+        },
+        {
+          "id": "cn_005_005",
+          "name": "Socket编程",
+          "description": "基于Socket的网络编程",
+          "difficulty": 0.7,
+          "learning_hours": 3,
+          "prerequisites": [
+            "cn_004_001",
+            "cn_004_002"
+          ],
+          "keywords": [
+            "Socket",
+            "TCP编程",
+            "UDP编程",
+            "端口"
+          ],
+          "children": [],
+          "node_code": "cn_005_005"
+        }
+      ],
+      "node_code": "cn_005"
+    },
+    {
+      "id": "cn_006",
+      "name": "网络安全",
+      "description": "网络安全基础",
+      "difficulty": 0.5,
+      "learning_hours": 8,
+      "children": [
+        {
+          "id": "cn_006_001",
+          "name": "加密算法",
+          "description": "对称加密和非对称加密",
+          "difficulty": 0.6,
+          "learning_hours": 2,
+          "prerequisites": [],
+          "keywords": [
+            "对称加密",
+            "非对称加密",
+            "密钥"
+          ],
+          "children": [],
+          "node_code": "cn_006_001"
+        },
+        {
+          "id": "cn_006_002",
+          "name": "数字签名与证书",
+          "description": "数字签名和CA证书机制",
+          "difficulty": 0.6,
+          "learning_hours": 2,
+          "prerequisites": [
+            "cn_006_001"
+          ],
+          "keywords": [
+            "数字签名",
+            "CA",
+            "证书"
+          ],
+          "children": [],
+          "node_code": "cn_006_002"
+        },
+        {
+          "id": "cn_006_003",
+          "name": "SSL/TLS",
+          "description": "安全套接层协议",
+          "difficulty": 0.7,
+          "learning_hours": 2,
+          "prerequisites": [
+            "cn_006_002"
+          ],
+          "keywords": [
+            "SSL",
+            "TLS",
+            "握手协议"
+          ],
+          "children": [],
+          "node_code": "cn_006_003"
+        },
+        {
+          "id": "cn_006_004",
+          "name": "防火墙与IDS",
+          "description": "网络安全防护设备",
+          "difficulty": 0.5,
+          "learning_hours": 2,
+          "prerequisites": [
+            "cn_002_003"
+          ],
+          "keywords": [
+            "防火墙",
+            "IDS",
+            "IPS"
+          ],
+          "children": [],
+          "node_code": "cn_006_004"
+        }
+      ],
+      "node_code": "cn_006"
+    }
+  ],
+  "schema_version": "2.0",
+  "course_code": "computer_network"
+}

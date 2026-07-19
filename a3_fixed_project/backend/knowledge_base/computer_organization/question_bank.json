@@ -1,0 +1,276 @@
+{
+  "course_id": "computer_organization",
+  "description": "计算机组成原理课程题库",
+  "questions": [
+    {
+      "question_id": "co_q_01_01_001",
+      "knowledge_point_id": "co_001_001",
+      "knowledge_point_name": "定点数",
+      "question_type": "single_choice",
+      "difficulty": 0.4,
+      "score": 2,
+      "question": "字长为8位的计算机中，[+0]原和[-0]原分别是？",
+      "options": [
+        {"key": "A", "text": "00000000 和 00000000"},
+        {"key": "B", "text": "00000000 和 10000000"},
+        {"key": "C", "text": "10000000 和 00000000"},
+        {"key": "D", "text": "00000000 和 11111111"}
+      ],
+      "answer": "B",
+      "analysis": "原码中，0有两种表示：[+0]原 = 00000000，[-0]原 = 10000000。最高位为符号位，0表示正数，1表示负数。",
+      "reference": ["计算机组成原理", "第2章", "2.1节"]
+    },
+    {
+      "question_id": "co_q_01_01_002",
+      "knowledge_point_id": "co_001_001",
+      "knowledge_point_name": "定点数",
+      "question_type": "single_choice",
+      "difficulty": 0.5,
+      "score": 2,
+      "question": "字长为8位的计算机中，X=-0110101的补码是？",
+      "options": [
+        {"key": "A", "text": "11001011"},
+        {"key": "B", "text": "10110101"},
+        {"key": "C", "text": "11001010"},
+        {"key": "D", "text": "00110101"}
+      ],
+      "answer": "A",
+      "analysis": "原码 = 10110101，反码 = 11001010，补码 = 反码 + 1 = 11001011。",
+      "reference": ["计算机组成原理", "第2章", "2.1节"]
+    },
+    {
+      "question_id": "co_q_01_01_003",
+      "knowledge_point_id": "co_001_001",
+      "knowledge_point_name": "定点数",
+      "question_type": "single_choice",
+      "difficulty": 0.5,
+      "score": 2,
+      "question": "在补码加减法中，以下哪种情况会产生溢出？",
+      "options": [
+        {"key": "A", "text": "两个正数相加，结果为正数"},
+        {"key": "B", "text": "两个负数相加，结果为负数"},
+        {"key": "C", "text": "两个正数相加，结果为负数"},
+        {"key": "D", "text": "正数加负数，结果为正数"}
+      ],
+      "answer": "C",
+      "analysis": "当两个同号数相加时，如果结果的符号位与加数不同，则发生溢出。两个正数相加结果应该为正数，如果变成负数，说明发生了上溢。",
+      "reference": ["计算机组成原理", "第2章", "2.2节"]
+    },
+    {
+      "question_id": "co_q_01_02_001",
+      "knowledge_point_id": "co_001_002",
+      "knowledge_point_name": "浮点数",
+      "question_type": "single_choice",
+      "difficulty": 0.6,
+      "score": 2,
+      "question": "IEEE 754单精度浮点数的尾数占多少位？",
+      "options": [
+        {"key": "A", "text": "8位"},
+        {"key": "B", "text": "11位"},
+        {"key": "C", "text": "23位"},
+        {"key": "D", "text": "52位"}
+      ],
+      "answer": "C",
+      "analysis": "IEEE 754单精度浮点数（32位）的结构：符号位1位，阶码8位，尾数23位。",
+      "reference": ["计算机组成原理", "第2章", "2.3节"]
+    },
+    {
+      "question_id": "co_q_01_02_002",
+      "knowledge_point_id": "co_001_002",
+      "knowledge_point_name": "浮点数",
+      "question_type": "calculation",
+      "difficulty": 0.7,
+      "score": 3,
+      "question": "IEEE 754单精度浮点数中，阶码E=129表示的实际阶码是？",
+      "options": [
+        {"key": "A", "text": "1"},
+        {"key": "B", "text": "2"},
+        {"key": "C", "text": "129"},
+        {"key": "D", "text": "-127"}
+      ],
+      "answer": "B",
+      "analysis": "IEEE 754单精度浮点数的阶码采用偏移表示，偏移量为127。实际阶码 = E - 127 = 129 - 127 = 2。",
+      "reference": ["计算机组成原理", "第2章", "2.3节"]
+    },
+    {
+      "question_id": "co_q_02_01_001",
+      "knowledge_point_id": "co_002_001",
+      "knowledge_point_name": "ALU与CU",
+      "question_type": "single_choice",
+      "difficulty": 0.4,
+      "score": 2,
+      "question": "ALU的主要功能是什么？",
+      "options": [
+        {"key": "A", "text": "控制指令执行"},
+        {"key": "B", "text": "执行算术和逻辑运算"},
+        {"key": "C", "text": "存储数据"},
+        {"key": "D", "text": "访问内存"}
+      ],
+      "answer": "B",
+      "analysis": "ALU（算术逻辑单元）负责执行算术运算（加法、减法、乘法、除法）和逻辑运算（与、或、非、异或）。",
+      "reference": ["计算机组成原理", "第3章", "3.1节"]
+    },
+    {
+      "question_id": "co_q_02_02_001",
+      "knowledge_point_id": "co_002_002",
+      "knowledge_point_name": "寄存器",
+      "question_type": "single_choice",
+      "difficulty": 0.4,
+      "score": 2,
+      "question": "程序计数器（PC）的主要功能是什么？",
+      "options": [
+        {"key": "A", "text": "存储当前执行的指令"},
+        {"key": "B", "text": "存储下一条要执行的指令地址"},
+        {"key": "C", "text": "存储运算结果"},
+        {"key": "D", "text": "存储内存地址"}
+      ],
+      "answer": "B",
+      "analysis": "程序计数器（PC）用于存储下一条要执行的指令在内存中的地址，确保程序按顺序执行。",
+      "reference": ["计算机组成原理", "第3章", "3.2节"]
+    },
+    {
+      "question_id": "co_q_02_03_001",
+      "knowledge_point_id": "co_002_003",
+      "knowledge_point_name": "指令系统",
+      "question_type": "single_choice",
+      "difficulty": 0.5,
+      "score": 2,
+      "question": "以下哪种寻址方式的操作数直接在指令中？",
+      "options": [
+        {"key": "A", "text": "寄存器寻址"},
+        {"key": "B", "text": "直接寻址"},
+        {"key": "C", "text": "立即寻址"},
+        {"key": "D", "text": "间接寻址"}
+      ],
+      "answer": "C",
+      "analysis": "立即寻址的操作数直接在指令中，无需访问内存或寄存器，速度最快。",
+      "reference": ["计算机组成原理", "第4章", "4.2节"]
+    },
+    {
+      "question_id": "co_q_02_03_002",
+      "knowledge_point_id": "co_002_003",
+      "knowledge_point_name": "指令系统",
+      "question_type": "single_choice",
+      "difficulty": 0.5,
+      "score": 2,
+      "question": "RISC和CISC相比，以下哪个说法是正确的？",
+      "options": [
+        {"key": "A", "text": "RISC指令数量更多"},
+        {"key": "B", "text": "RISC指令格式更复杂"},
+        {"key": "C", "text": "RISC执行速度更快"},
+        {"key": "D", "text": "RISC编译器更简单"}
+      ],
+      "answer": "C",
+      "analysis": "RISC（精简指令系统计算机）指令数量少、格式简单、执行速度快，但编译器更复杂。",
+      "reference": ["计算机组成原理", "第4章", "4.3节"]
+    },
+    {
+      "question_id": "co_q_03_01_001",
+      "knowledge_point_id": "co_003_001",
+      "knowledge_point_name": "主存",
+      "question_type": "single_choice",
+      "difficulty": 0.4,
+      "score": 2,
+      "question": "SRAM和DRAM相比，以下哪个说法是正确的？",
+      "options": [
+        {"key": "A", "text": "SRAM速度更慢"},
+        {"key": "B", "text": "SRAM需要刷新"},
+        {"key": "C", "text": "SRAM成本更低"},
+        {"key": "D", "text": "SRAM功耗更低"}
+      ],
+      "answer": "D",
+      "analysis": "SRAM（静态RAM）速度快、功耗低、不需要刷新，但成本高、容量小。DRAM（动态RAM）速度较慢、功耗较高、需要刷新，但成本低、容量大。",
+      "reference": ["计算机组成原理", "第5章", "5.1节"]
+    },
+    {
+      "question_id": "co_q_03_02_001",
+      "knowledge_point_id": "co_003_002",
+      "knowledge_point_name": "Cache",
+      "question_type": "single_choice",
+      "difficulty": 0.5,
+      "score": 2,
+      "question": "Cache的直接映射方式中，主存块号为15，Cache有8个块，则该主存块映射到Cache的哪个块？",
+      "options": [
+        {"key": "A", "text": "块0"},
+        {"key": "B", "text": "块7"},
+        {"key": "C", "text": "块15"},
+        {"key": "D", "text": "块8"}
+      ],
+      "answer": "B",
+      "analysis": "直接映射公式：Cache块号 = 主存块号 mod Cache块数 = 15 mod 8 = 7。",
+      "reference": ["计算机组成原理", "第5章", "5.3节"]
+    },
+    {
+      "question_id": "co_q_03_02_002",
+      "knowledge_point_id": "co_003_002",
+      "knowledge_point_name": "Cache",
+      "question_type": "single_choice",
+      "difficulty": 0.6,
+      "score": 2,
+      "question": "Cache的写回策略相比写直达策略，以下哪个说法是正确的？",
+      "options": [
+        {"key": "A", "text": "写回策略一致性更好"},
+        {"key": "B", "text": "写回策略写操作更快"},
+        {"key": "C", "text": "写回策略不需要脏位"},
+        {"key": "D", "text": "写回策略每次写都访问主存"}
+      ],
+      "answer": "B",
+      "analysis": "写回策略只写入Cache，Cache块替换时再写回主存，减少了主存访问次数，写操作更快，但一致性较差，需要标记脏块。",
+      "reference": ["计算机组成原理", "第5章", "5.3节"]
+    },
+    {
+      "question_id": "co_q_04_01_001",
+      "knowledge_point_id": "co_004_001",
+      "knowledge_point_name": "总线",
+      "question_type": "single_choice",
+      "difficulty": 0.4,
+      "score": 2,
+      "question": "数据总线的主要功能是什么？",
+      "options": [
+        {"key": "A", "text": "传输内存地址"},
+        {"key": "B", "text": "传输数据"},
+        {"key": "C", "text": "传输控制信号"},
+        {"key": "D", "text": "传输中断信号"}
+      ],
+      "answer": "B",
+      "analysis": "数据总线负责在CPU、主存和I/O设备之间传输数据，是双向传输的。",
+      "reference": ["计算机组成原理", "第6章", "6.1节"]
+    },
+    {
+      "question_id": "co_q_04_02_001",
+      "knowledge_point_id": "co_004_002",
+      "knowledge_point_name": "I/O系统",
+      "question_type": "single_choice",
+      "difficulty": 0.5,
+      "score": 2,
+      "question": "以下哪种I/O控制方式CPU效率最高？",
+      "options": [
+        {"key": "A", "text": "程序查询方式"},
+        {"key": "B", "text": "程序中断方式"},
+        {"key": "C", "text": "DMA方式"},
+        {"key": "D", "text": "通道方式"}
+      ],
+      "answer": "C",
+      "analysis": "DMA（直接内存访问）方式中，DMA控制器直接在内存和I/O设备之间传输数据，不需要CPU干预，CPU效率最高。",
+      "reference": ["计算机组成原理", "第6章", "6.3节"]
+    },
+    {
+      "question_id": "co_q_04_02_002",
+      "knowledge_point_id": "co_004_002",
+      "knowledge_point_name": "I/O系统",
+      "question_type": "single_choice",
+      "difficulty": 0.5,
+      "score": 2,
+      "question": "中断处理过程中，以下哪个步骤是在执行中断服务程序之前完成的？",
+      "options": [
+        {"key": "A", "text": "恢复现场"},
+        {"key": "B", "text": "保护现场"},
+        {"key": "C", "text": "中断返回"},
+        {"key": "D", "text": "执行用户程序"}
+      ],
+      "answer": "B",
+      "analysis": "中断处理过程：中断请求 → 中断响应 → 保护现场 → 中断服务 → 恢复现场 → 中断返回。保护现场在执行中断服务程序之前完成。",
+      "reference": ["计算机组成原理", "第6章", "6.4节"]
+    }
+  ]
+}
