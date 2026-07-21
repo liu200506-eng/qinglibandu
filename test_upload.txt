@@ -1,6 +1,0 @@
-TCP Three-Way Handshake:
-1. SYN
-2. SYN-ACK
-3. ACK
-
-This is a test document for network knowledge.

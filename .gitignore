@@ -114,9 +114,18 @@ logs/
 *.7z
 *.tar.gz
 
-# 旧版本工程文件夹
+# 旧版本工程文件夹 / 临时副本
 a3_competition_improved/
 a3_competition_single_course/
+a3_competition_temp/
+a3_competition_streaming_temp/
+a3_fixed_project/
+book-master/
+
+# 临时测试文件
+test_upload.txt
+_inspect_db.py
+ai-learning-frontend.iml
 
 # 编辑器缓存
 .idea/
