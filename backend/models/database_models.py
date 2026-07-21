@@ -12,6 +12,7 @@ class Student(Base):
     username = Column(String(50), unique=True, index=True, nullable=False)
     password_hash = Column(String(255), nullable=False)
     email = Column(String(100), unique=True, index=True, nullable=True)
+    role = Column(String(20), default="student")  # student/teacher/admin
     created_at = Column(DateTime, server_default=func.now(), index=True)
     updated_at = Column(DateTime, server_default=func.now(), onupdate=func.now())
     is_active = Column(Boolean, default=True)

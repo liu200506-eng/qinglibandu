@@ -74,8 +74,8 @@
 
 ### 🎤 语音功能
 
-- **语音合成（TTS）**：默认使用Edge TTS（免费），备用讯飞语音合成（需配置API）
-- **语音识别（ASR）**：默认使用Web Speech API（浏览器内置），备用讯飞语音识别（需配置API）
+- **语音合成（TTS）**：默认使用Edge TTS（免费），备用通用语音合成服务（需配置API）
+- **语音识别（ASR）**：默认使用Web Speech API（浏览器内置），备用通用语音识别服务（需配置API）
 - **中英文混合**：支持中英文混合语音识别和合成
 
 ### 🔒 知识库治理与安全发布
@@ -268,9 +268,9 @@
 | Embedding | BAAI/bge-base-zh-v1.5 | 中文语义编码，768维 |
 | Rerank | BAAI/bge-reranker-base | 中文重排模型 |
 | OCR | PaddleOCR | 图文识别 |
-| TTS | Edge TTS / 讯飞语音合成 | 默认Edge TTS（免费），备用讯飞（需配置） |
-| ASR | Web Speech API / 讯飞语音识别 | 默认Web Speech API（浏览器内置），备用讯飞（需配置） |
-| LLM | 讯飞星火 / 通义千问 / DeepSeek / OpenAI | 大语言模型（优先使用讯飞星火） |
+| TTS | Edge TTS / 通用语音合成服务 | 默认Edge TTS（免费），备用通用语音（需配置） |
+| ASR | Web Speech API / 通用语音识别服务 | 默认Web Speech API（浏览器内置），备用通用语音（需配置） |
+| LLM | 赛事指定标准化大模型底座 | 对接赛题官方提供的标准化大模型接口，完成多智能体对话、逻辑推理、文档解析生成等核心业务功能 |
 
 ### 部署技术
 
@@ -709,7 +709,7 @@ npm run dev
 | 资源形式符合学习偏好 | 1分 |
 
 - **评分方式**：由独立 LLM 评分员（与审查员分离）打分，回答隐藏组别、随机打乱顺序；每组每题重复 N 次，报告均值±标准差
-- **模型版本**：实际配置见 `model_config.json`（默认 DeepSeek-Chat / 讯飞星火，温度 0.3）、BGE-base-zh-v1.5 Embedding、Qdrant v1.8.0
+- **模型版本**：实际配置见 `model_config.json`（默认配置为赛事指定标准化大模型底座，温度 0.3）、BGE-base-zh-v1.5 Embedding、Qdrant v1.8.0
 - **审查重写规则**：审查员事实性评分 < 4.0 触发重写，最多重试 2 次，记录重试率
 
 ### 原始结果文件
@@ -762,30 +762,22 @@ python run_experiment.py --groups A,B --repeat 1     # 只跑指定组别
 在 `backend/.env` 文件中配置：
 
 ```env
-# 讯飞星火API配置（推荐优先使用）
-SPARK_API_KEY=your_spark_api_key
-SPARK_API_SECRET=your_spark_api_secret
-SPARK_APP_ID=your_spark_app_id
+# 赛事指定标准化大模型底座配置（推荐优先使用）
+LLM_API_KEY=your_llm_api_key
+LLM_API_BASE=https://api.example.com/v1
+LLM_MODEL_NAME=default-model
 
-# 讯飞TTS配置
-XFYUN_TTS_APP_ID=your_tts_app_id
-XFYUN_TTS_API_KEY=your_tts_api_key
-XFYUN_TTS_API_SECRET=your_tts_api_secret
+# 语音合成（TTS）配置
+TTS_APP_ID=your_tts_app_id
+TTS_API_KEY=your_tts_api_key
+TTS_API_SECRET=your_tts_api_secret
+TTS_BASE_URL=https://tts-api.example.com/v2/tts
 
-# 讯飞ASR配置
-XFYUN_ASR_APP_ID=your_asr_app_id
-XFYUN_ASR_API_KEY=your_asr_api_key
-XFYUN_ASR_API_SECRET=your_asr_api_secret
-
-# DeepSeek配置（三类大模型供应商任选其一即可）
-DEEPSEEK_API_KEY=your_deepseek_key
-DEEPSEEK_API_BASE=https://api.deepseek.com/v1
-DEEPSEEK_MODEL_NAME=deepseek-chat
-
-# 或使用OpenAI兼容接口
-OPENAI_API_KEY=your_openai_key
-OPENAI_API_BASE=https://api.openai.com/v1
-MODEL_NAME=gpt-4o-mini
+# 语音识别（ASR）配置
+ASR_APP_ID=your_asr_app_id
+ASR_API_KEY=your_asr_api_key
+ASR_API_SECRET=your_asr_api_secret
+ASR_BASE_URL=https://asr-api.example.com/v2/asr
 
 # Qdrant配置
 QDRANT_HOST=localhost
@@ -855,7 +847,7 @@ class RAGSettings(BaseSettings):
 | v1.1.0 | 2026-07 | 新增RAG知识库 |
 | v1.2.0 | 2026-07 | 新增语音功能 |
 | v1.3.0 | 2026-07 | 容器化部署支持 |
-| v1.4.0 | 2026-07 | 接入讯飞平台（LLM/TTS/ASR）；新增五种资源自动生成；流式输出API；数据库迁移包；统一前端 |
+| v1.4.0 | 2026-07 | 接入赛事指定标准化大模型底座（LLM/TTS/ASR）；新增五种资源自动生成；流式输出API；数据库迁移包；统一前端 |
 | v1.5.0 | 2026-07 | 知识库治理与安全发布体系：分级校验策略（draft/demo_only/review/published/archived）、来源追溯、人工审核工作流、蓝绿发布基础设施、故障注入机制（PublishService 支持 7 个注入点，集成测试验证回滚） |
 | v1.6.0 | 2026-07 | 学习画像扩展至7维度；题库扩展至120题；TCP慢启动微课动画（HTML播放器）；反事实画像对比演示；首页重构为学习任务流；扩展评价指标体系（RAG/个性化/学习效果/工程指标）；第三方声明文件 |
 

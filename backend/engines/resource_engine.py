@@ -333,14 +333,14 @@ class ResourceGenerator:
             }
 
         try:
-            from utils.xfyun_tts import xfyun_synthesize_speech
+            from utils.xfyun_tts import cloud_synthesize_speech
             from utils.tts_client import synthesize_speech
             
             voiceover_text = video_data.get("voiceover", "")
             audio_data = None
             
-            if settings.XFYUN_TTS_APP_ID:
-                audio_data = xfyun_synthesize_speech(voiceover_text, "default")
+            if settings.TTS_APP_ID:
+                audio_data = cloud_synthesize_speech(voiceover_text, "default")
             
             if audio_data is None:
                 audio_data = synthesize_speech(voiceover_text, "default")

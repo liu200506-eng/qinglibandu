@@ -13,12 +13,8 @@ def _usable(value: str) -> bool:
 
 
 def llm_config_status() -> dict:
-    if _usable(settings.SPARK_API_KEY) and _usable(settings.SPARK_APP_ID) and _usable(settings.SPARK_API_SECRET):
-        return {"configured": True, "provider": "spark", "model": settings.SPARK_MODEL_NAME}
-    if _usable(settings.DEEPSEEK_API_KEY):
-        return {"configured": True, "provider": "deepseek", "model": settings.DEEPSEEK_MODEL_NAME}
-    if _usable(settings.OPENAI_API_KEY):
-        return {"configured": True, "provider": "openai-compatible", "model": settings.MODEL_NAME}
+    if _usable(settings.LLM_API_KEY):
+        return {"configured": True, "provider": "competition-llm", "model": settings.LLM_MODEL_NAME}
     return {"configured": False, "provider": None, "model": None}
 
 
@@ -27,7 +23,7 @@ class UnconfiguredLLM:
 
     message = (
         "未配置可用的大模型密钥。请在 backend/.env 中配置 "
-        "DEEPSEEK_API_KEY、OPENAI_API_KEY，或完整的讯飞星火三项密钥。"
+        "LLM_API_KEY（赛事指定标准化大模型底座）。"
     )
 
     def invoke(self, *_args, **_kwargs):
@@ -38,34 +34,16 @@ class UnconfiguredLLM:
 
 
 def get_llm():
-    # 优先使用讯飞星火大模型（OpenAI兼容接口）
-    if _usable(settings.SPARK_API_KEY) and _usable(settings.SPARK_APP_ID) and _usable(settings.SPARK_API_SECRET):
-        logger.info(f"使用讯飞星火大模型: {settings.SPARK_MODEL_NAME}")
-        return ChatOpenAI(
-            model=settings.SPARK_MODEL_NAME,
-            api_key=f"{settings.SPARK_APP_ID}:{settings.SPARK_API_KEY}:{settings.SPARK_API_SECRET}",
-            base_url=settings.SPARK_API_BASE,
-            temperature=0.7
-        )
-    # 其次使用DeepSeek配置
-    if _usable(settings.DEEPSEEK_API_KEY):
-        logger.info(f"使用DeepSeek模型: {settings.DEEPSEEK_MODEL_NAME}")
-        return ChatOpenAI(
-            model=settings.DEEPSEEK_MODEL_NAME,
-            api_key=settings.DEEPSEEK_API_KEY,
-            base_url=settings.DEEPSEEK_API_BASE,
-            temperature=0.7
-        )
-    if not _usable(settings.OPENAI_API_KEY):
+    """获取赛事指定标准化大模型底座实例。"""
+    if not _usable(settings.LLM_API_KEY):
         logger.warning(UnconfiguredLLM.message)
         return UnconfiguredLLM()
 
-    # 回退到OpenAI兼容配置
-    logger.info(f"使用OpenAI模型: {settings.MODEL_NAME}")
+    logger.info(f"使用赛事指定标准化大模型底座: {settings.LLM_MODEL_NAME}")
     return ChatOpenAI(
-        model=settings.MODEL_NAME,
-        api_key=settings.OPENAI_API_KEY,
-        base_url=settings.OPENAI_API_BASE,
+        model=settings.LLM_MODEL_NAME,
+        api_key=settings.LLM_API_KEY,
+        base_url=settings.LLM_API_BASE if _usable(settings.LLM_API_BASE) else None,
         temperature=0.7
     )
 

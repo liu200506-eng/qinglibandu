@@ -69,8 +69,8 @@ An AI-powered learning assistant for high school and university students, formin
 
 ### 🎤 Voice Features
 
-- **Text-to-Speech (TTS)**: Edge TTS (default, free), iFlytek (backup, requires API)
-- **Speech-to-Text (ASR)**: Web Speech API (default, browser built-in), iFlytek (backup)
+- **Text-to-Speech (TTS)**: Edge TTS (default, free), general TTS service (backup, requires API)
+- **Speech-to-Text (ASR)**: Web Speech API (default, browser built-in), general ASR service (backup)
 - **Chinese-English Mixed**: Support for mixed language recognition and synthesis
 
 ### 🔒 Knowledge Base Governance & Secure Publishing
@@ -85,7 +85,7 @@ An AI-powered learning assistant for high school and university students, formin
 - **Human Review Workflow**: `review` subcommand with list/approve/reject operations; author/reviewer/publisher role separation
 - **Blue-Green Deployment**: Atomic publishing via Qdrant alias mechanism; staging collection creation, atomic alias switching, rollback, and cleanup
 - **Failure Injection Testing**: before_alias_swap and after_database_write injection points to verify rollback
-- **Automated Testing**: 52 tests all passed (15 integration + 21 toolchain + 13 business + 3 failure injection)
+- **Automated Testing**: 45 tests all passed (15 integration + 18 toolchain + 12 business)
 
 ### 📝 Exam System
 
@@ -161,9 +161,9 @@ An AI-powered learning assistant for high school and university students, formin
 | Embedding | BAAI/bge-base-zh | Chinese semantic encoding, 768-dim |
 | Rerank | BAAI/bge-reranker-base | Chinese reranking model |
 | OCR | PaddleOCR | Text recognition |
-| TTS | Edge TTS / iFlytek | Text-to-speech |
-| ASR | Web Speech / iFlytek | Speech recognition |
-| LLM | iFlytek Spark / Qwen / DeepSeek / OpenAI | Large language models |
+| TTS | Edge TTS / General TTS | Text-to-speech |
+| ASR | Web Speech / General ASR | Speech recognition |
+| LLM | Competition-designated Standardized LLM Base | Connects to the competition's official standardized LLM interface for multi-agent dialogue, logical reasoning, and document parsing |
 
 ---
 
@@ -193,8 +193,8 @@ A3/
 │   ├── agents/            # Multi-Agent system
 │   ├── tests/             # Test directory
 │   │   ├── test_real_integration.py # Integration tests (15)
-│   │   ├── test_knowledge_toolchain.py # Toolchain tests (21)
-│   │   └── test_magicstudy.py       # Business tests (13)
+│   │   ├── test_knowledge_toolchain.py # Toolchain tests (18)
+│   │   └── test_magicstudy.py       # Business tests (12)
 │   └── knowledge_base/    # Knowledge base
 │
 ├── reports/               # Reports directory
@@ -263,7 +263,7 @@ Four controlled experiment groups:
 | Response Time | 2.8-3.8 seconds |
 | Vector Dimension | 768 (BGE-base) |
 | Q&A Accuracy | ~90% |
-| Tests Passed | 52/52 |
+| Tests Passed | 45/45 |
 
 ---
 
@@ -275,8 +275,8 @@ Four controlled experiment groups:
 | v1.1.0 | 2026-07 | Added RAG knowledge base |
 | v1.2.0 | 2026-07 | Added voice features |
 | v1.3.0 | 2026-07 | Docker deployment |
-| v1.4.0 | 2026-07 | iFlytek integration, resource generation |
-| v1.5.0 | 2026-07 | Knowledge governance, blue-green deployment, 52 tests |
+| v1.4.0 | 2026-07 | Standardized LLM base integration, resource generation |
+| v1.5.0 | 2026-07 | Knowledge governance, blue-green deployment, 45 tests |
 
 ---
 

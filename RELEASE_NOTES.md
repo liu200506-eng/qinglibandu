@@ -82,14 +82,14 @@ npm run dev
 复制 `backend/.env.example` 为 `backend/.env`，配置以下关键参数：
 
 ```env
-# LLM配置（必填）
-OPENAI_API_KEY=your_api_key
-OPENAI_API_BASE=https://api.openai.com/v1
+# LLM配置（必填）：对接赛题官方标准化大模型接口
+LLM_API_KEY=your_api_key
+LLM_API_BASE=https://api.example.com/v1
 
-# 讯飞TTS/ASR（可选）
-XFYUN_TTS_APP_ID=your_app_id
-XFYUN_TTS_API_KEY=your_api_key
-XFYUN_TTS_API_SECRET=your_api_secret
+# 语音合成（TTS）/ 语音识别（ASR）配置（可选）
+TTS_APP_ID=your_app_id
+TTS_API_KEY=your_api_key
+TTS_API_SECRET=your_api_secret
 ```
 
 ## 📊 实验结果摘要

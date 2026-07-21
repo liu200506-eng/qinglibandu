@@ -118,7 +118,7 @@ def call_llm(system: str, user: str) -> Dict:
     latency = time.time() - t0
     tokens = 0
     try:
-        # langchain_openai 的响应带 usage_metadata
+        # ChatOpenAI 的响应带 usage_metadata
         um = getattr(resp, "usage_metadata", None)
         if um:
             tokens = int(um.get("total_tokens", 0))
