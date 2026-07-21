@@ -80,3 +80,44 @@ backend/_ffmpeg/ffmpeg-master-latest-win64-gpl/bin/
 # 临时备份/解压目录
 /a3-competition-improved.zip
 /a3_competition_improved/
+# 虚拟环境和缓存
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# 编辑器配置
+.vscode/
+.idea/
+
+# 模型和大文件
+*.pth
+*.gguf
+*.bin
+*.safetensors
+*.zip
+*.rar
+*.7z
+
+# 日志和临时文件
+logs/
+*.log
+*.tmp
+
+# 私密配置
+.env
+.env.local
+
+# 压缩包全部忽略
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
+# 旧版本工程文件夹
+a3_competition_improved/
+a3_competition_single_course/
+
+# 编辑器缓存
+.idea/
+.pytest_cache/
