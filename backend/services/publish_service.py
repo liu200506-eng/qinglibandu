@@ -296,7 +296,7 @@ class PublishService:
             release_id=datetime.utcnow().strftime('%Y%m%d%H%M%S') + '-' + course_code,
             git_commit=self._get_git_commit(),
             qdrant_image=self._get_qdrant_image(),
-            embedding_model='BAAI/bge-base-zh',
+            embedding_model='BAAI/bge-base-zh-v1.5',
             embedding_dimension=768,
             alias_name='course_' + course_code + '_alias',
         )

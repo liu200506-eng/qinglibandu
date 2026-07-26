@@ -158,7 +158,7 @@ An AI-powered learning assistant for high school and university students, formin
 
 | Model Type | Model Name | Description |
 |------------|------------|-------------|
-| Embedding | BAAI/bge-base-zh | Chinese semantic encoding, 768-dim |
+| Embedding | BAAI/bge-base-zh-v1.5 | Chinese semantic encoding, 768-dim |
 | Rerank | BAAI/bge-reranker-base | Chinese reranking model |
 | OCR | PaddleOCR | Text recognition |
 | TTS | Edge TTS / General TTS | Text-to-speech |

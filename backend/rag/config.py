@@ -12,7 +12,7 @@ class RAGSettings(BaseSettings):
     # 本地嵌入式模式的存储路径
     qdrant_local_path: str = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "qdrant_storage")
     
-    embedding_model: str = "BAAI/bge-base-zh"
+    embedding_model: str = "BAAI/bge-base-zh-v1.5"
     reranker_model: str = "BAAI/bge-reranker-base"
     
     chunk_size: int = 1024

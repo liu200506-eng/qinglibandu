@@ -801,7 +801,7 @@ class RAGSettings(BaseSettings):
     qdrant_port: int = 6333
     qdrant_collection: str = "magicstudy_knowledge"
     
-    embedding_model: str = "BAAI/bge-base-zh"
+    embedding_model: str = "BAAI/bge-base-zh-v1.5"
     reranker_model: str = "BAAI/bge-reranker-base"
     
     chunk_size: int = 512

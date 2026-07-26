@@ -28,7 +28,7 @@ from models.database_models import (
 # 默认分块参数
 DEFAULT_CHUNK_SIZE = 500  # 每块字符数
 DEFAULT_CHUNK_OVERLAP = 50  # 重叠字符数
-DEFAULT_EMBEDDING_MODEL = "BAAI/bge-base-zh"
+DEFAULT_EMBEDDING_MODEL = "BAAI/bge-base-zh-v1.5"
 
 
 class QdrantSyncService:
