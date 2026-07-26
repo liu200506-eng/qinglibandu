@@ -2,11 +2,26 @@
 
 <div align="center">
 
-![青藜伴读](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=A%20modern%20AI%20education%20platform%20logo%20with%20book%20and%20light%20bulb%20icon%2C%20blue%20and%20gold%20gradient%2C%20clean%20minimalist%20design&image_size=square)
+<div align="center">
+<img src="./demo/personal_task_flow.png" width="860">
+<p>个性化学习任务流与自然语言画像入口</p>
+</div>
+<br>
+
+<div align="center">
+<img src="./demo/knowledge_base_upload.png" width="860">
+<p>知识库上传与资料管理（RAG底层支撑模块）</p>
+</div>
+<br>
+
+<div align="center">
+<img src="./demo/multi_agent_strategy.png" width="860">
+<p>多Agent学习策略、薄弱点分析与智能推荐模块</p>
+</div>
 
 **AI智能学习决策与陪练系统**
 
-一款面向高中生和大学生的AI智能学习助手，通过学习状态建模、策略决策、智能辅导、反馈闭环形成完整的个性化学习闭环系统。
+一款面向大学生的AI智能学习助手，通过学习状态建模、策略决策、智能辅导、反馈闭环形成完整的个性化学习闭环系统。
 
 </div>
 

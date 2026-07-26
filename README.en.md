@@ -1,12 +1,39 @@
-# MagicStudy - AI-Powered Learning Companion
+# Qinglibandu - AI-Powered Learning Companion
 
 <div align="center">
 
-![MagicStudy](https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=A%20modern%20AI%20education%20platform%20logo%20with%20book%20and%20light%20bulb%20icon%2C%20blue%20and%20gold%20gradient%2C%20clean%20minimalist%20design&image_size=square)
+**AI Intelligent Learning Decision and Coaching System**
+
+An AI-powered learning assistant for high school and college students. It builds a complete personalized learning loop via learning status modeling, strategy decision-making, intelligent tutoring and feedback mechanisms.
+</div>
+
+---
+
+## Project Overview
+**Qinglibandu (青藜伴读)** is an AI intelligent learning support system. It delivers personalized, intelligent learning services for learners.
+The system name derives from the ancient Chinese allusion of "Qing Li Ban Du (青藜伴读)". The "green tumbleweed torch" symbolizes diligent study, and AI serves as your permanent companion on the journey of knowledge exploration.
+
+<div align="center">
+<img src="./demo/personal_task_flow.png" width="860">
+<p>Personalized Learning Task Flow & Natural Language User Portrait Entry</p>
+</div>
+<br>
+
+<div align="center">
+<img src="./demo/knowledge_base_upload.png" width="860">
+<p>Knowledge Base Upload & Document Management (RAG Infrastructure)</p>
+</div>
+<br>
+
+<div align="center">
+<img src="./demo/multi_agent_strategy.png" width="860">
+<p>Multi-Agent Learning Strategy, Weakness Analysis & Intelligent Recommendation</p>
+</div>
+
 
 **AI Intelligent Learning Decision and Coaching System**
 
-An AI-powered learning assistant for high school and university students, forming a complete personalized learning loop through learning state modeling, strategy decision-making, intelligent tutoring, and feedback mechanisms.
+An AI-powered learning assistant for university students, forming a complete personalized learning loop through learning state modeling, strategy decision-making, intelligent tutoring, and feedback mechanisms.
 
 </div>
 
