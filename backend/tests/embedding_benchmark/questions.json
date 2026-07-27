@@ -1,0 +1,2171 @@
+[
+  {
+    "question_id": "eq001",
+    "question": "TCP三次握手的主要目的是什么？",
+    "category": "精确关键词",
+    "knowledge_point": "TCP握手",
+    "relevant_document": "计算机网络第三章.pdf",
+    "relevant_chunk_ids": [
+      "ed75ee3d-68ef-45b3-83d9-d1e0c6918574",
+      "1c73b1e6-e17d-418f-b51e-6a6dddda6ea8",
+      "ad271402-0ab1-4309-a0e1-4a7e45a32455"
+    ],
+    "relevant_keywords": [
+      "三次握手",
+      "建立连接",
+      "序列号同步",
+      "可靠传输"
+    ],
+    "notes": "基础概念题；需命中TCP连接建立相关分块；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "ed75ee3d-68ef-45b3-83d9-d1e0c6918574",
+        "document": "TCP三次握手.md",
+        "score": 8.6094,
+        "matched_keywords": [
+          "三次握手",
+          "序列号同步"
+        ],
+        "chunk_index": 23
+      },
+      {
+        "point_id": "1c73b1e6-e17d-418f-b51e-6a6dddda6ea8",
+        "document": "TCP三次握手.md",
+        "score": 8.1094,
+        "matched_keywords": [
+          "三次握手",
+          "建立连接"
+        ],
+        "chunk_index": 2
+      },
+      {
+        "point_id": "ad271402-0ab1-4309-a0e1-4a7e45a32455",
+        "document": "TCP三次握手.md",
+        "score": 5.5821,
+        "matched_keywords": [
+          "三次握手"
+        ],
+        "chunk_index": 14
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq002",
+    "question": "为什么建立TCP连接时需要发送第三个ACK，而不是两次握手就够了？",
+    "category": "同义改写",
+    "knowledge_point": "TCP握手",
+    "relevant_document": "计算机网络第三章.pdf",
+    "relevant_chunk_ids": [
+      "ad271402-0ab1-4309-a0e1-4a7e45a32455",
+      "ed75ee3d-68ef-45b3-83d9-d1e0c6918574",
+      "1c73b1e6-e17d-418f-b51e-6a6dddda6ea8"
+    ],
+    "relevant_keywords": [
+      "三次握手",
+      "第三次ACK",
+      "失效连接请求",
+      "双方收发能力"
+    ],
+    "notes": "与eq001同知识点，但侧重第三次确认的必要性；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "ad271402-0ab1-4309-a0e1-4a7e45a32455",
+        "document": "TCP三次握手.md",
+        "score": 6.6547,
+        "matched_keywords": [
+          "三次握手"
+        ],
+        "chunk_index": 14
+      },
+      {
+        "point_id": "ed75ee3d-68ef-45b3-83d9-d1e0c6918574",
+        "document": "TCP三次握手.md",
+        "score": 5.4623,
+        "matched_keywords": [
+          "三次握手"
+        ],
+        "chunk_index": 23
+      },
+      {
+        "point_id": "1c73b1e6-e17d-418f-b51e-6a6dddda6ea8",
+        "document": "TCP三次握手.md",
+        "score": 5.1547,
+        "matched_keywords": [
+          "三次握手"
+        ],
+        "chunk_index": 2
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq003",
+    "question": "TCP连接释放为什么通常采用四次挥手？",
+    "category": "机制推理",
+    "knowledge_point": "TCP挥手",
+    "relevant_document": "计算机网络第三章.pdf",
+    "relevant_chunk_ids": [
+      "7a56e04c-923b-4151-88fe-bf9c435c9b86",
+      "00ddc449-c3b5-4678-afe0-504d33e3e9a4",
+      "9bc21784-e1f8-4daf-8bc2-4edd0e84dba8"
+    ],
+    "relevant_keywords": [
+      "四次挥手",
+      "FIN",
+      "ACK",
+      "半关闭"
+    ],
+    "notes": "需覆盖连接释放过程和半关闭机制；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "7a56e04c-923b-4151-88fe-bf9c435c9b86",
+        "document": "TCP四次挥手.md",
+        "score": 9.25,
+        "matched_keywords": [
+          "四次挥手",
+          "FIN",
+          "ACK"
+        ],
+        "chunk_index": 19
+      },
+      {
+        "point_id": "00ddc449-c3b5-4678-afe0-504d33e3e9a4",
+        "document": "TCP四次挥手.md",
+        "score": 9.0,
+        "matched_keywords": [
+          "四次挥手",
+          "FIN",
+          "ACK"
+        ],
+        "chunk_index": 14
+      },
+      {
+        "point_id": "9bc21784-e1f8-4daf-8bc2-4edd0e84dba8",
+        "document": "TCP四次挥手.md",
+        "score": 9.0,
+        "matched_keywords": [
+          "四次挥手",
+          "FIN",
+          "ACK"
+        ],
+        "chunk_index": 9
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq004",
+    "question": "TIME_WAIT状态为什么要持续2MSL？",
+    "category": "专业术语",
+    "knowledge_point": "TCP连接管理",
+    "relevant_document": "计算机网络第三章.pdf",
+    "relevant_chunk_ids": [
+      "4151b40c-ad90-491e-8b36-27693b954f11",
+      "7a56e04c-923b-4151-88fe-bf9c435c9b86",
+      "ea04a130-482a-49c2-8b48-b928a03287e5"
+    ],
+    "relevant_keywords": [
+      "TIME_WAIT",
+      "2MSL",
+      "最后ACK",
+      "旧报文段"
+    ],
+    "notes": "应定位到TCP连接释放后的等待状态；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "4151b40c-ad90-491e-8b36-27693b954f11",
+        "document": "TCP四次挥手.md",
+        "score": 6.9487,
+        "matched_keywords": [
+          "TIME_WAIT",
+          "2MSL"
+        ],
+        "chunk_index": 17
+      },
+      {
+        "point_id": "7a56e04c-923b-4151-88fe-bf9c435c9b86",
+        "document": "TCP四次挥手.md",
+        "score": 4.3162,
+        "matched_keywords": [
+          "TIME_WAIT"
+        ],
+        "chunk_index": 19
+      },
+      {
+        "point_id": "ea04a130-482a-49c2-8b48-b928a03287e5",
+        "document": "TCP四次挥手.md",
+        "score": 3.3825,
+        "matched_keywords": [
+          "TIME_WAIT"
+        ],
+        "chunk_index": 15
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq005",
+    "question": "TCP滑动窗口机制解决了什么问题？",
+    "category": "精确关键词",
+    "knowledge_point": "TCP流量控制",
+    "relevant_document": "计算机网络第三章.pdf",
+    "relevant_chunk_ids": [
+      "a48c4d40-3a28-4dea-bb3a-cdad9b7ef8bd",
+      "a0d9f7d4-553d-4bfc-ad29-d72f6a92419f",
+      "a483df71-1d34-48af-ba75-a3617033cde3"
+    ],
+    "relevant_keywords": [
+      "滑动窗口",
+      "流量控制",
+      "接收窗口",
+      "发送窗口"
+    ],
+    "notes": "需命中流量控制而非拥塞控制；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "a48c4d40-3a28-4dea-bb3a-cdad9b7ef8bd",
+        "document": "流量控制.md",
+        "score": 11.0173,
+        "matched_keywords": [
+          "流量控制",
+          "接收窗口",
+          "发送窗口"
+        ],
+        "chunk_index": 10
+      },
+      {
+        "point_id": "a0d9f7d4-553d-4bfc-ad29-d72f6a92419f",
+        "document": "流量控制.md",
+        "score": 9.3536,
+        "matched_keywords": [
+          "滑动窗口",
+          "流量控制"
+        ],
+        "chunk_index": 7
+      },
+      {
+        "point_id": "a483df71-1d34-48af-ba75-a3617033cde3",
+        "document": "流量控制.md",
+        "score": 9.0863,
+        "matched_keywords": [
+          "滑动窗口",
+          "流量控制"
+        ],
+        "chunk_index": 26
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq006",
+    "question": "接收方通告窗口为0时，TCP发送方如何避免永久等待？",
+    "category": "容易混淆",
+    "knowledge_point": "TCP流量控制",
+    "relevant_document": "计算机网络第三章.pdf",
+    "relevant_chunk_ids": [
+      "2d481146-0633-4de3-9de4-2309463c39c2",
+      "a0d9f7d4-553d-4bfc-ad29-d72f6a92419f",
+      "8dea828a-f2b4-4cd5-ac4f-5c4a4b8d6a2e"
+    ],
+    "relevant_keywords": [
+      "零窗口",
+      "持续计时器",
+      "窗口探测报文",
+      "死锁"
+    ],
+    "notes": "重点区分持续计时器与重传计时器；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "2d481146-0633-4de3-9de4-2309463c39c2",
+        "document": "流量控制.md",
+        "score": 2.4188,
+        "matched_keywords": [],
+        "chunk_index": 19
+      },
+      {
+        "point_id": "a0d9f7d4-553d-4bfc-ad29-d72f6a92419f",
+        "document": "流量控制.md",
+        "score": 2.4188,
+        "matched_keywords": [],
+        "chunk_index": 7
+      },
+      {
+        "point_id": "8dea828a-f2b4-4cd5-ac4f-5c4a4b8d6a2e",
+        "document": "流量控制.md",
+        "score": 2.2424,
+        "matched_keywords": [],
+        "chunk_index": 17
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq007",
+    "question": "TCP的流量控制与拥塞控制有什么本质区别？",
+    "category": "容易混淆",
+    "knowledge_point": "TCP控制机制",
+    "relevant_document": "计算机网络第三章.pdf",
+    "relevant_chunk_ids": [
+      "00ef32fc-5551-4730-8ed5-e45be6858da9",
+      "626c8fc9-7d7a-41fa-b697-fa3fcc3bd6fd",
+      "7c84a033-1bb4-4f89-80d4-721e26630866"
+    ],
+    "relevant_keywords": [
+      "流量控制",
+      "拥塞控制",
+      "接收方能力",
+      "网络负载"
+    ],
+    "notes": "需要跨流量控制与拥塞控制分块比较；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "00ef32fc-5551-4730-8ed5-e45be6858da9",
+        "document": "TCP可靠传输.md",
+        "score": 8.9627,
+        "matched_keywords": [
+          "流量控制",
+          "拥塞控制"
+        ],
+        "chunk_index": 4
+      },
+      {
+        "point_id": "626c8fc9-7d7a-41fa-b697-fa3fcc3bd6fd",
+        "document": "流量控制.md",
+        "score": 8.9627,
+        "matched_keywords": [
+          "流量控制",
+          "拥塞控制"
+        ],
+        "chunk_index": 21
+      },
+      {
+        "point_id": "7c84a033-1bb4-4f89-80d4-721e26630866",
+        "document": "流量控制.md",
+        "score": 8.6903,
+        "matched_keywords": [
+          "流量控制",
+          "拥塞控制"
+        ],
+        "chunk_index": 20
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq008",
+    "question": "慢开始、拥塞避免、快重传和快恢复分别在什么条件下触发？",
+    "category": "跨段落",
+    "knowledge_point": "TCP拥塞控制",
+    "relevant_document": "计算机网络第三章.pdf",
+    "relevant_chunk_ids": [
+      "bc277283-bdd4-4b53-9252-6284596647b8",
+      "1b8a5ada-6624-4411-a629-1d15c7609bb7",
+      "da1b53a5-96b1-4170-9c86-c59a7eba5efd"
+    ],
+    "relevant_keywords": [
+      "慢开始",
+      "拥塞避免",
+      "快重传",
+      "快恢复",
+      "拥塞窗口"
+    ],
+    "notes": "需要跨多个拥塞控制算法分块综合回答；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "bc277283-bdd4-4b53-9252-6284596647b8",
+        "document": "拥塞控制.md",
+        "score": 5.4747,
+        "matched_keywords": [
+          "拥塞避免"
+        ],
+        "chunk_index": 25
+      },
+      {
+        "point_id": "1b8a5ada-6624-4411-a629-1d15c7609bb7",
+        "document": "快速恢复.md",
+        "score": 5.4289,
+        "matched_keywords": [
+          "拥塞避免"
+        ],
+        "chunk_index": 15
+      },
+      {
+        "point_id": "da1b53a5-96b1-4170-9c86-c59a7eba5efd",
+        "document": "快速恢复.md",
+        "score": 5.2247,
+        "matched_keywords": [
+          "拥塞避免"
+        ],
+        "chunk_index": 6
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq009",
+    "question": "TCP收到三个重复ACK后为什么可以不等待超时就重传？",
+    "category": "机制推理",
+    "knowledge_point": "TCP快速重传",
+    "relevant_document": "计算机网络第三章.pdf",
+    "relevant_chunk_ids": [
+      "8708a4a6-93e9-427d-8927-36ec9a154612",
+      "c6591ace-eab3-4cf0-a1b2-688bfab46680",
+      "a36e7430-0cc2-435f-a9f2-0fa0f8c29207"
+    ],
+    "relevant_keywords": [
+      "三个重复ACK",
+      "快速重传",
+      "报文段丢失",
+      "超时重传"
+    ],
+    "notes": "测试对重复ACK语义的理解；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "8708a4a6-93e9-427d-8927-36ec9a154612",
+        "document": "快速重传.md",
+        "score": 8.816,
+        "matched_keywords": [
+          "快速重传",
+          "超时重传"
+        ],
+        "chunk_index": 8
+      },
+      {
+        "point_id": "c6591ace-eab3-4cf0-a1b2-688bfab46680",
+        "document": "快速重传.md",
+        "score": 7.1764,
+        "matched_keywords": [
+          "快速重传",
+          "超时重传"
+        ],
+        "chunk_index": 7
+      },
+      {
+        "point_id": "a36e7430-0cc2-435f-a9f2-0fa0f8c29207",
+        "document": "快速重传.md",
+        "score": 6.7424,
+        "matched_keywords": [
+          "快速重传"
+        ],
+        "chunk_index": 4
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq010",
+    "question": "UDP与TCP在可靠性、连接方式和开销方面有何差异？",
+    "category": "容易混淆",
+    "knowledge_point": "传输层协议",
+    "relevant_document": "计算机网络第三章.pdf",
+    "relevant_chunk_ids": [
+      "da062d11-c16a-407f-b82f-c0b27680b97e",
+      "01128684-89c6-4790-bdc4-eca2f5b0cdfc",
+      "88eba26a-2990-4ea5-9d0f-0fa7a7feba65"
+    ],
+    "relevant_keywords": [
+      "UDP",
+      "TCP",
+      "面向连接",
+      "可靠传输",
+      "首部开销"
+    ],
+    "notes": "需同时覆盖两种协议的核心差异；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "da062d11-c16a-407f-b82f-c0b27680b97e",
+        "document": "UDP协议详解.md",
+        "score": 11.0916,
+        "matched_keywords": [
+          "UDP",
+          "TCP",
+          "面向连接"
+        ],
+        "chunk_index": 6
+      },
+      {
+        "point_id": "01128684-89c6-4790-bdc4-eca2f5b0cdfc",
+        "document": "TCP可靠传输.md",
+        "score": 10.1708,
+        "matched_keywords": [
+          "TCP",
+          "面向连接",
+          "可靠传输"
+        ],
+        "chunk_index": 2
+      },
+      {
+        "point_id": "88eba26a-2990-4ea5-9d0f-0fa7a7feba65",
+        "document": "TCP_IP四层模型.md",
+        "score": 10.1444,
+        "matched_keywords": [
+          "UDP",
+          "TCP",
+          "面向连接"
+        ],
+        "chunk_index": 18
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq011",
+    "question": "CSMA/CD协议中的冲突检测是如何工作的？",
+    "category": "精确关键词",
+    "knowledge_point": "CSMA/CD",
+    "relevant_document": "计算机网络第四章.pdf",
+    "relevant_chunk_ids": [
+      "a7029d3f-d15d-494f-99b9-d0ac40a93fa6",
+      "2802f4df-2a60-4ecc-88e5-b5f2a4c95d39",
+      "6bacf022-6070-48f5-93b0-6e5cb35022cc"
+    ],
+    "relevant_keywords": [
+      "CSMA/CD",
+      "冲突检测",
+      "边发送边监听",
+      "强化碰撞"
+    ],
+    "notes": "需定位共享式以太网介质访问控制；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "a7029d3f-d15d-494f-99b9-d0ac40a93fa6",
+        "document": "以太网与MAC地址.md",
+        "score": 7.5328,
+        "matched_keywords": [
+          "CSMA/CD",
+          "冲突检测"
+        ],
+        "chunk_index": 4
+      },
+      {
+        "point_id": "2802f4df-2a60-4ecc-88e5-b5f2a4c95d39",
+        "document": "以太网与MAC地址.md",
+        "score": 4.0246,
+        "matched_keywords": [
+          "CSMA/CD"
+        ],
+        "chunk_index": 24
+      },
+      {
+        "point_id": "6bacf022-6070-48f5-93b0-6e5cb35022cc",
+        "document": "以太网与MAC地址.md",
+        "score": 3.2664,
+        "matched_keywords": [
+          "CSMA/CD"
+        ],
+        "chunk_index": 5
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq012",
+    "question": "截断二进制指数退避算法如何决定重传等待时间？",
+    "category": "专业术语",
+    "knowledge_point": "以太网退避",
+    "relevant_document": "计算机网络第四章.pdf",
+    "relevant_chunk_ids": [
+      "dad4fd10-8235-4a3c-81db-b5e79ab1278d"
+    ],
+    "relevant_keywords": [
+      "截断二进制指数退避",
+      "争用期",
+      "随机退避",
+      "重传次数"
+    ],
+    "notes": "应包含退避窗口随碰撞次数变化的规则；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "dad4fd10-8235-4a3c-81db-b5e79ab1278d",
+        "document": "以太网与MAC地址.md",
+        "score": 1.4047,
+        "matched_keywords": [],
+        "chunk_index": 6
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq013",
+    "question": "为什么全双工交换式以太网不再需要CSMA/CD？",
+    "category": "机制推理",
+    "knowledge_point": "交换式以太网",
+    "relevant_document": "计算机网络第四章.pdf",
+    "relevant_chunk_ids": [
+      "2802f4df-2a60-4ecc-88e5-b5f2a4c95d39",
+      "99c250b5-1405-4933-9cf4-fd11027cd698",
+      "e6588941-e57e-481c-bc00-c0f16b303eb1"
+    ],
+    "relevant_keywords": [
+      "全双工",
+      "交换式以太网",
+      "独占链路",
+      "冲突域"
+    ],
+    "notes": "用于检验共享介质与点到点链路的区别；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "2802f4df-2a60-4ecc-88e5-b5f2a4c95d39",
+        "document": "以太网与MAC地址.md",
+        "score": 4.9627,
+        "matched_keywords": [
+          "全双工"
+        ],
+        "chunk_index": 24
+      },
+      {
+        "point_id": "99c250b5-1405-4933-9cf4-fd11027cd698",
+        "document": "以太网与MAC地址.md",
+        "score": 3.9851,
+        "matched_keywords": [
+          "全双工"
+        ],
+        "chunk_index": 23
+      },
+      {
+        "point_id": "e6588941-e57e-481c-bc00-c0f16b303eb1",
+        "document": "交换机工作原理.md",
+        "score": 3.9776,
+        "matched_keywords": [
+          "全双工"
+        ],
+        "chunk_index": 6
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq014",
+    "question": "交换机如何根据MAC地址表转发以太网帧？",
+    "category": "精确关键词",
+    "knowledge_point": "以太网交换",
+    "relevant_document": "计算机网络第四章.pdf",
+    "relevant_chunk_ids": [
+      "e4cba712-44c9-4161-b756-cf1c5cd4cd5d",
+      "cced9b15-b50b-4092-86ee-a2786ec44163",
+      "eee0f44b-e831-4f29-bb97-6b7d7108f550"
+    ],
+    "relevant_keywords": [
+      "MAC地址表",
+      "自学习",
+      "转发",
+      "泛洪",
+      "过滤"
+    ],
+    "notes": "需覆盖交换机自学习和三类转发行为；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "e4cba712-44c9-4161-b756-cf1c5cd4cd5d",
+        "document": "交换机工作原理.md",
+        "score": 5.4477,
+        "matched_keywords": [
+          "转发"
+        ],
+        "chunk_index": 5
+      },
+      {
+        "point_id": "cced9b15-b50b-4092-86ee-a2786ec44163",
+        "document": "交换机工作原理.md",
+        "score": 4.9552,
+        "matched_keywords": [
+          "转发"
+        ],
+        "chunk_index": 8
+      },
+      {
+        "point_id": "eee0f44b-e831-4f29-bb97-6b7d7108f550",
+        "document": "交换机工作原理.md",
+        "score": 4.9552,
+        "matched_keywords": [
+          "转发"
+        ],
+        "chunk_index": 4
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq015",
+    "question": "广播风暴通常由什么原因引起，生成树协议如何抑制它？",
+    "category": "跨段落",
+    "knowledge_point": "二层环路与STP",
+    "relevant_document": "计算机网络第四章.pdf",
+    "relevant_chunk_ids": [
+      "91e4eff8-c5b4-4071-865c-d5a422adf9fd",
+      "57cf5b33-9ed9-49b7-b16f-d64ea912c742"
+    ],
+    "relevant_keywords": [
+      "广播风暴",
+      "二层环路",
+      "STP",
+      "生成树",
+      "阻塞端口"
+    ],
+    "notes": "需跨广播、环路和生成树协议内容；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "91e4eff8-c5b4-4071-865c-d5a422adf9fd",
+        "document": "交换机工作原理.md",
+        "score": 4.1255,
+        "matched_keywords": [
+          "广播风暴"
+        ],
+        "chunk_index": 10
+      },
+      {
+        "point_id": "57cf5b33-9ed9-49b7-b16f-d64ea912c742",
+        "document": "RIP与OSPF.md",
+        "score": 2.7085,
+        "matched_keywords": [
+          "STP"
+        ],
+        "chunk_index": 10
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq016",
+    "question": "VLAN为什么能够隔离广播域？",
+    "category": "专业术语",
+    "knowledge_point": "VLAN",
+    "relevant_document": "计算机网络第四章.pdf",
+    "relevant_chunk_ids": [
+      "44986364-8ff2-4f6a-97be-18fa1583ab85",
+      "9bde9c26-9638-4de4-b1b9-dd0f5e2e60f2"
+    ],
+    "relevant_keywords": [
+      "VLAN",
+      "广播域",
+      "逻辑分组",
+      "802.1Q"
+    ],
+    "notes": "应解释逻辑隔离而非物理隔离；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "44986364-8ff2-4f6a-97be-18fa1583ab85",
+        "document": "交换机工作原理.md",
+        "score": 7.5076,
+        "matched_keywords": [
+          "VLAN",
+          "广播域"
+        ],
+        "chunk_index": 9
+      },
+      {
+        "point_id": "9bde9c26-9638-4de4-b1b9-dd0f5e2e60f2",
+        "document": "交换机工作原理.md",
+        "score": 4.206,
+        "matched_keywords": [
+          "广播域"
+        ],
+        "chunk_index": 7
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq017",
+    "question": "ARP协议如何把IPv4地址解析为MAC地址？",
+    "category": "精确关键词",
+    "knowledge_point": "ARP",
+    "relevant_document": "计算机网络第四章.pdf",
+    "relevant_chunk_ids": [
+      "88e17052-4252-450d-9b7a-e709deabf75f",
+      "1de58a1c-615c-49f8-aa8f-8629cd2c3ffb",
+      "cad43862-fc64-472b-8169-ccd8d8e7f408"
+    ],
+    "relevant_keywords": [
+      "ARP",
+      "IP地址",
+      "MAC地址",
+      "广播请求",
+      "单播响应"
+    ],
+    "notes": "需命中ARP请求与响应过程；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "88e17052-4252-450d-9b7a-e709deabf75f",
+        "document": "ARP协议.md",
+        "score": 10.9141,
+        "matched_keywords": [
+          "ARP",
+          "IP地址",
+          "MAC地址"
+        ],
+        "chunk_index": 2
+      },
+      {
+        "point_id": "1de58a1c-615c-49f8-aa8f-8629cd2c3ffb",
+        "document": "ARP协议.md",
+        "score": 10.5821,
+        "matched_keywords": [
+          "ARP",
+          "IP地址",
+          "MAC地址"
+        ],
+        "chunk_index": 9
+      },
+      {
+        "point_id": "cad43862-fc64-472b-8169-ccd8d8e7f408",
+        "document": "ARP协议.md",
+        "score": 10.5821,
+        "matched_keywords": [
+          "ARP",
+          "IP地址",
+          "MAC地址"
+        ],
+        "chunk_index": 7
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq018",
+    "question": "ARP欺骗为什么会威胁局域网通信安全？",
+    "category": "场景应用",
+    "knowledge_point": "ARP安全",
+    "relevant_document": "计算机网络第四章.pdf",
+    "relevant_chunk_ids": [
+      "7ad63035-ed7e-48f2-93eb-2d371433f5c0",
+      "642d0f9a-b98d-4bf5-b69a-283e33bab099",
+      "1de58a1c-615c-49f8-aa8f-8629cd2c3ffb"
+    ],
+    "relevant_keywords": [
+      "ARP欺骗",
+      "ARP缓存",
+      "中间人攻击",
+      "地址映射"
+    ],
+    "notes": "侧重协议无认证带来的安全问题；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "7ad63035-ed7e-48f2-93eb-2d371433f5c0",
+        "document": "ARP协议.md",
+        "score": 7.0,
+        "matched_keywords": [
+          "ARP缓存",
+          "地址映射"
+        ],
+        "chunk_index": 11
+      },
+      {
+        "point_id": "642d0f9a-b98d-4bf5-b69a-283e33bab099",
+        "document": "ARP协议.md",
+        "score": 4.5,
+        "matched_keywords": [
+          "中间人攻击"
+        ],
+        "chunk_index": 23
+      },
+      {
+        "point_id": "1de58a1c-615c-49f8-aa8f-8629cd2c3ffb",
+        "document": "ARP协议.md",
+        "score": 4.0,
+        "matched_keywords": [
+          "ARP缓存"
+        ],
+        "chunk_index": 9
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq019",
+    "question": "IPv4地址枯竭问题主要有哪些应对技术？",
+    "category": "专业术语",
+    "knowledge_point": "IPv4地址",
+    "relevant_document": "计算机网络第五章.pdf",
+    "relevant_chunk_ids": [
+      "26f8ac93-db7e-48d5-8cb7-073fb99cd0c3",
+      "4b2d3434-8050-4971-9907-4c4197307fd7",
+      "7be0e1a3-8721-498c-8496-85f60cc77775"
+    ],
+    "relevant_keywords": [
+      "CIDR",
+      "NAT",
+      "私有地址",
+      "IPv6",
+      "地址枯竭"
+    ],
+    "notes": "需要跨地址聚合、地址复用和IPv6迁移内容；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "26f8ac93-db7e-48d5-8cb7-073fb99cd0c3",
+        "document": "IP地址与子网划分.md",
+        "score": 7.5,
+        "matched_keywords": [
+          "IPv6",
+          "地址枯竭"
+        ],
+        "chunk_index": 15
+      },
+      {
+        "point_id": "4b2d3434-8050-4971-9907-4c4197307fd7",
+        "document": "NAT与VPN.md",
+        "score": 4.0,
+        "matched_keywords": [
+          "NAT"
+        ],
+        "chunk_index": 2
+      },
+      {
+        "point_id": "7be0e1a3-8721-498c-8496-85f60cc77775",
+        "document": "NAT与VPN.md",
+        "score": 3.75,
+        "matched_keywords": [
+          "NAT"
+        ],
+        "chunk_index": 21
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq020",
+    "question": "什么是CIDR，它如何提高IPv4地址分配效率？",
+    "category": "精确关键词",
+    "knowledge_point": "CIDR",
+    "relevant_document": "计算机网络第五章.pdf",
+    "relevant_chunk_ids": [
+      "04b12038-42ab-4d8d-a77f-3679a1eff6cc",
+      "8f0a37be-5cef-4b36-aaf0-9254385e63ce",
+      "44986364-8ff2-4f6a-97be-18fa1583ab85"
+    ],
+    "relevant_keywords": [
+      "CIDR",
+      "无分类编址",
+      "网络前缀",
+      "路由聚合"
+    ],
+    "notes": "需区分CIDR与传统分类编址；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "04b12038-42ab-4d8d-a77f-3679a1eff6cc",
+        "document": "RIP与OSPF.md",
+        "score": 3.25,
+        "matched_keywords": [
+          "CIDR"
+        ],
+        "chunk_index": 12
+      },
+      {
+        "point_id": "8f0a37be-5cef-4b36-aaf0-9254385e63ce",
+        "document": "IP地址与子网划分.md",
+        "score": 3.0,
+        "matched_keywords": [
+          "CIDR"
+        ],
+        "chunk_index": 9
+      },
+      {
+        "point_id": "44986364-8ff2-4f6a-97be-18fa1583ab85",
+        "document": "交换机工作原理.md",
+        "score": 1.0,
+        "matched_keywords": [],
+        "chunk_index": 9
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq021",
+    "question": "子网掩码255.255.255.192对应多少位网络前缀，每个子网最多可用多少个主机地址？",
+    "category": "计算分析",
+    "knowledge_point": "IPv4子网划分",
+    "relevant_document": "计算机网络第五章.pdf",
+    "relevant_chunk_ids": [
+      "2ee7f0af-f41d-43ae-be65-97fe24999907",
+      "1429a5ea-8f22-4637-9d87-9315d19b0809",
+      "49797c1e-0d06-44cc-a9ea-11f3f38911bd"
+    ],
+    "relevant_keywords": [
+      "子网掩码",
+      "/26",
+      "主机位",
+      "可用主机地址"
+    ],
+    "notes": "应命中子网划分公式与保留地址规则；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "2ee7f0af-f41d-43ae-be65-97fe24999907",
+        "document": "IP地址与子网划分.md",
+        "score": 8.9821,
+        "matched_keywords": [
+          "子网掩码",
+          "/26"
+        ],
+        "chunk_index": 12
+      },
+      {
+        "point_id": "1429a5ea-8f22-4637-9d87-9315d19b0809",
+        "document": "IP地址与子网划分.md",
+        "score": 6.0396,
+        "matched_keywords": [
+          "子网掩码"
+        ],
+        "chunk_index": 8
+      },
+      {
+        "point_id": "49797c1e-0d06-44cc-a9ea-11f3f38911bd",
+        "document": "DHCP.md",
+        "score": 5.5972,
+        "matched_keywords": [
+          "子网掩码"
+        ],
+        "chunk_index": 15
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq022",
+    "question": "路由器收到IPv4数据报后，最长前缀匹配是如何选择下一跳的？",
+    "category": "机制推理",
+    "knowledge_point": "IP转发",
+    "relevant_document": "计算机网络第五章.pdf",
+    "relevant_chunk_ids": [
+      "5e4d5593-ab07-4866-98f4-a3fe593c02db",
+      "6195f25e-a4a9-43fe-a72c-770bfffc97ee",
+      "8a9f809e-54c7-4561-9b3d-dd9dfd2c3d01"
+    ],
+    "relevant_keywords": [
+      "最长前缀匹配",
+      "路由表",
+      "下一跳",
+      "目的网络"
+    ],
+    "notes": "需命中路由查表和转发规则；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "5e4d5593-ab07-4866-98f4-a3fe593c02db",
+        "document": "路由算法.md",
+        "score": 3.65,
+        "matched_keywords": [
+          "路由表"
+        ],
+        "chunk_index": 4
+      },
+      {
+        "point_id": "6195f25e-a4a9-43fe-a72c-770bfffc97ee",
+        "document": "路由算法.md",
+        "score": 3.4,
+        "matched_keywords": [
+          "路由表"
+        ],
+        "chunk_index": 6
+      },
+      {
+        "point_id": "8a9f809e-54c7-4561-9b3d-dd9dfd2c3d01",
+        "document": "RIP与OSPF.md",
+        "score": 3.4,
+        "matched_keywords": [
+          "路由表"
+        ],
+        "chunk_index": 8
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq023",
+    "question": "IPv4分片在什么情况下发生，接收端如何完成重组？",
+    "category": "跨段落",
+    "knowledge_point": "IPv4分片",
+    "relevant_document": "计算机网络第五章.pdf",
+    "relevant_chunk_ids": [
+      "9c2c1dc2-8460-4e3b-81d2-85c302813ad3",
+      "c7eb8ff6-3a59-47cd-a6e5-46a0028235af",
+      "1c6fa760-2f99-4fa6-939f-507c0b9cab4c"
+    ],
+    "relevant_keywords": [
+      "MTU",
+      "分片",
+      "片偏移",
+      "MF标志",
+      "重组"
+    ],
+    "notes": "需覆盖分片字段和重组位置；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "9c2c1dc2-8460-4e3b-81d2-85c302813ad3",
+        "document": "以太网与MAC地址.md",
+        "score": 5.9736,
+        "matched_keywords": [
+          "MTU",
+          "分片"
+        ],
+        "chunk_index": 19
+      },
+      {
+        "point_id": "c7eb8ff6-3a59-47cd-a6e5-46a0028235af",
+        "document": "数据封装与解封装.md",
+        "score": 3.4472,
+        "matched_keywords": [
+          "重组"
+        ],
+        "chunk_index": 14
+      },
+      {
+        "point_id": "1c6fa760-2f99-4fa6-939f-507c0b9cab4c",
+        "document": "以太网与MAC地址.md",
+        "score": 2.75,
+        "matched_keywords": [
+          "MTU"
+        ],
+        "chunk_index": 18
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq024",
+    "question": "ICMP差错报告报文有哪些典型类型，它们分别用于什么场景？",
+    "category": "跨段落",
+    "knowledge_point": "ICMP",
+    "relevant_document": "计算机网络第五章.pdf",
+    "relevant_chunk_ids": [
+      "ad5ce533-d11c-49e9-a828-487c1b24e4ff",
+      "e0a301aa-e600-45cf-a54c-047ffd450992",
+      "e8a3ef59-4b22-4658-8710-133fd62553e2"
+    ],
+    "relevant_keywords": [
+      "ICMP",
+      "目的不可达",
+      "时间超过",
+      "参数问题",
+      "重定向"
+    ],
+    "notes": "需要综合多个ICMP差错类型；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "ad5ce533-d11c-49e9-a828-487c1b24e4ff",
+        "document": "ICMP与ping.md",
+        "score": 14.2706,
+        "matched_keywords": [
+          "ICMP",
+          "目的不可达",
+          "参数问题",
+          "重定向"
+        ],
+        "chunk_index": 4
+      },
+      {
+        "point_id": "e0a301aa-e600-45cf-a54c-047ffd450992",
+        "document": "TCP_IP四层模型.md",
+        "score": 3.8165,
+        "matched_keywords": [
+          "ICMP"
+        ],
+        "chunk_index": 20
+      },
+      {
+        "point_id": "e8a3ef59-4b22-4658-8710-133fd62553e2",
+        "document": "ICMP与ping.md",
+        "score": 3.4082,
+        "matched_keywords": [
+          "ICMP"
+        ],
+        "chunk_index": 9
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq025",
+    "question": "NAT在家庭网络中扮演什么角色，它会带来哪些局限？",
+    "category": "场景应用",
+    "knowledge_point": "NAT",
+    "relevant_document": "计算机网络第五章.pdf",
+    "relevant_chunk_ids": [
+      "915d12d5-6e2d-4250-9b99-990f8e5135d6",
+      "4b2d3434-8050-4971-9907-4c4197307fd7",
+      "52227a86-dc54-41ab-8223-c51cb2b704a9"
+    ],
+    "relevant_keywords": [
+      "NAT",
+      "私有IP",
+      "公网IP",
+      "端到端通信",
+      "端口映射"
+    ],
+    "notes": "需同时说明地址复用与端到端破坏；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "915d12d5-6e2d-4250-9b99-990f8e5135d6",
+        "document": "NAT与VPN.md",
+        "score": 6.9682,
+        "matched_keywords": [
+          "NAT",
+          "私有IP"
+        ],
+        "chunk_index": 6
+      },
+      {
+        "point_id": "4b2d3434-8050-4971-9907-4c4197307fd7",
+        "document": "NAT与VPN.md",
+        "score": 6.4682,
+        "matched_keywords": [
+          "NAT",
+          "私有IP"
+        ],
+        "chunk_index": 2
+      },
+      {
+        "point_id": "52227a86-dc54-41ab-8223-c51cb2b704a9",
+        "document": "NAT与VPN.md",
+        "score": 3.9682,
+        "matched_keywords": [
+          "NAT"
+        ],
+        "chunk_index": 8
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq026",
+    "question": "IPv6相较IPv4在地址长度、首部结构和自动配置方面有哪些变化？",
+    "category": "容易混淆",
+    "knowledge_point": "IPv6",
+    "relevant_document": "计算机网络第五章.pdf",
+    "relevant_chunk_ids": [
+      "26f8ac93-db7e-48d5-8cb7-073fb99cd0c3",
+      "acddac0a-46fa-41b4-8d1e-a59cdb2b48c6",
+      "a798080b-f58f-482f-a29d-1924dc825d56"
+    ],
+    "relevant_keywords": [
+      "IPv6",
+      "128位地址",
+      "基本首部",
+      "扩展首部",
+      "无状态自动配置"
+    ],
+    "notes": "需要跨多个IPv6特性分块；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "26f8ac93-db7e-48d5-8cb7-073fb99cd0c3",
+        "document": "IP地址与子网划分.md",
+        "score": 3.8624,
+        "matched_keywords": [
+          "IPv6"
+        ],
+        "chunk_index": 15
+      },
+      {
+        "point_id": "acddac0a-46fa-41b4-8d1e-a59cdb2b48c6",
+        "document": "DNS域名系统.md",
+        "score": 3.6124,
+        "matched_keywords": [
+          "IPv6"
+        ],
+        "chunk_index": 19
+      },
+      {
+        "point_id": "a798080b-f58f-482f-a29d-1924dc825d56",
+        "document": "IP地址与子网划分.md",
+        "score": 3.2041,
+        "matched_keywords": [
+          "IPv6"
+        ],
+        "chunk_index": 14
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq027",
+    "question": "RIP为什么适合小型自治系统，却不适合大型网络？",
+    "category": "机制推理",
+    "knowledge_point": "RIP",
+    "relevant_document": "计算机网络第六章.pdf",
+    "relevant_chunk_ids": [
+      "7b07510b-1f3b-4c57-8f48-2e0952e0479f",
+      "2aa9c4f7-88bb-40a3-99d8-d1dfa1e444f3",
+      "e0992a49-00d7-4d20-889b-0dffe84079ea"
+    ],
+    "relevant_keywords": [
+      "RIP",
+      "距离向量",
+      "跳数",
+      "15跳",
+      "收敛慢"
+    ],
+    "notes": "需说明度量上限和收敛问题；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "7b07510b-1f3b-4c57-8f48-2e0952e0479f",
+        "document": "RIP与OSPF.md",
+        "score": 10.6677,
+        "matched_keywords": [
+          "RIP",
+          "距离向量",
+          "跳数"
+        ],
+        "chunk_index": 19
+      },
+      {
+        "point_id": "2aa9c4f7-88bb-40a3-99d8-d1dfa1e444f3",
+        "document": "RIP与OSPF.md",
+        "score": 6.4382,
+        "matched_keywords": [
+          "RIP",
+          "跳数"
+        ],
+        "chunk_index": 4
+      },
+      {
+        "point_id": "e0992a49-00d7-4d20-889b-0dffe84079ea",
+        "document": "RIP与OSPF.md",
+        "score": 6.2294,
+        "matched_keywords": [
+          "RIP",
+          "距离向量"
+        ],
+        "chunk_index": 2
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq028",
+    "question": "OSPF和RIP两种路由协议的核心区别体现在哪里？",
+    "category": "跨段落",
+    "knowledge_point": "路由协议比较",
+    "relevant_document": "计算机网络第六章.pdf",
+    "relevant_chunk_ids": [
+      "7b07510b-1f3b-4c57-8f48-2e0952e0479f",
+      "57cf5b33-9ed9-49b7-b16f-d64ea912c742",
+      "e0992a49-00d7-4d20-889b-0dffe84079ea"
+    ],
+    "relevant_keywords": [
+      "OSPF",
+      "RIP",
+      "链路状态",
+      "距离向量",
+      "收敛速度"
+    ],
+    "notes": "需要跨多个协议分块对比；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "7b07510b-1f3b-4c57-8f48-2e0952e0479f",
+        "document": "RIP与OSPF.md",
+        "score": 16.4588,
+        "matched_keywords": [
+          "OSPF",
+          "RIP",
+          "链路状态",
+          "距离向量",
+          "收敛速度"
+        ],
+        "chunk_index": 19
+      },
+      {
+        "point_id": "57cf5b33-9ed9-49b7-b16f-d64ea912c742",
+        "document": "RIP与OSPF.md",
+        "score": 9.6677,
+        "matched_keywords": [
+          "OSPF",
+          "RIP",
+          "链路状态"
+        ],
+        "chunk_index": 10
+      },
+      {
+        "point_id": "e0992a49-00d7-4d20-889b-0dffe84079ea",
+        "document": "RIP与OSPF.md",
+        "score": 9.4177,
+        "matched_keywords": [
+          "OSPF",
+          "RIP",
+          "距离向量"
+        ],
+        "chunk_index": 2
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq029",
+    "question": "OSPF为什么要把自治系统划分为多个区域？",
+    "category": "机制推理",
+    "knowledge_point": "OSPF区域",
+    "relevant_document": "计算机网络第六章.pdf",
+    "relevant_chunk_ids": [
+      "0dc1b16f-dbfc-484e-a924-18c8aeda7e1f",
+      "d5ac5e81-7144-45f5-bdfc-f31dd6acb10b",
+      "301f4645-5b8c-4ea5-9e1a-2732a6d147f0"
+    ],
+    "relevant_keywords": [
+      "OSPF",
+      "区域",
+      "主干区域",
+      "链路状态数据库",
+      "规模扩展"
+    ],
+    "notes": "应命中分层路由设计目的；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "0dc1b16f-dbfc-484e-a924-18c8aeda7e1f",
+        "document": "RIP与OSPF.md",
+        "score": 7.6977,
+        "matched_keywords": [
+          "OSPF",
+          "区域"
+        ],
+        "chunk_index": 14
+      },
+      {
+        "point_id": "d5ac5e81-7144-45f5-bdfc-f31dd6acb10b",
+        "document": "RIP与OSPF.md",
+        "score": 6.5,
+        "matched_keywords": [
+          "OSPF",
+          "链路状态数据库"
+        ],
+        "chunk_index": 17
+      },
+      {
+        "point_id": "301f4645-5b8c-4ea5-9e1a-2732a6d147f0",
+        "document": "RIP与OSPF.md",
+        "score": 6.4851,
+        "matched_keywords": [
+          "OSPF",
+          "区域"
+        ],
+        "chunk_index": 13
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq030",
+    "question": "BGP为什么采用路径向量而不是单纯的最短路径算法？",
+    "category": "专业术语",
+    "knowledge_point": "BGP",
+    "relevant_document": "计算机网络第六章.pdf",
+    "relevant_chunk_ids": [
+      "be32f1ee-acea-4268-92fd-31c24ad4951f",
+      "3bc7de4c-3698-4d45-9938-a8dee51a9c77",
+      "c81b60b4-d0be-4a95-9721-09c63c4a98c9"
+    ],
+    "relevant_keywords": [
+      "BGP",
+      "路径向量",
+      "AS-PATH",
+      "策略路由",
+      "自治系统"
+    ],
+    "notes": "需体现域间路由的策略属性；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "be32f1ee-acea-4268-92fd-31c24ad4951f",
+        "document": "路由算法.md",
+        "score": 7.3411,
+        "matched_keywords": [
+          "BGP",
+          "路径向量"
+        ],
+        "chunk_index": 14
+      },
+      {
+        "point_id": "3bc7de4c-3698-4d45-9938-a8dee51a9c77",
+        "document": "路由算法.md",
+        "score": 4.3729,
+        "matched_keywords": [
+          "路径向量"
+        ],
+        "chunk_index": 13
+      },
+      {
+        "point_id": "c81b60b4-d0be-4a95-9721-09c63c4a98c9",
+        "document": "路由算法.md",
+        "score": 3.7182,
+        "matched_keywords": [
+          "策略路由"
+        ],
+        "chunk_index": 15
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq031",
+    "question": "路由选择与分组转发有什么区别？",
+    "category": "容易混淆",
+    "knowledge_point": "网络层功能",
+    "relevant_document": "计算机网络第六章.pdf",
+    "relevant_chunk_ids": [
+      "cced9b15-b50b-4092-86ee-a2786ec44163",
+      "8fd32357-8fde-4d40-bfb2-c3d647c813c0",
+      "3f40bee0-de4b-4e42-9ba3-a86e547c8b88"
+    ],
+    "relevant_keywords": [
+      "路由选择",
+      "分组转发",
+      "控制平面",
+      "数据平面"
+    ],
+    "notes": "测试控制平面与数据平面的区分；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "cced9b15-b50b-4092-86ee-a2786ec44163",
+        "document": "交换机工作原理.md",
+        "score": 4.819,
+        "matched_keywords": [
+          "路由选择"
+        ],
+        "chunk_index": 8
+      },
+      {
+        "point_id": "8fd32357-8fde-4d40-bfb2-c3d647c813c0",
+        "document": "OSI七层模型.md",
+        "score": 1.5345,
+        "matched_keywords": [],
+        "chunk_index": 10
+      },
+      {
+        "point_id": "3f40bee0-de4b-4e42-9ba3-a86e547c8b88",
+        "document": "路由算法.md",
+        "score": 1.2845,
+        "matched_keywords": [],
+        "chunk_index": 2
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq032",
+    "question": "距离向量路由算法中的“坏消息传播得慢”是怎样产生的？",
+    "category": "机制推理",
+    "knowledge_point": "距离向量路由",
+    "relevant_document": "计算机网络第六章.pdf",
+    "relevant_chunk_ids": [
+      "7b984575-4559-4a0a-98e1-27ae20f30129",
+      "6195f25e-a4a9-43fe-a72c-770bfffc97ee",
+      "e0992a49-00d7-4d20-889b-0dffe84079ea"
+    ],
+    "relevant_keywords": [
+      "坏消息传播得慢",
+      "计数到无穷",
+      "距离向量",
+      "路由环路"
+    ],
+    "notes": "需命中计数到无穷问题及其成因；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "7b984575-4559-4a0a-98e1-27ae20f30129",
+        "document": "路由算法.md",
+        "score": 4.6255,
+        "matched_keywords": [
+          "计数到无穷"
+        ],
+        "chunk_index": 7
+      },
+      {
+        "point_id": "6195f25e-a4a9-43fe-a72c-770bfffc97ee",
+        "document": "路由算法.md",
+        "score": 4.5426,
+        "matched_keywords": [
+          "距离向量"
+        ],
+        "chunk_index": 6
+      },
+      {
+        "point_id": "e0992a49-00d7-4d20-889b-0dffe84079ea",
+        "document": "RIP与OSPF.md",
+        "score": 4.5426,
+        "matched_keywords": [
+          "距离向量"
+        ],
+        "chunk_index": 2
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq033",
+    "question": "DNS解析过程为什么采用分级域名结构？",
+    "category": "跨段落",
+    "knowledge_point": "DNS",
+    "relevant_document": "计算机网络第八章.pdf",
+    "relevant_chunk_ids": [
+      "38d9260e-4f2e-461a-ad68-11a4d45c2917",
+      "49d93fdb-d844-41fe-b6b7-e6d7806ea736",
+      "ef123bda-e78e-4f81-9e06-eed8e6b33ea8"
+    ],
+    "relevant_keywords": [
+      "DNS",
+      "分级域名",
+      "根域名服务器",
+      "顶级域服务器",
+      "授权域名服务器"
+    ],
+    "notes": "需跨DNS命名结构和服务器层次内容；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "38d9260e-4f2e-461a-ad68-11a4d45c2917",
+        "document": "DNS域名系统.md",
+        "score": 10.0,
+        "matched_keywords": [
+          "DNS",
+          "根域名服务器"
+        ],
+        "chunk_index": 7
+      },
+      {
+        "point_id": "49d93fdb-d844-41fe-b6b7-e6d7806ea736",
+        "document": "DNS域名系统.md",
+        "score": 6.0,
+        "matched_keywords": [
+          "DNS"
+        ],
+        "chunk_index": 10
+      },
+      {
+        "point_id": "ef123bda-e78e-4f81-9e06-eed8e6b33ea8",
+        "document": "TCP_IP四层模型.md",
+        "score": 5.75,
+        "matched_keywords": [
+          "DNS"
+        ],
+        "chunk_index": 16
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq034",
+    "question": "递归查询与迭代查询在DNS解析中有什么区别？",
+    "category": "容易混淆",
+    "knowledge_point": "DNS查询",
+    "relevant_document": "计算机网络第八章.pdf",
+    "relevant_chunk_ids": [
+      "38d9260e-4f2e-461a-ad68-11a4d45c2917",
+      "3bab64a0-f321-4a24-b64f-38c920389b4c",
+      "4d3c3039-e6cc-466e-b1a8-9c073a3f44b8"
+    ],
+    "relevant_keywords": [
+      "递归查询",
+      "迭代查询",
+      "本地域名服务器",
+      "DNS缓存"
+    ],
+    "notes": "应明确由谁继续查询以及返回什么结果；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "38d9260e-4f2e-461a-ad68-11a4d45c2917",
+        "document": "DNS域名系统.md",
+        "score": 4.9714,
+        "matched_keywords": [
+          "本地域名服务器"
+        ],
+        "chunk_index": 7
+      },
+      {
+        "point_id": "3bab64a0-f321-4a24-b64f-38c920389b4c",
+        "document": "DNS域名系统.md",
+        "score": 4.9571,
+        "matched_keywords": [
+          "递归查询"
+        ],
+        "chunk_index": 9
+      },
+      {
+        "point_id": "4d3c3039-e6cc-466e-b1a8-9c073a3f44b8",
+        "document": "DNS域名系统.md",
+        "score": 4.9571,
+        "matched_keywords": [
+          "迭代查询"
+        ],
+        "chunk_index": 12
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq035",
+    "question": "DNS缓存为什么既能提高效率，也可能造成解析结果暂时过期？",
+    "category": "机制推理",
+    "knowledge_point": "DNS缓存",
+    "relevant_document": "计算机网络第八章.pdf",
+    "relevant_chunk_ids": [
+      "e83f9929-0fdc-495b-9c97-76aa2b48ea68",
+      "628bba77-e46e-4fbc-a1ac-2c51aac38999",
+      "01807057-6466-43ef-bedf-1665e50a26ac"
+    ],
+    "relevant_keywords": [
+      "DNS缓存",
+      "TTL",
+      "解析延迟",
+      "过期记录"
+    ],
+    "notes": "需说明TTL与缓存一致性的权衡；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "e83f9929-0fdc-495b-9c97-76aa2b48ea68",
+        "document": "DNS域名系统.md",
+        "score": 3.9,
+        "matched_keywords": [
+          "TTL"
+        ],
+        "chunk_index": 16
+      },
+      {
+        "point_id": "628bba77-e46e-4fbc-a1ac-2c51aac38999",
+        "document": "DNS域名系统.md",
+        "score": 3.65,
+        "matched_keywords": [
+          "DNS缓存"
+        ],
+        "chunk_index": 14
+      },
+      {
+        "point_id": "01807057-6466-43ef-bedf-1665e50a26ac",
+        "document": "ICMP与ping.md",
+        "score": 2.75,
+        "matched_keywords": [
+          "TTL"
+        ],
+        "chunk_index": 17
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq036",
+    "question": "HTTP和HTTPS在传输安全性上的差别是什么？",
+    "category": "容易混淆",
+    "knowledge_point": "Web协议",
+    "relevant_document": "计算机网络第八章.pdf",
+    "relevant_chunk_ids": [
+      "efd16b96-1623-426c-97e3-6b9eac8dcd2b",
+      "01cf111c-cbe3-4c24-b1ea-f78174286d74",
+      "5b23dec0-9cb9-4e87-9f84-e0c2e6a52a40"
+    ],
+    "relevant_keywords": [
+      "HTTP",
+      "HTTPS",
+      "TLS",
+      "证书",
+      "加密",
+      "完整性"
+    ],
+    "notes": "不要与HTTP/2或HTTP/3性能特性混淆；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "efd16b96-1623-426c-97e3-6b9eac8dcd2b",
+        "document": "HTTP与HTTPS.md",
+        "score": 14.5,
+        "matched_keywords": [
+          "HTTP",
+          "HTTPS",
+          "证书",
+          "加密",
+          "完整性"
+        ],
+        "chunk_index": 12
+      },
+      {
+        "point_id": "01cf111c-cbe3-4c24-b1ea-f78174286d74",
+        "document": "HTTP与HTTPS.md",
+        "score": 14.0,
+        "matched_keywords": [
+          "HTTP",
+          "HTTPS",
+          "TLS",
+          "证书",
+          "加密"
+        ],
+        "chunk_index": 14
+      },
+      {
+        "point_id": "5b23dec0-9cb9-4e87-9f84-e0c2e6a52a40",
+        "document": "HTTP与HTTPS.md",
+        "score": 12.75,
+        "matched_keywords": [
+          "HTTP",
+          "HTTPS",
+          "证书",
+          "加密"
+        ],
+        "chunk_index": 16
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq037",
+    "question": "HTTPS建立连接时，数字证书如何帮助客户端验证服务器身份？",
+    "category": "机制推理",
+    "knowledge_point": "TLS认证",
+    "relevant_document": "计算机网络第八章.pdf",
+    "relevant_chunk_ids": [
+      "efd16b96-1623-426c-97e3-6b9eac8dcd2b",
+      "cfc0c5e9-6c61-4252-be98-e5dd5868b86c",
+      "01cf111c-cbe3-4c24-b1ea-f78174286d74"
+    ],
+    "relevant_keywords": [
+      "数字证书",
+      "CA",
+      "服务器身份",
+      "公钥",
+      "证书链"
+    ],
+    "notes": "需命中证书验证和公钥绑定；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "efd16b96-1623-426c-97e3-6b9eac8dcd2b",
+        "document": "HTTP与HTTPS.md",
+        "score": 11.3371,
+        "matched_keywords": [
+          "数字证书",
+          "CA",
+          "服务器身份"
+        ],
+        "chunk_index": 12
+      },
+      {
+        "point_id": "cfc0c5e9-6c61-4252-be98-e5dd5868b86c",
+        "document": "数字签名与证书.md",
+        "score": 10.3165,
+        "matched_keywords": [
+          "数字证书",
+          "CA",
+          "公钥"
+        ],
+        "chunk_index": 8
+      },
+      {
+        "point_id": "01cf111c-cbe3-4c24-b1ea-f78174286d74",
+        "document": "HTTP与HTTPS.md",
+        "score": 8.7454,
+        "matched_keywords": [
+          "数字证书",
+          "CA"
+        ],
+        "chunk_index": 14
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq038",
+    "question": "HTTP持久连接与非持久连接在时延和资源开销上有何差异？",
+    "category": "容易混淆",
+    "knowledge_point": "HTTP连接管理",
+    "relevant_document": "计算机网络第八章.pdf",
+    "relevant_chunk_ids": [
+      "821df1e5-75a9-4af9-a236-4bfc88d0d1d5",
+      "6eb91232-8021-47c4-813e-28072d5bad22",
+      "3c5f5ec8-9251-47a4-8041-cdf2be8a35ce"
+    ],
+    "relevant_keywords": [
+      "持久连接",
+      "非持久连接",
+      "RTT",
+      "TCP连接复用"
+    ],
+    "notes": "需覆盖连接复用对时延和开销的影响；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "821df1e5-75a9-4af9-a236-4bfc88d0d1d5",
+        "document": "SSL-TLS.md",
+        "score": 3.4682,
+        "matched_keywords": [
+          "RTT"
+        ],
+        "chunk_index": 12
+      },
+      {
+        "point_id": "6eb91232-8021-47c4-813e-28072d5bad22",
+        "document": "TCP可靠传输.md",
+        "score": 3.0,
+        "matched_keywords": [
+          "RTT"
+        ],
+        "chunk_index": 15
+      },
+      {
+        "point_id": "3c5f5ec8-9251-47a4-8041-cdf2be8a35ce",
+        "document": "慢启动.md",
+        "score": 2.75,
+        "matched_keywords": [
+          "RTT"
+        ],
+        "chunk_index": 15
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq039",
+    "question": "电子邮件从发送端到接收端通常涉及哪些协议，各自承担什么功能？",
+    "category": "跨段落",
+    "knowledge_point": "电子邮件协议",
+    "relevant_document": "计算机网络第八章.pdf",
+    "relevant_chunk_ids": [
+      "98c7aa2c-4eff-4cfb-bf40-cc4a84f6055d",
+      "270bec1b-c271-45eb-8474-ad55a4bb6e10",
+      "ef751fcf-054a-454b-a594-8f391b0db3aa"
+    ],
+    "relevant_keywords": [
+      "SMTP",
+      "POP3",
+      "IMAP",
+      "MIME",
+      "邮件服务器"
+    ],
+    "notes": "需要跨发送、接收和内容扩展协议分块；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "98c7aa2c-4eff-4cfb-bf40-cc4a84f6055d",
+        "document": "FTP与邮件协议.md",
+        "score": 9.5669,
+        "matched_keywords": [
+          "SMTP",
+          "POP3",
+          "IMAP"
+        ],
+        "chunk_index": 27
+      },
+      {
+        "point_id": "270bec1b-c271-45eb-8474-ad55a4bb6e10",
+        "document": "FTP与邮件协议.md",
+        "score": 6.439,
+        "matched_keywords": [
+          "POP3",
+          "IMAP"
+        ],
+        "chunk_index": 25
+      },
+      {
+        "point_id": "ef751fcf-054a-454b-a594-8f391b0db3aa",
+        "document": "FTP与邮件协议.md",
+        "score": 5.75,
+        "matched_keywords": [
+          "POP3",
+          "IMAP"
+        ],
+        "chunk_index": 24
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  },
+  {
+    "question_id": "eq040",
+    "question": "FTP的控制连接和数据连接为什么要分开建立？",
+    "category": "专业术语",
+    "knowledge_point": "FTP",
+    "relevant_document": "计算机网络第八章.pdf",
+    "relevant_chunk_ids": [
+      "f0d89949-5055-48dd-b422-9519a63a8a18",
+      "d241b526-2275-4786-9242-f61c4d5f1c04",
+      "4e8c1903-e055-49fa-b6f2-d472f1a6524f"
+    ],
+    "relevant_keywords": [
+      "FTP",
+      "控制连接",
+      "数据连接",
+      "端口21",
+      "带外控制"
+    ],
+    "notes": "需定位FTP双连接体系；relevant_chunk_ids须由实际Qdrant collection解析后回填",
+    "resolved_chunk_metadata": [
+      {
+        "point_id": "f0d89949-5055-48dd-b422-9519a63a8a18",
+        "document": "FTP与邮件协议.md",
+        "score": 14.1785,
+        "matched_keywords": [
+          "FTP",
+          "控制连接",
+          "数据连接",
+          "端口21"
+        ],
+        "chunk_index": 6
+      },
+      {
+        "point_id": "d241b526-2275-4786-9242-f61c4d5f1c04",
+        "document": "FTP与邮件协议.md",
+        "score": 11.1499,
+        "matched_keywords": [
+          "FTP",
+          "控制连接",
+          "数据连接"
+        ],
+        "chunk_index": 4
+      },
+      {
+        "point_id": "4e8c1903-e055-49fa-b6f2-d472f1a6524f",
+        "document": "FTP与邮件协议.md",
+        "score": 3.9857,
+        "matched_keywords": [
+          "FTP"
+        ],
+        "chunk_index": 8
+      }
+    ],
+    "chunk_resolution": {
+      "collection": "qingli_docs",
+      "identifier_type": "qdrant_point_id",
+      "status": "resolved"
+    }
+  }
+]

@@ -770,6 +770,137 @@ python run_experiment.py --groups A,B --repeat 1     # 只跑指定组别
 
 ---
 
+## 🔬 Embedding模型选型实验
+
+> 与 [🧪 实验对比](#-实验对比) 中的 A/B/C/D 系统方案消融不同，本节专门针对 **Embedding 模型选型** 进行横向对比，避免凭直觉选模型。
+
+### 实验目的
+
+在统一的中文知识库与测试集上，对比不同中文 Embedding 模型在纯检索任务下的效果与本地部署成本，为项目默认选用 `BAAI/bge-base-zh-v1.5` 提供真实数据依据。
+
+### 实验环境
+
+| 项目 | 值 |
+|---|---|
+| CPU | 待填 |
+| GPU | 待填 |
+| 内存 | 待填 |
+| Python | 待填（由脚本写入 `_meta.python`） |
+| Qdrant 模式 | `local` / `server`（待填） |
+| 实验时间 | 待填（脚本自动写入 `_meta.timestamp`） |
+
+### 数据集
+
+- 源文档：计算机网络教材等（与主系统同一文档库）
+- 文本块数量：待填（脚本自动写入 `chunk_count`）
+- 测试问题数量：40 道（`eq001`—`eq040`，覆盖 TCP/以太网/ARP/IPv4/IPv6/路由协议/DNS/HTTP 等知识点）
+- 标注方式：先用 `fill_real_chunk_ids.py` 从运行中的 Qdrant 自动匹配真实 point ID，再人工复核
+- 问题类型覆盖：精确关键词 / 同义改写 / 专业术语 / 跨段落 / 容易混淆
+
+### 固定参数（控制变量）
+
+为保证对比有效，以下参数对所有候选模型保持完全相同：
+
+| 参数 | 值 |
+|---|---|
+| Chunk Size | 1024（与 `settings.chunk_size` 一致） |
+| Chunk Overlap | 128 |
+| Top-K | 10 |
+| Distance | Cosine |
+| Reranker | **关闭**（仅评测 Embedding 检索能力） |
+| BM25 | **不参与**（仅向量检索） |
+| 大模型回答 | **不进入**（避免 Prompt/RAGAS 干扰） |
+
+### 候选模型
+
+| 简称 | 完整名称 | 维度 | 说明 |
+|---|---|---|---|
+| bge-base-zh | BAAI/bge-base-zh-v1.5 | 768 | 当前基线 |
+| m3e-base | moka-ai/m3e-base | 768 | Moka AI 中文向量 |
+| text2vec | shibing624/text2vec-base-chinese | 768 | text2vec 中文基础 |
+| bge-m3 | BAAI/bge-m3 | 1024 | 多语言大模型（机器资源允许时加入） |
+
+### 评价指标
+
+| 指标 | 含义 |
+|---|---|
+| Hit@1 | Top-1 结果是否命中相关 chunk |
+| Hit@3 | Top-3 中是否出现相关 chunk |
+| Recall@5 | Top-5 召回了多少比例的相关 chunk |
+| MRR | 平均倒数排名，正确结果越靠前分数越高 |
+| 编码耗时 | 单条 query 向量化的平均耗时 |
+| 检索耗时 | Qdrant search 的平均耗时 |
+| 模型加载峰值内存 | 本地部署资源需求参考 |
+
+### 实验结果
+
+> 以下为占位表。运行评测脚本后会自动写入 [results.json](backend/tests/embedding_benchmark/results.json)，请将真实数值回填至此表，**禁止编造数据**。
+
+| 模型 | 维度 | Hit@1 | Hit@3 | Recall@5 | MRR | 编码耗时/ms | 检索耗时/ms | 加载峰值内存/MB |
+|---|---|---|---|---|---|---|---|---|
+| bge-base-zh-v1.5 | 768 | 待测 | 待测 | 待测 | 待测 | 待测 | 待测 | 待测 |
+| m3e-base | 768 | 待测 | 待测 | 待测 | 待测 | 待测 | 待测 | 待测 |
+| text2vec-base-chinese | 768 | 待测 | 待测 | 待测 | 待测 | 待测 | 待测 | 待测 |
+| bge-m3 | 1024 | 待测 | 待测 | 待测 | 待测 | 待测 | 待测 | 待测 |
+
+### 运行方式
+
+**第 0 步：回填真实 Qdrant point ID（一次性操作）**
+
+确保 Qdrant 已启动且知识库文档已导入，然后：
+
+```bash
+cd backend
+# 用回填脚本从运行中的 Qdrant 匹配真实 point ID
+python -m tests.embedding_benchmark.fill_real_chunk_ids \
+  --url http://localhost:6333 \
+  --strict
+```
+
+脚本会将每道题匹配到的真实 Qdrant point ID 写入 `relevant_chunk_ids`，替换掉占位值。`--strict` 会在无法解析时报错。
+
+**第 1 步：运行评测**
+
+```bash
+cd backend
+# 评测3个768维模型，每个重复3次取平均
+python -m tests.embedding_benchmark.benchmark --models bge-base-zh m3e-base text2vec --repeat 3
+
+# 资源允许时加入bge-m3
+python -m tests.embedding_benchmark.benchmark --models bge-base-zh m3e-base text2vec bge-m3 --repeat 3
+```
+
+> 未回填真实 ID 时脚本会退回到 `relevant_keywords` 软匹配模式，仅作快速自测用，**不可用于选型决策**。
+
+脚本会自动：
+1. 从主系统 `qingli_docs` collection 读取所有 chunk 文本与元数据
+2. 为每个候选模型创建独立的 `benchmark_<model>` collection（避免维度冲突）
+3. 用各自的 Embedding 模型重新编码并写入
+4. 在同一份测试集上执行纯向量检索
+5. 计算 Hit@1/Hit@3/Recall@5/MRR 及耗时与内存
+6. 将结果写入 [backend/tests/embedding_benchmark/results.json](backend/tests/embedding_benchmark/results.json)
+
+### 选型结论
+
+待真实结果产出后填写。例如：
+
+> 在 N 道测试问题上，bge-base-zh-v1.5 的 Hit@3 达到 XX%，MRR 为 X.XX，平均编码耗时 XX ms，综合检索效果与本地部署资源占用优于其余候选模型，故选用 BAAI/bge-base-zh-v1.5 作为项目默认 Embedding 模型。
+
+### 代码目录
+
+```
+backend/tests/embedding_benchmark/
+├── __init__.py
+├── questions.json              # 40道测试问题集（含relevant_keywords，待回填真实ID）
+├── fill_real_chunk_ids.py      # 从运行中的Qdrant匹配真实point ID的回填脚本
+├── benchmark.py                # 主评测脚本：控制变量+多轮重复
+├── metrics.py                  # 检索指标计算（Hit@K/Recall@K/MRR）
+├── results.json                # 真实评测结果（脚本自动写入）
+└── report.md                   # 人类可读报告（手工汇总）
+```
+
+---
+
 ## 🔧 配置说明
 
 ### 环境变量
